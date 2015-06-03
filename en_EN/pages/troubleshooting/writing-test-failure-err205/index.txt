@@ -1,0 +1,43 @@
+Title: Writing test failure (ERR_205)
+
+Content:
+
+If you get this alert when trying to install Bludit, you need to set the correct permissions to the `content` directory.
+
+#### Content
+1. [Hosting server change permissions via FTP](#ftp)
+1. [Permissions on GNU/Linux](#linux)
+
+---
+
+## <a id="ftp"></a> Hosting server change permissions via FTP
+
+If you have access to your Webserver via FTP, you can set the permission right-clicking on the directory/folder `content`, set permissions. First try to set the permission to 755, if the error continues then try with 777 permission.
+
+---
+
+## <a id="linux"></a> Permissions on GNU/Linux
+
+I recommend you to check with which user running on your Webserver, because you need to set read/write/execute permissions to the directory content. For example if you are running Apache on GNU/Linux you can do this:
+
+```
+$ sudo ps axo user | egrep '(apache|httpd)' | uniq
+```
+
+This commands returns what user is running Apache.
+
+Now you can set the username to the directory `content`. And fix some permissions to files and directories.
+
+```
+$ cd /var/www/html/bludit
+$ sudo chown -R USERNAME:USERNAME content
+$ sudo find . -type f | xargs chmod 664
+$ sudo find . -type d | xargs chmod 755
+```
+
+Other way, that I don’t recommend, is setting the permissions for all read/write/execute (777).
+
+```
+$ cd /var/www/html/bludit
+$ sudo chmod 777 content
+```

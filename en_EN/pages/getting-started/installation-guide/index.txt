@@ -1,0 +1,7 @@
+Title: Installation guide
+Content: You only need to upload the files to the server.
+
+1. Download the latest version from http://www.bludit.com/bludit_latest.zip
+2. Extract the zip file into a directory like `bludit`.
+3. Upload the directory `bludit` on your hosting.
+4. Done!

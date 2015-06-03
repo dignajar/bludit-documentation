@@ -1,0 +1,68 @@
+Title: Theme basics
+Content:
+
+Themes in Bludit are very flexible, you can use any framework (Bootstrap, Kube, Skeleton, Less, etc..), any Javascript code, whatever you want.
+
+All themes resides in the `themes` directory, and have a default structure of directories, this structure is necesary only if you are going to use Bludit Helpers.
+
+#### Content
+1. [Directory structure](#directory-structure)
+2. [$pages array](#page-array)
+3. [$posts array](#post-array)
+
+---
+
+## <a id="directory-structure"></a> Directory structure
+```
+/themes/
+	css/
+	js/
+	php/
+	index.php
+```
+
+---
+
+## <a id="page-array"></a> $pages array
+
+This array contains all published pages. Each item from the array is a [Page Object](../themes/page-object).
+
+### Examples
+
+Print all pages title
+<pre><code data-language="php">foreach($pages as $page)
+{
+	echo $page->title();
+}
+</code></pre>
+
+Print all pages title and content
+<pre><code data-language="php">foreach($pages as $page)
+{
+	echo '<h1>'.$page->title().'</h1>';
+	echo '<div>'.$page->content().'</div>';
+}
+</code></pre>
+
+---
+
+## <a id="post-array"></a> $posts array
+
+This array contains all posts published for the current page number. Each item from the array is a [Post Object](../themes/post-object).
+
+### Examples
+
+Print all posts title
+<pre><code data-language="php">foreach($posts as $post)
+{
+	echo $post->title();
+}
+</code></pre>
+
+Print all posts title and content
+<pre><code data-language="php">foreach($posts as $post)
+{
+	echo '<h1>'.$post->title().'</h1>';
+	echo '<div>'.$post->content().'</div>';
+}
+</code></pre>
