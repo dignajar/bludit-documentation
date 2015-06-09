@@ -1,8 +1,8 @@
 title:Getting started
 content:## Hello!
 
-What do I need to install Bludit? [Requirements](./getting-start/requirements/)
+What do I need to install Bludit? [Requirements](./getting-started/requirements/)
 
-How to install Bludit ? Follow the [installation guide](./getting-start/installation-guide/) it's very easy!
+How to install Bludit ? Follow the [installation guide](./getting-started/installation-guide/) it's very easy!
 
 If you need more information or if you have some questions, bug report, visit the [support forum](http://forum.bludit.com)
