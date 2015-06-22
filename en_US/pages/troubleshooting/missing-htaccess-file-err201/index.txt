@@ -1,0 +1,16 @@
+Title: Missing .htaccess file (ERR_201)
+
+Content:
+May have forgotten upload the .htaccess file in the root directory.
+
+Note: **The file name is .htaccess, begins with the dot.**
+
+#### Content
+1. [How to create the file .htaccess on Windows](#windows)
+
+---
+
+## <a id="windows"></a> How to create the file .htaccess on Windows
+When you want to rename a file on Windows with the name .htaccess you have the alert ```You must type a file name.```. You can create the file with Notepad, and then File->Save as->Write .htaccess and choose ```All Files``` as the type.
+
+Link: http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-with-a-dot-prefix-in-windows-for-example-htacce

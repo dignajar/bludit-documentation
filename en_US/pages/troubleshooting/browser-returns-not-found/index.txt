@@ -3,10 +3,16 @@ Title: Browser returns not found or forbidden
 Content:
 If you have a problem when browsing your site, for example when you go to some page or post.
 
+#### Content
+1. [Apache Webserver](#apache)
+2. [Nginx Webserver](#nginx)
+
 ![Bludit Not found error](../content/uploads/bludit-notfound.png "Bludit Not found error")
 
-### Apache Webserver
-If you uses Apache Webserver you need the `.htaccess` file in your root directory. With the following configuration.
+---
+
+### <a id="apache"></a> Apache Webserver
+If you uses Apache Webserver you need the ```.htaccess``` file in your root directory and enable the [module rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html). With the following configuration.
 
 <pre><code data-language="bash"># apache configuration
 AddDefaultCharset UTF-8
@@ -25,7 +31,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*) index.php [L]
 </code></pre>
 
-### Nginx Webserver
+### <a id="nginx"></a> Nginx Webserver
 If you use Nginx Webserver you need the following configuration in `nginx.conf` file.
 
 <pre><code data-language="bash"># nginx configuration
