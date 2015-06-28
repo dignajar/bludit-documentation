@@ -110,17 +110,15 @@ If you don’t have the command wget, you can try with the curl command.
 $ curl --remote-name http://www.bludit.com/bludit_latest.zip
 ```
 
-DEBUG:I recommend you to check with which user running on your Webserver****, because you need to set read/write/execute permissions to the directory `content`. For example if you are running Apache you can do this:
+Get the user associated with the Webserver process, to set the correct permissions to the directory `content`. For example if you are running Apache you can do this:
 ```
 $ sudo ps axo user | egrep '(apache|httpd)' | uniq
 ```
 
-DEBUG:This return the username with you are running the Webserver Apache on GNU/Linux.*******
-
 Now you can set the username to the directory `content`. And fix some permissions to files and directories.
 ```
 $ cd /var/www/html/bludit
-$ sudo chown -R USERNAME:USERNAME content
+$ sudo chown -R {USERNAME}:{USERNAME} content
 $ sudo find . -type f | xargs chmod 664
 $ sudo find . -type d | xargs chmod 755
 ```
