@@ -18,4 +18,4 @@ If you have access to your Webserver via FTP, you can set the permission right-c
 
 ## <a id="linux"></a> Permissions on GNU/Linux
 
-Check the article [Installation on GNU/Linux](./getting-started/installation-on-gnu-linux#default)
+Check this article [Installation on GNU/Linux](./getting-started/installation-on-gnu-linux#default)
