@@ -7,6 +7,8 @@ Note: **The file name is .htaccess, begins with the dot.**
 
 #### Content
 1. [How to create the file .htaccess on Windows](#windows)
+2. [File .htaccess for Apache Webserver](#apache)
+3. [Configuration for Nginx Webserver](#nginx)
 
 ---
 
@@ -14,3 +16,37 @@ Note: **The file name is .htaccess, begins with the dot.**
 When you want to rename a file on Windows with the name .htaccess you have the alert ```You must type a file name.```. You can create the file with Notepad, and then File->Save as->Write .htaccess and choose ```All Files``` as the type.
 
 Link: http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-with-a-dot-prefix-in-windows-for-example-htacce
+
+### <a id="apache"></a> File .htaccess for Apache Webserver
+If you uses Apache Webserver you need the ```.htaccess``` file in your root directory and enable the [module rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html). With the following configuration.
+
+<pre><code data-language="bash"># apache configuration
+AddDefaultCharset UTF-8
+
+# Remove the trailing slash from URL
+DirectorySlash Off
+
+# Enable rewrite rules
+RewriteEngine on
+
+# Deny direct access to .txt files
+RewriteRule ^content/(.*)\.txt$ - [R=404,L]
+
+# All URL process by index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*) index.php [L]
+</code></pre>
+
+### <a id="nginx"></a> Configuration for Nginx Webserver
+If you use Nginx Webserver you need the following configuration in `nginx.conf` file.
+
+<pre><code data-language="bash"># nginx configuration
+charset utf-8;
+location ~ ^/content/(.*)\.(txt)$ {
+}
+location / {
+if (!-e $request_filename){
+rewrite ^/(.*) /index.php break;
+}
+}
+</code></pre>

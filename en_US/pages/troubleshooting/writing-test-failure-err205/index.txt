@@ -18,26 +18,4 @@ If you have access to your Webserver via FTP, you can set the permission right-c
 
 ## <a id="linux"></a> Permissions on GNU/Linux
 
-I recommend you to check with which user running on your Webserver, because you need to set read/write/execute permissions to the directory content. For example if you are running Apache on GNU/Linux you can do this:
-
-```
-$ sudo ps axo user | egrep '(apache|httpd)' | uniq
-```
-
-This commands returns what user is running Apache.
-
-Now you can set the username to the directory `content`. And fix some permissions to files and directories.
-
-```
-$ cd /var/www/html/bludit
-$ sudo chown -R USERNAME:USERNAME content
-$ sudo find . -type f | xargs chmod 664
-$ sudo find . -type d | xargs chmod 755
-```
-
-Other way, that I don’t recommend, is setting the permissions for all read/write/execute (777).
-
-```
-$ cd /var/www/html/bludit
-$ sudo chmod 777 content
-```
+Check the article [Installation on GNU/Linux](./getting-started/installation-on-gnu-linux#default)
