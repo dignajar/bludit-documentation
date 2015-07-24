@@ -1,0 +1,27 @@
+Title: How to insert an image
+
+Content:
+
+First you need to upload the image on `/bludit/content/uploads/` then you can use this image on your posts or pages.
+
+Example:
+1. Upload the image `test.jpg` on `/bludit/content/uploads/test.jpg`
+2. Create a post or page, you can use HTML code to link the image.
+```
+<img src="test.jpg" alt="My new test image">
+```
+3. Done!
+
+## Sort on folders
+
+You can create folders inside the `/bludit/content/uploads/` and link the images.
+
+Example:
+1. Create the folder `animals` on `/bludit/content/uploads/`
+2. Upload the images `dog.jpg` and `cat.jpg` on `/bludit/content/uploads/animals/`
+3. Create the post or page.
+4. Insert the HTML code img tag.
+```
+<img src="animals/dog.jpg" alt="My dog Echo">
+<img src="animals/cat.jpg" alt="The cat">
+```
