@@ -1,0 +1,22 @@
+Title: My first theme
+Content:
+
+This theme only show the posts
+<pre><code data-language="html"><!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bludit</title>
+</head>
+<body>
+	<?php foreach ($posts as $Post): ?>
+
+	<div><?php echo $Post->title() ?></div>
+	<div><?php echo $Post->content() ?></div>
+
+	<hr>
+
+	<?php endforeach; ?>
+</body>
+</html>
+</code></pre>

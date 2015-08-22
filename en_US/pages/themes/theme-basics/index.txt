@@ -6,17 +6,25 @@ Themes in Bludit are very flexible, you can use any framework (Bootstrap, Kube, 
 All themes resides in the `themes` directory, and have a default structure of directories, this structure is necesary only if you are going to use Bludit Helpers.
 
 #### Content
-1. [Directory structure](#directory-structure)
+1. [Simple structure for themes](#simple-structure-for-themes)
 2. [$pages array](#page-array)
 3. [$posts array](#post-array)
 
 ---
 
-## <a id="directory-structure"></a> Directory structure
+## <a id="simple-structure-for-themes"></a> Simple structure for themes
+With this structure you can use Bludit Helpers.
+
+- All CSS files are in `css` folder
+- All Javascript files are in `js` folder
+- All Languages files are in `language` folder
+- All PHP files are in `php` folder
+
 ```
-/themes/
+/themes/THEME_NAME/
 	css/
 	js/
+	language/
 	php/
 	index.php
 ```
