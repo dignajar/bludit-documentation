@@ -12,25 +12,24 @@ Note: **The last field should be Content**.
 
 ---
 
-### <a id="fields"></a> Fields / Variables
+### Fields / Variables <a id="fields"></a>
 
-| Field 			| Description |
-| ------------------|-------------|
-| Title 			| The title for the post or page |
+| Field 		| Description |
+| ----------------------|-----------------|
+| Title 		| The title for the post or page |
 | Description 		| Little description, no more than 150 characters |
-| Tags 				| Tags or keywords separated by a comma |
+| Tags 			| Tags or keywords separated by a comma |
 | AllowComments 	| True or False |
-| Status 			| Published or Draft |
-| unixTimeCreated	| Define the created time/date in unix time stamp, this need to be in UTC-0/GMT. |
-| unixTimeModified	| Define the modified time/date in unix time stamp, this need to be in UTC-0/GMT. |
-| Username 			| The owner username. Needs to be a valid username. |
-| Content 			| The content for the post/page, support HTML and Markdown code. |
+| Status 		| Published, Draft or Scheduled |
+| Date			| Define the created time/date. Default format YYYY-MM-DD HH:mm:ss |
+| Username 		| The owner username. Needs to be a valid username. |
+| Content 		| The content for the post/page, support HTML and Markdown code. |
 
-### <a id="post-example"></a> Post example
+### Post example <a id="post-example"></a>
 ```
 Title: New post test
 Status: published
-unixTimeCreated: 1425340270
+Date: 2015-11-22 22:01:00
 Username: diego
 Author: Diego Najar
 Content:
@@ -41,5 +40,4 @@ Content:
 
 ## Some HTML code
 <strong>It is a long established</strong> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
 ```
