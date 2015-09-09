@@ -29,7 +29,7 @@ Select the version PHP 5.4.
 
 Complete the fields:
 - Public URL: Set your blog URL.
-- Source code: Type **https://github.com/dignajar/bludit-openshift**
+- Source code: **https://github.com/dignajar/bludit-openshift**
 
 Click on **Create Application** button.
 
