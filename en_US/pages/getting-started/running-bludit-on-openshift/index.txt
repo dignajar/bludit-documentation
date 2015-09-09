@@ -1,7 +1,7 @@
 Title: Running Bludit on OpenShift
 Content:
 
-OpenShift is a very good platform for running a Bludit, it easy and free.
+OpenShift is a very good platform for running Bludit, it easy and free.
 
 > OpenShift is a next-generation cloud application platform that makes it easy to develop, deploy, and scale applications in the cloud – public or private. https://www.openshift.com/products/architecture
 
