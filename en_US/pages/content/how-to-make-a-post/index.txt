@@ -10,16 +10,18 @@ There are two ways to make a post. The easy mode, with graphic user interface, a
 
 ---
 
-## <a id="easy-mode"></a> Easy mode
+## Easy mode <a id="easy-mode"></a>
 Login to Admin panel and go to `New post` on the left menu.
 
 Complete the form and your are done.
+
+![Bludit New Post](bludit-new-post.png)
 
 ---
 
 ## <a id="advanced-mode"></a> Advanced mode
 You can make a new post editing the filesystem.
-- Create a directory in `/bludit/content/posts/`
+- Create a directory in `/content/posts/`
 - The directory name will be the uri of the new post.
 - Create a new file named `index.txt` inside of the new directory.
 - Edit the file `index.txt`
@@ -27,8 +29,8 @@ You can make a new post editing the filesystem.
 - Then log-in to Admin Panel to auto-regenerate the database.
 
 ### Example
-- Create the directory `/bludit/content/posts/test`
-- Create the file `index.txt` in `/bludit/content/posts/test/`
+- Create the directory `/content/posts/test`
+- Create the file `index.txt` in `/content/posts/test/`
 - Edit the file `index.txt`
 - Add the next text
 
