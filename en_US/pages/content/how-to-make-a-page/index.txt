@@ -1,4 +1,4 @@
-Title: How to make page
+Title: How to make a page
 
 Content:
 
@@ -10,16 +10,18 @@ There are two ways to make a page. The easy mode, with graphic user interface, a
 
 ---
 
-## <a id="easy-mode"></a> Easy mode
+## Easy mode <a id="easy-mode"></a>
 Login to Admin panel and go to `New page` on the left menu.
 
 Complete the form and your are done.
+
+![Bludit New Post](bludit-new-page.png)
 
 ---
 
 ## <a id="advanced-mode"></a> Advanced mode
 You can make a new page editing the filesystem.
-- Create a directory in `/bludit/content/pages/`
+- Create a directory in `/content/pages/`
 - The directory name will be the uri of the new page.
 - Create a new file named `index.txt` inside of the new directory.
 - Edit the file `index.txt`
@@ -27,8 +29,8 @@ You can make a new page editing the filesystem.
 - Then log-in to Admin Panel to auto-regenerate the database.
 
 ### Example
-- Create the directory `/bludit/content/pages/test`
-- Create the file `index.txt` in `/bludit/content/pages/test/`
+- Create the directory `/content/pages/test`
+- Create the file `index.txt` in `/content/pages/test/`
 - Edit the file `index.txt`
 - Add the next text
 

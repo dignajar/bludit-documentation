@@ -1,0 +1,13 @@
+Title: How to schedule a post
+
+Content:
+
+You can prepare a post and schedule it to be published on your web site at a different date.
+
+To schedule a post:
+1- Create a new post, **Admin panel->New post**
+2- Click **Advanced options** button.
+3- Choose the date and time you want the post to be published.
+4- Click **Publish** button.
+
+![Schedule a post on Bludit](bludit-schedule-post.png)
