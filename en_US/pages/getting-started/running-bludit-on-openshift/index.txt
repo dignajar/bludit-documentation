@@ -8,6 +8,7 @@ OpenShift is a very good platform for running a Bludit, it easy and free.
 ## Sign Up for an account
 
 Go to https://www.openshift.com and sign up for an account.
+
 You only need to sign up for a free account.
 
 ## Log In to OpenShift
@@ -19,6 +20,7 @@ On the dashboard, click on **Create your first application now**
 ## Look for PHP cartridge
 
 Type "PHP" into "Search by keyword or tag" input field to filter.
+
 Select the version PHP 5.4.
 
 ![OpenShift PHP Cartridge](bludit-openshift-search-php.png)
