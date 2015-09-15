@@ -3,7 +3,7 @@ Title: Missing .htaccess file (ERR_201)
 Content:
 May have forgotten upload the .htaccess file in the root directory.
 
-Note: **The file name is .htaccess, begins with the dot.**
+Note: **The file name is .htaccess, begins with a dot, because is a hidden file.**
 
 #### Content
 1. [File .htaccess for Apache Webserver](#apache)
@@ -13,13 +13,13 @@ Note: **The file name is .htaccess, begins with the dot.**
 ---
 
 ## <a id="apache"></a> File .htaccess for Apache Webserver
-If you uses Apache Webserver you need the ```.htaccess``` file in your root directory and enable the [module rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html). With the following configuration.
+If you uses Apache Webserver you need the ```.htaccess``` file in your root directory and enable the [module rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
-<pre><code data-language="bash"># apache configuration
+.htaccess file
+<pre><code data-language="bash"># Apache configuration
 AddDefaultCharset UTF-8
 
-# Remove the trailing slash from URL
-DirectorySlash Off
+<IfModule mod_rewrite.c>
 
 # Enable rewrite rules
 RewriteEngine on
@@ -30,12 +30,13 @@ RewriteRule ^content/(.*)\.txt$ - [R=404,L]
 # All URL process by index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*) index.php [L]
-</code></pre>
+
+</IfModule></code></pre>
 
 ---
 
 ## <a id="windows"></a> How to create the file .htaccess on Windows
-When you want to rename a file on Windows with the name .htaccess you have the alert ```You must type a file name.```. You can create the file with Notepad, and then File->Save as->Write .htaccess and choose ```All Files``` as the type.
+When rename a file on Windows with the name .htaccess you have the alert ```You must type a file name.```. To solve this problem, you can create the file with **Notepad**, and go to **File->Save as->Write** .htaccess and choose ```All Files``` as the type.
 
 Link: http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-with-a-dot-prefix-in-windows-for-example-htacce
 
