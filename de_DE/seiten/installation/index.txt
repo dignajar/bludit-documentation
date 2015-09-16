@@ -3,6 +3,6 @@ content:## Hallo!
 
 Was benötige ich, um Bludit zu installieren? [Voraussetzungen](./installation/vorausssetzungen/)
 
-Wir installiere ich Bludit ? Folge der [Installationsanleitung](./installation/installationsanleitung/) Es ist ganz einfach!
+Wir installiere ich Bludit? Folge der [Installationsanleitung](./installation/installationsanleitung/) Es ist ganz einfach!
 
-Wenn Du mehr Informationen brauchst, Fragen hast oder einen Bug melden möchtest, besuche das [Support-Forum](http://forum.bludit.com).
+Wenn Du mehr Informationen brauchst, Fragen hast oder einen Bug melden möchtest, steht Dir das [Support-Forum](http://forum.bludit.com) zur Verfügung.
