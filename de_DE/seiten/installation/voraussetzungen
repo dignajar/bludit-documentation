@@ -1,9 +1,0 @@
-Title: Voraussetzungen
-Content:
-Alles was Du brauchst, ist ein Webserver mit PHP.
-
-- PHP v5.3 oder höher.
-- PHP module [mbstring](http://php.net/manual/en/book.mbstring.php) for full UTF-8 support.
-- Server:
-  * Apache mit dem Modul [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
-  * Ngnix mit dem Modul [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)
