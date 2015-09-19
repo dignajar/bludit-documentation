@@ -1,0 +1,40 @@
+Title: Bludit bei OpenShift installieren.
+Content:
+
+OpenShift ist eine gute Plattform, auf der Bludit einfach und kostenlos installiert werden kann. 
+
+> OpenShift ist eine Cloud-Plattform, die sich für die Entwicklung, Verwendung und Anpassung von Applikationen in der Cloud eignent, sowohl öffentlich als auch privat. https://www.openshift.com/products/architecture
+
+## Registrierung
+
+Ein Konto bei OpenShift kann unter https://www.openshift.com eingerichtet werden.
+
+Es reicht, sich für ein kostenloses Konto zu registrieren.
+
+## Anwendung einrichten
+
+Nach der SAnmeldung bei OpenShift im Dashboard **Create your first application now** anklicken.
+
+![OpenShift Dashboard](bludit-openshift-dashboard.png)
+
+## PHP Cartridge
+
+Unter "PHP" die Version PHP 5.4. wählen.
+
+![OpenShift PHP Cartridge](bludit-openshift-search-php.png)
+
+## Konfiguration
+
+Ergänzung der Felder:
+- Public URL: URL der Installation eingeben.
+- Source code: **https://github.com/dignajar/bludit-openshift** eingeben.
+
+Den Button **Create Application** anklicken.
+
+![OpenShift Configure Application](bludit-openshift-configure-application.png)
+
+## Installation abschliessen
+
+"Visit app in the browser" wählen oder die bei Public URL gewählte Adresse im Browser aufrufen und Bludit installieren.
+
+![OpenShift finish installation](bludit-openshift-finish-installation.png)
