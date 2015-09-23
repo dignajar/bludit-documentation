@@ -3,9 +3,10 @@ Content:
 
 First, create the folder structure, in this example I will call my new theme `Coffee`.
 
-1. Create the folder theme inside `/themes/` folder, you will get `/themes/coffee/`.
-2. Create the folder `languages` inside `/themes/coffee/languages/`.
-3. Create the file `index.php` inside `/themes/coffee/`, with the next HTML and PHP code:
+- Create the folder theme inside `/themes/` folder, you will get `/themes/coffee/`.
+- Create the folder `languages` inside `/themes/coffee/` folder.
+- Create the file `index.php` inside `/themes/coffee/` folder, with the next HTML and PHP code:
+
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +26,8 @@ First, create the folder structure, in this example I will call my new theme `Co
 </html>
 </code></pre>
 
-4. Create the file called `en_US.json` with the information about the theme, inside `/themes/coffee/languages/` folder.
+Create the theme information, create a file called `en_US.json` inside `/themes/coffee/languages/` folder, whit the next JSON code:
+
 <pre><code data-language="php">{
 	"theme-data":
 	{
@@ -40,4 +42,4 @@ First, create the folder structure, in this example I will call my new theme `Co
 }
 </code></pre>
 
-5. Now you will see the theme on the **Dashboard->Themes**. This theme shows only the posts of the first page.
+Now you will see the theme on the **Dashboard->Themes**. This theme shows only the posts of the first page.
