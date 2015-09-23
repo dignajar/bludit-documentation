@@ -91,3 +91,49 @@ Get page status, this method returns TRUE if the page is published, FALSE otherw
 else {
 	echo 'Page draft';
 }</code></pre>
+
+---
+
+## <a id="page-array"></a> $pages array
+
+This array contains all published pages. Each item from the array is a [Page Object](../themes/page-object).
+
+### Examples
+
+Print all pages title
+<pre><code data-language="php">foreach($pages as $page)
+{
+	echo $page->title();
+}
+</code></pre>
+
+Print all pages title and content
+<pre><code data-language="php">foreach($pages as $page)
+{
+	echo '<h1>'.$page->title().'</h1>';
+	echo '<div>'.$page->content().'</div>';
+}
+</code></pre>
+
+---
+
+## <a id="post-array"></a> $posts array
+
+This array contains all posts published for the current page number. Each item from the array is a [Post Object](../themes/post-object).
+
+### Examples
+
+Print all posts title
+<pre><code data-language="php">foreach($posts as $post)
+{
+	echo $post->title();
+}
+</code></pre>
+
+Print all posts title and content
+<pre><code data-language="php">foreach($posts as $post)
+{
+	echo '<h1>'.$post->title().'</h1>';
+	echo '<div>'.$post->content().'</div>';
+}
+</code></pre>

@@ -7,24 +7,12 @@ All themes resides in the `themes` directory, and have a default structure of di
 
 #### Content
 1. [Simple structure for themes](#simple-structure-for-themes)
-2. [$pages array](#page-array)
+2. [Information about the theme](#information)
 3. [$posts array](#post-array)
 
 ---
 
 ## <a id="simple-structure-for-themes"></a> Simple structure for themes
-
-| Description 		| Real path                    | HTML paths in PHP constant | Real path in PHP constant|
-| ----------------------|------------------------------|----------------------------|--------------------------|
-| Theme root            | /themes/THEME_NAME/          | HTML_PATH_THEME            | PATH_THEME               |
-| CSS files             | /themes/THEME_NAME/css/      | HTML_PATH_THEME_CSS        | PATH_THEME_CSS           |
-| Images files          | /themes/THEME_NAME/img/      | HTML_PATH_THEME_IMG        | PATH_THEME_IMG           |
-| Javascript files      | /themes/THEME_NAME/js/       | HTML_PATH_THEME_JS         | PATH_THEME_JS            |
-| Languages files       | /themes/THEME_NAME/languages/|                            | PATH_THEME_LANG          |
-| PHP files             | /themes/THEME_NAME/php/      |                            | PATH_THEME_PHP           |
-
-
-**Tree list**
 
 ```
 /themes/THEME_NAME/
@@ -35,6 +23,16 @@ All themes resides in the `themes` directory, and have a default structure of di
 	php/
 	index.php
 ```
+
+| Description 		| Real path                    | HTML paths in PHP constant | Real path in PHP constant|
+| ----------------------|------------------------------|----------------------------|--------------------------|
+| Theme root            | /themes/THEME_NAME/          | HTML_PATH_THEME            | PATH_THEME               |
+| CSS files             | /themes/THEME_NAME/css/      | HTML_PATH_THEME_CSS        | PATH_THEME_CSS           |
+| Images files          | /themes/THEME_NAME/img/      | HTML_PATH_THEME_IMG        | PATH_THEME_IMG           |
+| Javascript files      | /themes/THEME_NAME/js/       | HTML_PATH_THEME_JS         | PATH_THEME_JS            |
+| Languages files       | /themes/THEME_NAME/languages/|                            | PATH_THEME_LANG          |
+| PHP files             | /themes/THEME_NAME/php/      |                            | PATH_THEME_PHP           |
+
 
 *Note: With this structure you can use Bludit Helpers.*
 
@@ -60,48 +58,3 @@ This is a valid JSON structure.
 }
 </code></pre>
 
----
-
-## <a id="page-array"></a> $pages array
-
-This array contains all published pages. Each item from the array is a [Page Object](../themes/page-object).
-
-### Examples
-
-Print all pages title
-<pre><code data-language="php">foreach($pages as $page)
-{
-	echo $page->title();
-}
-</code></pre>
-
-Print all pages title and content
-<pre><code data-language="php">foreach($pages as $page)
-{
-	echo '<h1>'.$page->title().'</h1>';
-	echo '<div>'.$page->content().'</div>';
-}
-</code></pre>
-
----
-
-## <a id="post-array"></a> $posts array
-
-This array contains all posts published for the current page number. Each item from the array is a [Post Object](../themes/post-object).
-
-### Examples
-
-Print all posts title
-<pre><code data-language="php">foreach($posts as $post)
-{
-	echo $post->title();
-}
-</code></pre>
-
-Print all posts title and content
-<pre><code data-language="php">foreach($posts as $post)
-{
-	echo '<h1>'.$post->title().'</h1>';
-	echo '<div>'.$post->content().'</div>';
-}
-</code></pre>
