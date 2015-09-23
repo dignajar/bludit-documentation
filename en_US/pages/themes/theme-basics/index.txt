@@ -24,7 +24,8 @@ All themes resides in the `themes` directory, and have a default structure of di
 | PHP files             | /themes/THEME_NAME/php/      |                            | PATH_THEME_PHP           |
 
 
-Tree list
+**Tree list**
+
 ```
 /themes/THEME_NAME/
 	css/
@@ -35,7 +36,30 @@ Tree list
 	index.php
 ```
 
-* Note: With this structure you can use Bludit Helpers. *
+*Note: With this structure you can use Bludit Helpers.*
+
+---
+
+## Information about the theme <a id="information"></a>
+
+Each theme has an information file located in `/themes/THEME_NAME/languages/en_US.json`, the default language is English and the locale is en_US, then the file information is called `en_US.json`. Each line in `en_US.json` file is a key-value pair with the key on the left and the value on the right.
+
+This is a valid JSON structure.
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Pure",
+		"description": "Pure is based on the framework Pure.css. Website: http://purecss.io",
+		"author": "Diego",
+		"email": "",
+		"website": "http://www.bludit.com",
+		"version": "1.0",
+		"releaseDate": "2015-10-23"
+	}
+}
+</code></pre>
+
 ---
 
 ## <a id="page-array"></a> $pages array
