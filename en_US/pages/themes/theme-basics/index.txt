@@ -13,7 +13,6 @@ All themes resides in the `themes` directory, and have a default structure of di
 ---
 
 ## <a id="simple-structure-for-themes"></a> Simple structure for themes
-With this structure you can use Bludit Helpers.
 
 | Description 		| Real path                    | HTML paths in PHP constant | Real path in PHP constant|
 | ----------------------|------------------------------|----------------------------|--------------------------|
@@ -25,6 +24,7 @@ With this structure you can use Bludit Helpers.
 | PHP files             | /themes/THEME_NAME/php/      |                            | PATH_THEME_PHP           |
 
 
+Tree list
 ```
 /themes/THEME_NAME/
 	css/
@@ -35,6 +35,7 @@ With this structure you can use Bludit Helpers.
 	index.php
 ```
 
+* Note: With this structure you can use Bludit Helpers. *
 ---
 
 ## <a id="page-array"></a> $pages array
