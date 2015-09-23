@@ -15,14 +15,20 @@ All themes resides in the `themes` directory, and have a default structure of di
 ## <a id="simple-structure-for-themes"></a> Simple structure for themes
 With this structure you can use Bludit Helpers.
 
-- All CSS files are in `css` folder
-- All Javascript files are in `js` folder
-- All Languages files are in `language` folder
-- All PHP files are in `php` folder
+| Description 		| Real path                    | HTML paths in PHP constant | Real path in PHP constant|
+| ----------------------|------------------------------|----------------------------|--------------------------|
+| Theme root            | /themes/THEME_NAME/          | HTML_PATH_THEME            | PATH_THEME               |
+| CSS files             | /themes/THEME_NAME/css/      | HTML_PATH_THEME_CSS        | PATH_THEME_CSS           |
+| Images files          | /themes/THEME_NAME/img/      | HTML_PATH_THEME_IMG        | PATH_THEME_IMG           |
+| Javascript files      | /themes/THEME_NAME/js/       | HTML_PATH_THEME_JS         | PATH_THEME_JS            |
+| Languages files       | /themes/THEME_NAME/languages/|                            | PATH_THEME_LANG          |
+| PHP files             | /themes/THEME_NAME/php/      |                            | PATH_THEME_PHP           |
+
 
 ```
 /themes/THEME_NAME/
 	css/
+	img/
 	js/
 	language/
 	php/
