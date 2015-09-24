@@ -8,7 +8,6 @@ All themes resides in the `themes` directory, and have a default structure of di
 #### Content
 1. [Simple structure for themes](#simple-structure-for-themes)
 2. [Information about the theme](#information)
-3. [$posts array](#post-array)
 
 ---
 
