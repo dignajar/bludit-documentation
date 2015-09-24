@@ -1,11 +1,11 @@
 Title: Theme basics
 Content:
 
-Themes in Bludit are very flexible, you can use any framework (Bootstrap, Kube, Skeleton, Less, etc..), any Javascript code, whatever you want.
+Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/), etc), any Javascript code, whatever you want.
 
 All themes resides in the `themes` directory, and have a default structure of directories, this structure is necesary only if you are going to use Bludit Helpers.
 
-#### Content
+### Content
 1. [Simple structure for themes](#simple-structure-for-themes)
 2. [Information about the theme](#information)
 

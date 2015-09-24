@@ -2,9 +2,9 @@ Title: Installation on GNU/Linux
 
 Content:
 
-All examples are from out of the box installation. If you have the steps for other distribution, you can submit this information on the [forum](http://forum.bludit.com) and I will upload it here.
+All examples are from out of the box installation. If you have the steps for other distribution, you can submit this information on the [forum](http://forum.bludit.com) or make a pull request on [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
 
-#### Content
+### Content
 1. [Installation on Ubuntu 14.04](#ubuntu)
 2. [Installation on Centos 7 / RedHat 7](#centos)
 3. [Installation on GNU/Linux](#default)

@@ -4,4 +4,6 @@ Content:
 1. Download the latest version from http://www.bludit.com/bludit_latest.zip
 2. Extract the zip file into a directory like `bludit`.
 3. Upload the directory `bludit` to your server/hosting.
-4. Done!
+4. Visit your domain `http://domain.com/bludit`
+
+_Note: You can upload the files in the web server root directory._

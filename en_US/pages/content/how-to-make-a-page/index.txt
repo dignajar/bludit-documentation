@@ -4,16 +4,18 @@ Content:
 
 There are two ways to make a page. The easy mode, with graphic user interface, and the advanced mode; if you choose the second option, check the [variables for posts and pages](../content/variables-for-posts-and-pages).
 
-#### Content
+### Content
 1. [Easy mode](#easy-mode)
 1. [Advanced mode](#advanced-mode)
 
 ---
 
 ## Easy mode <a id="easy-mode"></a>
-Login to Admin panel and go to `New page` on the left menu.
+Login to Admin panel and go to **New page** on the left menu.
 
-Complete the form and your are done.
+Complete the form and click on the button **Publish now**.
+
+The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ![Bludit New Post](bludit-new-page.png)
 
@@ -26,7 +28,6 @@ You can make a new page editing the filesystem.
 - Create a new file named `index.txt` inside of the new directory.
 - Edit the file `index.txt`
 - Add two variables, `Title:` and `Content:`
-- Then log-in to Admin Panel to auto-regenerate the database.
 
 ### Example
 - Create the directory `/content/pages/test`

@@ -3,19 +3,18 @@ Title: Missing .htaccess file (ERR_201)
 Content:
 May have forgotten upload the .htaccess file in the root directory.
 
-Note: **The file name is .htaccess, begins with a dot, because is a hidden file.**
+_Note: The file name is .htaccess, begins with a dot, because is a hidden file._
 
-#### Content
+### Content
 1. [File .htaccess for Apache Webserver](#apache)
 2. [How to create the file .htaccess on Windows](#windows)
 3. [Configuration for Nginx Webserver](#nginx)
 
 ---
 
-## <a id="apache"></a> File .htaccess for Apache Webserver
+## File .htaccess for Apache Webserver <a id="apache"></a>
 If you uses Apache Webserver you need the ```.htaccess``` file in your root directory and enable the [module rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
-.htaccess file
 <pre><code data-language="bash"># Apache configuration
 AddDefaultCharset UTF-8
 
