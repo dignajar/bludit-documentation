@@ -1,4 +1,5 @@
 Title: Installationsanleitung
+Page: 2
 Content:
 
 1. Lade die neueste Version von Bludit von http://www.bludit.com/bludit_latest.zip herunter.
