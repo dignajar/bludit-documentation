@@ -1,0 +1,40 @@
+Title: Ein Bild einfügen
+Content:
+
+Bevor Du ein Bild einfügen kannst, musst Du es in das Verzeichnis `/content/uploads/` auf Deinem Server laden. Dann kannst Du das Bild in einen Beitrag oder eine Seite einfügen. 
+
+Beispiel:
+1. Lade das Bild `test.jpg` in das Verzeiochnis `/content/uploads` (`/content/uploads/test.jpg`).
+2. Im Beitrag oder auf der Seite, kannst Du Markdown oder HTML-Code verwenden, um das Bild zu verlinken.
+
+*HTML*
+```
+<img src=test.jpg alt="Das ist ein Test-Bild">
+```
+
+*Markdown*
+```
+![Das ist ein Test-Bild](test.jpg)
+```
+
+## Unterverzeichnisse
+
+Du kannst im Verzeichnis `/content/uploads/` Unterverzeichnisse anlegen und die Bilder mit ihnen verlinken..
+
+Beispiel:
+1. Lege einen  Unterverzeichnis `animals` im Verzeichnis `/content/uploads/` an.
+2. Lade die Bilder `dog.jpg` und `cat.jpg` in das neue Verzeichnis `/content/uploads/animals/`.
+3. Lege einen Beitrag oder eine Seite an.
+4. Füge den HTML- oder Markdown-Code für Bilder ein.
+
+*HTML*
+```
+<img src=animals/dog.jpg alt="Mein Hund">
+<img src=animals/cat.jpg alt="Meine Katze">
+```
+
+*Markdown*
+```
+![Mein Hund](animals/dog.jpg)
+![Meine Katze](animals/cat.jpg)
+```
