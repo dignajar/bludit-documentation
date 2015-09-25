@@ -1,9 +1,9 @@
 Title: Voraussetzungen
 Content:
-Alles was Du brauchst, ist ein Webserver mit PHP.
+Alles was, was Du brauchst, um Bludit zu verwenden, ist ein Webserver, auf dem PHP läuft:
 
 - PHP v5.3 oder höher.
-- PHP module [mbstring](http://php.net/manual/en/book.mbstring.php) for full UTF-8 support.
+- PHP module [mbstring](http://php.net/manual/en/book.mbstring.php) mit Unterstützung von UTF-8.
 - Server:
   * Apache mit dem Modul [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html).
   * Ngnix mit dem Modul [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html).
