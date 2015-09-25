@@ -1,5 +1,7 @@
 Title: Voraussetzungen
+Position: 1
 Content:
+
 Alles was, was Du brauchst, um Bludit zu verwenden, ist ein Webserver, auf dem PHP läuft:
 
 - PHP v5.3 oder höher.
