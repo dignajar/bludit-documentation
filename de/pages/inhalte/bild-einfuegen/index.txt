@@ -1,4 +1,5 @@
 Title: Ein Bild einfügen
+Position: 3
 Content:
 
 Bevor Du ein Bild einfügen kannst, musst Du es in das Verzeichnis `/content/uploads/` auf Deinem Server laden. Dann kannst Du das Bild in einen Beitrag oder eine Seite einfügen. 
