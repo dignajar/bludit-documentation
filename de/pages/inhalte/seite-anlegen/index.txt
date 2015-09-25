@@ -1,6 +1,6 @@
 Title: Eine Seite anlegen
-
-Inhalt:
+Position: 2
+Content:
 
 Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" mit einer grafischen Oberfläche, und einen "Advanced Mode". Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
 
