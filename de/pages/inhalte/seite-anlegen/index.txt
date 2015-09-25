@@ -1,0 +1,48 @@
+Title: Eine Seite anlegen
+
+Inhalt:
+
+Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" mit einer grafischen Oberfläche, und einen "Advanced Mode". Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
+
+#### Inhalt
+1. [Easy Mode](#easy-mode)
+1. [Advanced Mode](#advanced-mode)
+
+---
+
+## Easy Mode <a id="easy-mode"></a>
+Melde Dich im Admin-Panel an und wähle `Neue Seite` im Menü links.
+
+Fülle die Felder aus und veröffentliche die Seite.
+
+![Bludit New Post](bludit-new-page.png)
+
+---
+
+## <a id="advanced-mode"></a> Advanced mode
+You can make a new page editing the filesystem.
+- Create a directory in `/content/pages/`
+- The directory name will be the uri of the new page.
+- Create a new file named `index.txt` inside of the new directory.
+- Edit the file `index.txt`
+- Add two variables, `Title:` and `Content:`
+- Then log-in to Admin Panel to auto-regenerate the database.
+
+### Example
+- Create the directory `/content/pages/test`
+- Create the file `index.txt` in `/content/pages/test/`
+- Edit the file `index.txt`
+- Add the next text
+
+```
+Title: Mix Markdown and HTML code
+
+Content:
+<h1>Hello Lorem</h1>
+
+## Subtitle for Lorem
+
+It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+**Bold text in Markdown format**
+```
