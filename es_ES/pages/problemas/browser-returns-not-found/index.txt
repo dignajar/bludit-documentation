@@ -1,0 +1,6 @@
+Title: Browser returns not found or forbidden
+Position: 1
+Content:
+If you have a problem when browsing your site, for example when you go to some page or post. You need to check if you have enable the [module rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
+
+![Bludit Not found error](bludit-notfound.png)

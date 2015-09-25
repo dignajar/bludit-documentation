@@ -1,0 +1,10 @@
+Title: Comience aquí
+
+Content:
+## Hola!,
+
+Que necesito para instalar Bludit? [Requerimientos](./comience-aqui/requerimientos/)
+
+Como instalar Bludit ? Siga la [guía de instalación](./comience-aqui/guia-de-instalacion/) es muy facil!
+
+Si necesita mas información o tiene alguna duda, reportar un error, visite el [foro de soporte](http://forum.bludit.com)

@@ -1,0 +1,130 @@
+Title: Installation on GNU/Linux
+Position: 3
+Content:
+
+All examples are from out of the box installation. If you have the steps for other distribution, you can submit this information on the [forum](http://forum.bludit.com) or make a pull request on [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
+
+### Content
+1. [Installation on Ubuntu 14.04](#ubuntu)
+2. [Installation on Centos 7 / RedHat 7](#centos)
+3. [Installation on GNU/Linux](#default)
+
+---
+
+## <a id="ubuntu"></a> Installation on Ubuntu 14.04 LTS
+
+Install Apache Webserver, PHP and some tools.
+
+```
+$ sudo apt-get install -y apache2
+$ sudo apt-get install -y php
+$ sudo apt-get install -y unzip
+$ sudo apt-get install -y wget
+```
+
+Enable mod_rewrite.
+```
+$ sudo a2enmod rewrite
+```
+
+Edit the next file, you can use the following commands: vi, nano, gedit, etc.
+```
+$ sudo vi /etc/apache2/sites-available/000-default.conf
+```
+
+Search for `DocumentRoot /var/www/html` and add the following lines directly below.
+```
+<Directory "/var/www/html">
+    AllowOverride All
+</Directory>
+```
+
+Restart Apache.
+```
+sudo service apache2 restart
+```
+
+Download Bludit and install it.
+```
+$ cd /tmp
+$ wget http://www.bludit.com/bludit_latest.zip
+$ unzip bludit_latest.zip
+$ sudo mv bludit /var/www/html/
+```
+
+Directory permissions.
+```
+sudo chown -R www-data:www-data /var/www/html/bludit/content
+```
+
+Now you need to open your browser and navigate to http://localhost/bludit/
+
+---
+
+## <a id="centos"></a> Installation on Centos 7 / Red Hat 7
+
+Install Apache Webserver, PHP and some tools.
+
+```
+$sudo yum install -y httpd
+$sudo yum install -y php php-dom
+$sudo yum install -y unzip
+$sudo yum install -y wget
+```
+
+Restart Apache.
+```
+sudo service httpd restart
+```
+
+Download Bludit and install it.
+```
+$ cd /tmp
+$ wget http://www.bludit.com/bludit_latest.zip
+$ unzip bludit_latest.zip
+$ sudo mv bludit /var/www/html/
+```
+
+Directory permissions.
+```
+sudo chown -R www-data:www-data /var/www/html/bludit/content
+```
+
+Now you need to open your browser and navigate to http://localhost/bludit/
+
+---
+
+## <a id="default"></a> Installation on GNU/Linux
+First, you need a running Webserver on your machine or have some server/hosting with SSH enabled.
+
+Once you have installed a Webserver, download and install Bludit.
+```
+$ cd /tmp
+$ wget http://www.bludit.com/bludit_latest.zip
+$ unzip bludit_latest.zip
+$ mv bludit /var/www/html/
+```
+
+If you don’t have the command wget, you can try with the curl command.
+```
+$ curl --remote-name http://www.bludit.com/bludit_latest.zip
+```
+
+Get the user associated with the Webserver process, to set the correct permissions to the directory `content`. For example if you are running Apache you can do this:
+```
+$ sudo ps axo user | egrep '(apache|httpd)' | uniq
+```
+
+Now you can set the username to the directory `content`. And fix some permissions to files and directories.
+```
+$ cd /var/www/html/bludit
+$ sudo chown -R {USERNAME}:{USERNAME} content
+$ sudo find . -type f | xargs chmod 664
+$ sudo find . -type d | xargs chmod 755
+```
+
+Other way, but I don’t recommend it, is setting the permissions for all read/write/execute (777).
+```
+$ cd /var/www/html/bludit
+$ sudo chmod 777 content
+```

@@ -1,0 +1,46 @@
+Title: My first theme
+Position: 2
+Content:
+
+First, create the folder structure, in this example I will call my new theme `Coffee`.
+
+- Create the folder theme inside `/themes/` folder, you will get `/themes/coffee/`.
+- Create the folder `languages` inside `/themes/coffee/` folder.
+- Create the file `index.php` inside `/themes/coffee/` folder, with the next HTML and PHP code:
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bludit</title>
+</head>
+<body>
+	<?php foreach ($posts as $Post): ?>
+
+	<div><?php echo $Post->title() ?></div>
+	<div><?php echo $Post->content() ?></div>
+
+	<hr>
+
+	<?php endforeach; ?>
+</body>
+</html>
+</code></pre>
+
+Create the theme information, create a file called `en_US.json` inside `/themes/coffee/languages/` folder, whit the next JSON code:
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Coffee",
+		"description": "This is my first theme for Bludit.",
+		"author": "Diego",
+		"email": "",
+		"website": "http://www.bludit.com",
+		"version": "1.0",
+		"releaseDate": "2015-10-23"
+	}
+}
+</code></pre>
+
+Now you will see the theme on the **Dashboard->Themes**. This theme shows only the posts of the first page.

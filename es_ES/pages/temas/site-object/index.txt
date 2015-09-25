@@ -1,0 +1,48 @@
+Title: Site Object
+Position: 100
+Status: draft
+Content: The object `$Site` has all the information from the database `/content/databases/site.php`.
+
+
+### Methods and examples of usage
+
+Print the site title
+<pre><code data-language="php">echo $Site->title();</code></pre>
+
+Print the site slogan
+<pre><code data-language="php">echo $Site->slogan();</code></pre>
+
+Print the site description
+<pre><code data-language="php">echo $Site->description();</code></pre>
+
+Print the footer text
+<pre><code data-language="php">echo $Site->footer();</code></pre>
+
+Get the current theme for the site
+<pre><code data-language="php">$theme = $Site->theme();</code></pre>
+
+Get the current theme for the admin panel
+<pre><code data-language="php">$theme = $Site->adminTheme();</code></pre>
+
+Check if the advanced options for writing are enabled
+<pre><code data-language="php">if($Site->advancedOptions()) {
+	echo ‘Advanced options are enabled’;
+}
+else {
+	echo ‘Advanced options are disabled’;
+}</code></pre>
+
+Get the defined timezone
+<pre><code data-language="php">echo $Site->timezone();</code></pre>
+
+Get the defined language
+<pre><code data-language="php">echo $Site->language();</code></pre>
+
+Get the defined locale
+<pre><code data-language="php">echo $Site->locale();</code></pre>
+
+Get the defined homepage
+<pre><code data-language="php">echo $Site->homepage();</code></pre>
+
+Get the number of posts to show on one page
+<pre><code data-language="php">echo $Site->postsPerPage();</code></pre>

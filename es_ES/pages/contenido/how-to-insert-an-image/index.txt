@@ -1,0 +1,41 @@
+Title: How to insert an image
+Position: 3
+Content:
+
+First you need to upload the image on `/content/uploads/` then you can use this image on your posts or pages.
+
+Example:
+1. Upload the image `test.jpg` on `/content/uploads/test.jpg`
+2. Create a post or page, you can use Markdown or HTML code to link the image.
+
+*HTML*
+```
+<img src=test.jpg alt="My new test image">
+```
+
+*Markdown*
+```
+![My new test image](test.jpg)
+```
+
+## Group in folders
+
+You can create folders inside `/content/uploads/` and link the images.
+
+Example:
+1. Create the folder `animals` on `/content/uploads/`
+2. Upload the images `dog.jpg` and `cat.jpg` on `/content/uploads/animals/`
+3. Create the post or page.
+4. Insert the HTML code img tag.
+
+*HTML*
+```
+<img src=animals/dog.jpg alt="My dog Echo">
+<img src=animals/cat.jpg alt="The cat">
+```
+
+*Markdown*
+```
+![My dog Echo](animals/dog.jpg)
+![The cat](animals/cat.jpg)
+```
