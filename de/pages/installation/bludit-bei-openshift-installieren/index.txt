@@ -1,9 +1,10 @@
 Title: Bludit bei OpenShift installieren.
+Page: 4
 Content:
 
-OpenShift ist eine gute Plattform, auf der Bludit einfach und kostenlos installiert werden kann. 
+OpenShift ist eine empfehlenswerte Plattform, auf der Bludit einfach und kostenlos installiert werden kann. 
 
-> OpenShift ist eine Cloud-Plattform, die sich für die Entwicklung, Verwendung und Anpassung von Applikationen in der Cloud eignent, sowohl öffentlich als auch privat. https://www.openshift.com/products/architecture
+> OpenShift ist eine Cloud-Plattform, die sich für die Entwicklung, Verwendung und Anpassung sowohl von öffentlichen als auch privaten Projekten in der Cloud eignet. https://www.openshift.com/products/architecture
 
 ## Registrierung
 
@@ -13,7 +14,7 @@ Es reicht, sich für ein kostenloses Konto zu registrieren.
 
 ## Anwendung einrichten
 
-Nach der SAnmeldung bei OpenShift im Dashboard **Create your first application now** anklicken.
+Nach der Anmeldung bei OpenShift im Dashboard **Create your first application now** anklicken.
 
 ![OpenShift Dashboard](bludit-openshift-dashboard.png)
 
