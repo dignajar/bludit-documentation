@@ -1,4 +1,6 @@
 title:Post Object
+Position: 100
+Status: draft
 content:If the user filter by a particular post there will be an object `$Post`. To check if the user is filtering by a post you can uses the object `$Url` and the method `whereAmI()`.
 
 <pre><code data-language="php">if( $Url->whereAmI()==='post' ) {

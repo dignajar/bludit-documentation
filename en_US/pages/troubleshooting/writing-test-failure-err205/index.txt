@@ -1,5 +1,5 @@
 Title: Writing test failure (ERR_205)
-
+Position: 3
 Content:
 
 If you get this alert when trying to install Bludit, you need to set the correct permissions to the `content` directory.

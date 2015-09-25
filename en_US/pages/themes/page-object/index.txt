@@ -1,4 +1,6 @@
 title:Page Object
+Position: 100
+Status: draft
 content:If the user filter by a particular page there will be an object `$Page`. To check if the user is filtering by a page you can uses the object `$Url` and the method `whereAmI()`.
 
 <pre><code data-language="php">if( $Url->whereAmI()==='page' ) {

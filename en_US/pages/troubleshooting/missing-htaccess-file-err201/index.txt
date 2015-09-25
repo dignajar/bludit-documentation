@@ -1,5 +1,5 @@
 Title: Missing .htaccess file (ERR_201)
-
+Position: 2
 Content:
 May have forgotten upload the .htaccess file in the root directory.
 

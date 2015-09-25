@@ -1,5 +1,5 @@
 Title: How to make a post
-
+Position: 1
 Content:
 
 There are two ways to make a post. The easy mode, with graphic user interface, and the advanced mode; if you choose the second option, check the [variables for posts and pages](../content/variables-for-posts-and-pages).

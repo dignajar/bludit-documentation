@@ -1,5 +1,5 @@
 Title: How to schedule a post
-
+Position: 4
 Content:
 
 You can prepare a post and schedule it to be published on your web site at a different date.

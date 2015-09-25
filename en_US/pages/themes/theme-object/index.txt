@@ -1,5 +1,6 @@
 Title: Theme Object
-
+Position: 100
+Status: draft
 Content:
 
 This object is a Helper, this try to help developers to make code more clean and less code to write.

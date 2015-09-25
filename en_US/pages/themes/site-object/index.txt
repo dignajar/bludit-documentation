@@ -1,5 +1,6 @@
 Title: Site Object
-
+Position: 100
+Status: draft
 Content: The object `$Site` has all the information from the database `/content/databases/site.php`.
 
 

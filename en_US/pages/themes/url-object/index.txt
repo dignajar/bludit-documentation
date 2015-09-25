@@ -1,5 +1,6 @@
 Title: Url Object
-
+Position: 100
+Status: draft
 Content:
 Where am I. This method returns where the user is browsing.
 <pre><code data-language="php">// If user browser http://domain.com/myfirstpage and the page filter is /

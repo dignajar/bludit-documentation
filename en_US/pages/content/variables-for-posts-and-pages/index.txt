@@ -1,5 +1,5 @@
 Title: Variables for posts and pages
-
+Position: 5
 Content:
 
 There are many fields/variables to make a post or a page. Each field ends with a colon.

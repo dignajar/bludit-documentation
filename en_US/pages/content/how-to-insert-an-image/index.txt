@@ -1,4 +1,5 @@
 Title: How to insert an image
+Position: 3
 Content:
 
 First you need to upload the image on `/content/uploads/` then you can use this image on your posts or pages.

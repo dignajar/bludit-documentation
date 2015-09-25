@@ -1,4 +1,5 @@
 Title: My first theme
+Position: 2
 Content:
 
 First, create the folder structure, in this example I will call my new theme `Coffee`.

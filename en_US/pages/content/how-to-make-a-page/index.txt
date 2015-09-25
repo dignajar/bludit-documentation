@@ -1,5 +1,5 @@
 Title: How to make a page
-
+Position: 2
 Content:
 
 There are two ways to make a page. The easy mode, with graphic user interface, and the advanced mode; if you choose the second option, check the [variables for posts and pages](../content/variables-for-posts-and-pages).

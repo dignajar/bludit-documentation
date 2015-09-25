@@ -1,5 +1,5 @@
 Title: Installation on GNU/Linux
-
+Position: 3
 Content:
 
 All examples are from out of the box installation. If you have the steps for other distribution, you can submit this information on the [forum](http://forum.bludit.com) or make a pull request on [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
