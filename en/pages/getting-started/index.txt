@@ -1,5 +1,7 @@
-title:Getting started
-content:## Hi!,
+Title: Getting started
+Position: 1
+Content:
+## Hi!,
 
 What do I need to install Bludit? [Requirements](./getting-started/requirements/)
 
