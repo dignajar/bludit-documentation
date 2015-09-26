@@ -1,4 +1,5 @@
 title:Installation
+position: 1
 content:## Hallo!
 
 Was benötige ich, um Bludit zu installieren? [Voraussetzungen](./installation/vorausssetzungen/)
