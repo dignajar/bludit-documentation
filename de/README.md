@@ -1,4 +1,4 @@
 # Bludit documentation in
 
 Translators:
-- Edi .... ?
+- Edi Goetschel

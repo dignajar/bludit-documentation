@@ -24,14 +24,14 @@ Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene St
 	index.php
 ```
 
-| Beschreibung 		| Real path                    | HTML paths in PHP constant | Real path in PHP constant|
-| ----------------------|------------------------------|----------------------------|--------------------------|
-| Stammverzeichnis      | /themes/THEME_NAME/          | HTML_PATH_THEME            | PATH_THEME               |
-| CSS-Dateien           | /themes/THEME_NAME/css/      | HTML_PATH_THEME_CSS        | PATH_THEME_CSS           |
-| Bild-Dateien          | /themes/THEME_NAME/img/      | HTML_PATH_THEME_IMG        | PATH_THEME_IMG           |
-| Javascript-Dateien    | /themes/THEME_NAME/js/       | HTML_PATH_THEME_JS         | PATH_THEME_JS            |
-| Sprach-Dateien        | /themes/THEME_NAME/languages/|                            | PATH_THEME_LANG          |
-| PHP-Dateien           | /themes/THEME_NAME/php/      |                            | PATH_THEME_PHP           |
+| Beschreibung 		      | Relativer Pfad               | PHP-Konstante absoluter Pfad | PHP-Konstante relativer Pfad|
+| ----------------------|------------------------------|------------------------------|-----------------------------|
+| Stammverzeichnis      | /themes/THEME_NAME/          | HTML_PATH_THEME              | PATH_THEME                  |
+| CSS-Dateien           | /themes/THEME_NAME/css/      | HTML_PATH_THEME_CSS          | PATH_THEME_CSS              |
+| Bild-Dateien          | /themes/THEME_NAME/img/      | HTML_PATH_THEME_IMG          | PATH_THEME_IMG              |
+| Javascript-Dateien    | /themes/THEME_NAME/js/       | HTML_PATH_THEME_JS           | PATH_THEME_JS               |
+| Sprach-Dateien        | /themes/THEME_NAME/languages/|                              | PATH_THEME_LANG             |
+| PHP-Dateien           | /themes/THEME_NAME/php/      |                              | PATH_THEME_PHP              |
 
 
 *Anmerkung: Mit dieser Struktur können Bludit Helpers verwendet werden.*
