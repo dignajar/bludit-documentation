@@ -11,7 +11,7 @@ Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" mit einer g
 ---
 
 ## Easy Mode <a id="easy-mode"></a>
-Melde Dich im Admin-Panel an und wähle `Neue Seite` im Menü links.
+Melde Dich im Admin-Bereich an und wähle `Neue Seite` im Menü links.
 
 Fülle die Felder aus und veröffentliche die Seite.
 
@@ -19,19 +19,19 @@ Fülle die Felder aus und veröffentliche die Seite.
 
 ---
 
-## <a id="advanced-mode"></a> Advanced mode
-You can make a new page editing the filesystem.
-- Create a directory in `/content/pages/`
-- The directory name will be the uri of the new page.
-- Create a new file named `index.txt` inside of the new directory.
-- Edit the file `index.txt`
-- Add two variables, `Title:` and `Content:`
-- Then log-in to Admin Panel to auto-regenerate the database.
+## <a id="advanced-mode"></a> Advanced Mode
+Du kannst eine neue Seite erstellen, indem Du das Datei-System bearbeitest.
+- Erstelle ein Vrzeichnis im Verzeichnis `/content/pages/` an.
+- Der Name des Verzeichnisses ist der URI der neuen Seite.
+- Erstelle eine Datei `index.txt` im neu erstellten Verzeichnis.
+- Bearbveite die Datei `index.txt`
+- Füge am Anfang der Datei die Variablen `Title:` and `Content:` hinzu.
+- Melde dich im Administrationsbereich an und baue die Datenbank neu auf.
 
-### Example
-- Create the directory `/content/pages/test`
-- Create the file `index.txt` in `/content/pages/test/`
-- Edit the file `index.txt`
+### Beispiel
+- Erstelle das verzeichnis `/content/pages/test`.
+- Erstelle die Datei `index.txt` im Verzeichnis `/content/pages/test/`.
+- Bearbeite die Datei `index.txt`.
 - Add the next text
 
 ```
