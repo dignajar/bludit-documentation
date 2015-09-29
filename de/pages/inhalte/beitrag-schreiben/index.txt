@@ -1,5 +1,5 @@
-Title: Eine Seite anlegen
-Position: 2
+Title: Einen Beitrag schreiben
+Position: 1
 Content:
 
 Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" mit einer grafischen Oberfläche, und einen "Advanced Mode". Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
@@ -11,31 +11,32 @@ Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" mit einer g
 ---
 
 ## Easy Mode <a id="easy-mode"></a>
-Melde Dich im Admin-Bereich an und wähle `Neue Seite` im Menü links.
+Melde Dich im Admin-Bereich an und wähle `Neuer Beitrag` im Menü links.
 
-Fülle die Felder aus und veröffentliche die Seite.
+Fülle die Felder aus und klicke den Button  **Veröffentlichen**.
 
-![Bludit New Post](bludit-new-page.png)
+The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+![Bludit New Post](bludit-new-post.png)
 
 ---
 
-## <a id="advanced-mode"></a> Advanced Mode
-Du kannst eine neue Seite erstellen, indem Du das Datei-System bearbeitest.
-- Erstelle ein Vrzeichnis im Verzeichnis `/content/pages/` an.
-- Der Name des Verzeichnisses ist der URI der neuen Seite.
-- Erstelle eine Datei `index.txt` im neu erstellten Verzeichnis.
-- Bearbveite die Datei `index.txt`
-- Füge am Anfang der Datei die Variablen `Title:` and `Content:` hinzu.
-- Melde dich im Administrationsbereich an und baue die Datenbank neu auf.
+## <a id="advanced-mode"></a> Advanced mode
+You can make a new post editing the filesystem.
+- Create a directory in `/content/posts/`
+- The directory name will be the uri of the new post.
+- Create a new file named `index.txt` inside of the new directory.
+- Edit the file `index.txt`
+- Add two variables, `Title:` and `Content:`
 
-### Beispiel
-- Erstelle das verzeichnis `/content/pages/test`.
-- Erstelle die Datei `index.txt` im Verzeichnis `/content/pages/test/`.
-- Bearbeite die Datei `index.txt`.
+### Example
+- Create the directory `/content/posts/test`
+- Create the file `index.txt` in `/content/posts/test/`
+- Edit the file `index.txt`
 - Add the next text
 
 ```
-Title: Mix Markdown and HTML code
+Title: New post test
 
 Content:
 <h1>Hello Lorem</h1>
