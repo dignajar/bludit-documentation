@@ -18,6 +18,8 @@ Example:
 ![My new test image](test.jpg)
 ```
 
+---
+
 ## Group in folders
 
 You can create folders inside `/content/uploads/` and link the images.

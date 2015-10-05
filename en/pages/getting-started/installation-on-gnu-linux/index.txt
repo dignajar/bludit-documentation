@@ -2,7 +2,7 @@ Title: Installation on GNU/Linux
 Position: 3
 Content:
 
-All examples are from out of the box installation. If you have the steps for other distribution, you can submit this information on the [forum](http://forum.bludit.com) or make a pull request on [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
+All examples are out of the box installation, with Apache Webserver. If you have the steps for other distribution, you can publish this on the [forum](http://forum.bludit.com) or make a pull request on [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
 
 ### Content
 1. [Installation on Ubuntu 14.04](#ubuntu)
@@ -39,7 +39,7 @@ Search for `DocumentRoot /var/www/html` and add the following lines directly bel
 </Directory>
 ```
 
-Restart Apache.
+Restart Apache Webserver.
 ```
 sudo service apache2 restart
 ```
@@ -72,7 +72,7 @@ $sudo yum install -y unzip
 $sudo yum install -y wget
 ```
 
-Restart Apache.
+Restart Apache Webserver.
 ```
 sudo service httpd restart
 ```

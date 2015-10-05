@@ -40,7 +40,7 @@ All themes resides in the `themes` directory, and have a default structure of di
 
 ## Information about the theme <a id="information"></a>
 
-Each theme has an information file located in `/themes/THEME_NAME/languages/en_US.json`, the default language is English and the locale is en_US, then the file information is called `en_US.json`. Each line in `en_US.json` file is a key-value pair with the key on the left and the value on the right.
+Each theme has an information file located in `/themes/THEME_NAME/languages/en_US.json`, the default language is English (United States) and the locale name is `en_US`, then the file information is called `en_US.json`. Each line in `en_US.json` file is a key-value pair with the key on the left and the value on the right.
 
 This is a valid JSON structure.
 
