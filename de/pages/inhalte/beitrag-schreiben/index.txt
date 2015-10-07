@@ -2,7 +2,7 @@ Title: Einen Beitrag schreiben
 Position: 1
 Content:
 
-Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" mit einer grafischen Oberfläche, und einen "Advanced Mode". Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
+Es gibt zwei Möglichkeiten, einen Beitrag zu schreiben. Einen "Easy Mode" (Einfachen Modus) mit einer grafischen Oberfläche, und einen "Advanced Mode" (Fortgeschrittenen Modus). Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
 
 #### Inhalt
 1. [Easy Mode](#easy-mode)
@@ -15,28 +15,28 @@ Melde Dich im Admin-Bereich an und wähle `Neuer Beitrag` im Menü links.
 
 Fülle die Felder aus und klicke den Button  **Veröffentlichen**.
 
-The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+Der Inhalt unterstützt HTML und Markdown-Text; hier ist ein [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-![Bludit New Post](bludit-new-post.png)
+![Bludit neuer Beitrag](bludit-new-post.png)
 
 ---
 
-## <a id="advanced-mode"></a> Advanced mode
-You can make a new post editing the filesystem.
-- Create a directory in `/content/posts/`
-- The directory name will be the uri of the new post.
-- Create a new file named `index.txt` inside of the new directory.
-- Edit the file `index.txt`
-- Add two variables, `Title:` and `Content:`
+## <a id="advanced-mode"></a> Advanced Mode
+Du kannst neue Beiträge erstellen, indem du das Dateisystem bearbeitest.
+- Erstelle ein Unterzeichnis im Verzeichnis `/content/posts/`
+- Der Ordnername wird die URI des neuen Beitrages sein
+- Erstelle eine neue Datei mit dem Namen `index.txt` innerhalb des neuen Verzeichnises
+- Bearbeite die Datei `index.txt`
+- Füge zwei Variablen hinzu: `Title:` und `Content:`
 
 ### Example
-- Create the directory `/content/posts/test`
-- Create the file `index.txt` in `/content/posts/test/`
-- Edit the file `index.txt`
-- Add the next text
+- Erstelle das Verzeichnis `/content/posts/test`
+- Erstelle die Datei `index.txt` in `/content/posts/test/`
+- Bearbeite die Datei `index.txt`
+- Führe deine Änderungen durch
 
 ```
-Title: New post test
+Title: Neuer Beitrag-Test
 
 Content:
 <h1>Hello Lorem</h1>
