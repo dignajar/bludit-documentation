@@ -1,32 +1,32 @@
 Title: Fehlende Datei .htaccess (ERR_201)
 Position: 2
 Content:
-Möglicherweise hasz Du vergessen, die Datei .htaccess in Dein Stammverzeichnis zu laden.
+Möglicherweise hast Du vergessen, die Datei .htaccess in Dein Stammverzeichnis zu laden.
 
-_Bemerkung: Der Name der Datei ist .htaccess, der Punkt am Anfang kennzeichnet sie als eine versteckte Datei._
+_Bemerkung: Der Name der Datei ist .htaccess, der Punkt am Anfang kennzeichnet diese als eine versteckte Datei._
 
 ### Inhalt
 1. [Datei .htaccess für Apache-Webserver](#apache)
 2. [Die Datei .htaccess für Windows erstellen](#windows)
-3. [Configuration for Nginx Webserver](#nginx)
+3. [Konfiguration für Nginx Webserver](#nginx)
 
 ---
 
 ## <a id="apache"></a> Datei .htaccess für Apache-Webserver 
 Wenn Du einen Webserver mit Apache verwendest, muss die Datei ```.htaccess``` inm Stammverzeichnis geladen werden und das [Module mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) aktiviert sein.
 
-<pre><code data-language="bash"># Apache configuration
+<pre><code data-language="bash"># Apache Konfiguration
 AddDefaultCharset UTF-8
 
 <IfModule mod_rewrite.c>
 
-# Enable rewrite rules
+# Rewrite-Regeln aktivieren
 RewriteEngine on
 
-# Deny direct access to .txt files
+# Verbiete direkten Zugriff auf .txt-Dateien
 RewriteRule ^content/(.*)\.txt$ - [R=404,L]
 
-# All URL process by index.php
+# Alle URL-Anfragen an die index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*) index.php [L]
 
@@ -41,16 +41,25 @@ Link: http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-w
 
 ---
 
-## <a id="nginx"></a> Configuration for Nginx Webserver
-If you use Nginx Webserver you need the following configuration in `nginx.conf` file.
+## <a id="nginx"></a> Konfiguration für Nginx Webserver
+Wenn Du den Nginx Webserver verwendest, musst Du folgende Konfiguration verwenden:
 
 <pre><code data-language="bash"># nginx configuration
-charset utf-8;
-location ~ ^/content/(.*)\.(txt)$ {
+autoindex off; # Deaktiviere Verzechnisauflistung aus Sicherheitsgruenden
+charset utf-8; # Standard Zeichensatz
+
+location ~ /\. {
+	# Blockiere direkten Zugriff auf .*-Dateien (z.B. auf htaccess bei nicht-Apache Webservern)
+	deny all;
 }
-location / {
-if (!-e $request_filename){
-rewrite ^/(.*) /index.php break;
+
+location ~* ^/content/(.*)\.txt$ {
+	# Blockiere direkten Zugriff auf Beitraege/Seiten
+	deny all;
 }
+
+if (!-f $request_filename) {
+	# wenn die Datei nicht existiert, leite auf die index Datei um...
+	rewrite ^/(.*) /index.php break;
 }
 </code></pre>
