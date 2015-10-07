@@ -16,10 +16,7 @@ All examples are out of the box installation, with Apache Webserver. If you have
 Install Apache Webserver, PHP and some tools.
 
 ```
-$ sudo apt-get install -y apache2
-$ sudo apt-get install -y php
-$ sudo apt-get install -y unzip
-$ sudo apt-get install -y wget
+$ sudo apt-get install -y apache2 php unzip wget
 ```
 
 Enable mod_rewrite.
@@ -66,10 +63,7 @@ Now you need to open your browser and navigate to http://localhost/bludit/
 Install Apache Webserver, PHP and some tools.
 
 ```
-$sudo yum install -y httpd
-$sudo yum install -y php php-dom
-$sudo yum install -y unzip
-$sudo yum install -y wget
+$ sudo yum install -y httpd php php-dom unzip wget
 ```
 
 Restart Apache Webserver.
