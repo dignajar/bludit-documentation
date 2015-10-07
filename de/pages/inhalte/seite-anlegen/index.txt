@@ -20,8 +20,8 @@ Fülle die Felder aus und veröffentliche die Seite.
 ---
 
 ## <a id="advanced-mode"></a> Advanced Mode
-Du kannst eine neue Seite erstellen, indem Du das Datei-System bearbeitest.
-- Erstelle ein Vrzeichnis im Verzeichnis `/content/pages/` an.
+Du kannst eine neue Seite erstellen, indem Du das Dateisystem bearbeitest.
+- Erstelle das Verzeichnis `/content/pages/`.
 - Der Name des Verzeichnisses ist der URI der neuen Seite.
 - Erstelle eine Datei `index.txt` im neu erstellten Verzeichnis.
 - Bearbveite die Datei `index.txt`
