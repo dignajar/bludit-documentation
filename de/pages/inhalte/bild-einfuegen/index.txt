@@ -5,7 +5,7 @@ Content:
 Bevor Du ein Bild einfügen kannst, musst Du es in das Verzeichnis `/content/uploads/` auf Deinem Server laden. Dann kannst Du das Bild in einen Beitrag oder eine Seite einfügen. 
 
 Beispiel:
-1. Lade das Bild `test.jpg` in das Verzeiochnis `/content/uploads` (`/content/uploads/test.jpg`).
+1. Lade das Bild `test.jpg` in das Verzeichnis `/content/uploads` (`/content/uploads/test.jpg`).
 2. Im Beitrag oder auf der Seite, kannst Du Markdown oder HTML-Code verwenden, um das Bild zu verlinken.
 
 *HTML*
