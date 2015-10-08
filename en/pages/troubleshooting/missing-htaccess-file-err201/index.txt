@@ -54,11 +54,11 @@ location ~ /\. {
 }
 
 location ~* ^/content/(.*)\.txt$ {
-	# block direct access to pages and sites
+	# block direct access to posts and pages
 	deny all;
 }
 
-if (!-f $request_filename)	{
+if (!-f $request_filename) {
 	# if file does not exist, rewrite to index file...
 	rewrite ^/(.*) /index.php break;
 }
