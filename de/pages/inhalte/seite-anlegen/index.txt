@@ -2,7 +2,7 @@ Title: Eine Seite anlegen
 Position: 2
 Content:
 
-Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" mit einer grafischen Oberfläche, und einen "Advanced Mode". Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
+Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" (Einfachen Modus) mit einer grafischen Oberfläche, und einen "Advanced Mode" (Fortgeschrittenem Modus). Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
 
 #### Inhalt
 1. [Easy Mode](#easy-mode)
@@ -20,8 +20,8 @@ Fülle die Felder aus und veröffentliche die Seite.
 ---
 
 ## <a id="advanced-mode"></a> Advanced Mode
-Du kannst eine neue Seite erstellen, indem Du das Datei-System bearbeitest.
-- Erstelle ein Vrzeichnis im Verzeichnis `/content/pages/` an.
+Du kannst eine neue Seite erstellen, indem Du das Dateisystem bearbeitest.
+- Erstelle ein neues Unterzeichnis im Verzeichnis `/content/pages/`.
 - Der Name des Verzeichnisses ist der URI der neuen Seite.
 - Erstelle eine Datei `index.txt` im neu erstellten Verzeichnis.
 - Bearbveite die Datei `index.txt`
@@ -29,10 +29,10 @@ Du kannst eine neue Seite erstellen, indem Du das Datei-System bearbeitest.
 - Melde dich im Administrationsbereich an und baue die Datenbank neu auf.
 
 ### Beispiel
-- Erstelle das verzeichnis `/content/pages/test`.
+- Erstelle das Verzeichnis `/content/pages/test`.
 - Erstelle die Datei `index.txt` im Verzeichnis `/content/pages/test/`.
 - Bearbeite die Datei `index.txt`.
-- Add the next text
+- Füge den Text ein
 
 ```
 Title: Mix Markdown and HTML code

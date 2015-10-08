@@ -2,7 +2,7 @@ Title: Grundlagen
 Position: 1
 Content:
 
-Für Themes kannst Du ein beliebiges Framework verwenden ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/) usw.), Javascript oder was auch immer Du möchtest.
+Für Themes kannst Du ein beliebiges Framework verwenden ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/) usw.), JavaScript oder was auch immer Du möchtest.
 
 Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene Struktur von Unterverzeichnissen, die jedoch nur verwendet werden muss, wenn Bludit Helpers verwendet werden.
 
@@ -40,9 +40,9 @@ Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene St
 
 ## Informationen zum Theme <a id="information"></a>
 
-Zu jedem Theme gehört eine Datei mit Informationen. Sie ist abgelegt unter `/themes/THEME_NAME/languages/en_US.json`, the default language is English and the locale is en_US, then the file information is called `en_US.json`. Each line in `en_US.json` file is a key-value pair with the key on the left and the value on the right.
+Zu jedem Theme gehört eine Datei mit Informationen, welche unter `/themes/THEME_NAME/languages/en_US.json` abgelegt ist. Die Standardsprache ist Englisch und die Lokalisierung `en_US`, also wird die Datei `en_US.json` verwendet. Jede Zeile ist ein Paar aus einem Schlüssel und einem Werte, mit dem Schlüssel links und dem Wert rechts.
 
-This is a valid JSON structure.
+Das ist beispielsweise ein gültiger JSON-Aufbau:
 
 <pre><code data-language="php">{
 	"theme-data":
