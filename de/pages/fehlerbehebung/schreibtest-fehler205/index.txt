@@ -1,0 +1,21 @@
+Title: Schreibteast Fehler (ERR_205)
+Position: 3
+Content:
+
+Wenn du diese Fehlermeldung erhälst beim Versuch, Bludit zu installieren, musst du dem Verzeichnis `content` die richtigen Rechte geben.
+
+### Inhalt
+1. [Änderung der Rechte auf dem Server mit FTP](#ftp)
+1. [Rechte unter GNU/Linux](#linux)
+
+---
+
+## Änderung der Rechte auf dem Server mit FTP <a id="ftp"></a>
+
+Wenn Du Zugang zu Deinem Webserver mit FTP hast, kannst Du damit die Rechte des Verzeichnisses `content` setzen. Versuche es zuerst mit 755, wenn du weiterhin die Fehlermeldung erhälst, versuche es mit 777.
+
+---
+
+## Permissions on GNU/Linux <a id="linux"></a>
+
+Check this article [Installation on GNU/Linux](../getting-started/installation-on-gnu-linux#default)
