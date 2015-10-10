@@ -49,7 +49,7 @@ $ unzip bludit_latest.zip
 $ sudo mv bludit /var/www/html/
 ```
 
-Verzeichnis-Berechtigungen.
+Setze die Verzeichnis-Rechte.
 ```
 sudo chown -R www-data:www-data /var/www/html/bludit/content
 ```
@@ -60,18 +60,18 @@ Jetzt kannst du im Browser http://localhost/bludit/ aufrufen.
 
 ## <a id="centos"></a> Installation unter Centos 7 / Red Hat 7
 
-Install Apache Webserver, PHP and some tools.
+Installiere den Apache-Webserver, PHP und einige Tools.
 
 ```
 $ sudo yum install -y httpd php php-dom unzip wget
 ```
 
-Restart Apache Webserver.
+Starte den Apache-Webserver neu.
 ```
 sudo service httpd restart
 ```
 
-Download Bludit and install it.
+Lade Bludit herunter und installiere es.
 ```
 $ cd /tmp
 $ wget http://www.bludit.com/bludit_latest.zip
@@ -79,12 +79,12 @@ $ unzip bludit_latest.zip
 $ sudo mv bludit /var/www/html/
 ```
 
-Directory permissions.
+Setze die Verzeichnis-Rechte.
 ```
 sudo chown -R www-data:www-data /var/www/html/bludit/content
 ```
 
-Now you need to open your browser and navigate to http://localhost/bludit/
+Jetzt kannst du im Browser http://localhost/bludit/ aufrufen.
 
 ---
 
