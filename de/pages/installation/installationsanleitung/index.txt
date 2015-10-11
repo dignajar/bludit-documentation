@@ -4,7 +4,26 @@ Content:
 
 1. Lade die neueste Version von Bludit von http://www.bludit.com/bludit_latest.zip herunter.
 2. Entpacke die ZIP-Datei in ein Verzeichnis, dass du beispielsweise `bludit` benennst.
-3. Lade das Verzeichnis `bludit` auf deinen Server.
+3. Lade das Verzeichnis `bludit` mit FTP auf deinen Server.
 4. Rufe im Browser die Domain mit der Installation auf, beispielsweise `http://domain.com/bludit`.
 
 _Hinweis: Du kannst die Dateien auch in das Stammverzeichnis auf dem Server laden._
+
+## File Transfer Protocol (FTP)
+
+Um Dateien auf den Server zu laden oder vom Server auf den eigenen Computer herunterzuladen, wird das File Transfer Protocol (FPT) verwendet.
+
+### FTP-Programme
+
+[FileZilla](https://filezilla-project.org), kostenloses Programm zum File-Transfer für Windows, Mac, Linux und andere Betriebssysteme.
+
+[WINSCP](http://winscp.net/eng/docs/lang:de), kostenloses Programm zum File-Transfer.
+
+[Cyberduck](https://cyberduck.io/?l=de), kostenloses FTP-Programm ursprünglich für Mac, das es mittlerweile auch für Windows gibt.
+
+Zugangsdaten
+
+Der Servername für FTP ist normalerweise die Domain (ohne http://). Es kann aber auch den Name des Servers verwendet werden (die Angabe dazu sind im Admin-Panel des Hostings oder in der Bestätigungsmail für das Hostingpaket zu finden).
+Web-FTP
+
+Einige Hoster bieten im Administrationsbereich ein Web-FTP an, das FTP-Funktionen im Browser erlaubt.
