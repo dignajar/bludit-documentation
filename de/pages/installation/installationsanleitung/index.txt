@@ -21,7 +21,7 @@ Um Dateien auf den Server zu laden oder vom Server auf den eigenen Computer heru
 
 [Cyberduck](https://cyberduck.io/?l=de), kostenloses FTP-Programm ursprünglich für Mac, das es mittlerweile auch für Windows gibt.
 
-###3 Zugangsdaten
+### Zugangsdaten
 
 Der Servername für FTP ist normalerweise die Domain (ohne http://). Es kann aber auch den Name des Servers verwendet werden (die Angabe dazu sind im Admin-Panel des Hostings oder in der Bestätigungsmail für das Hostingpaket zu finden).
 Web-FTP
