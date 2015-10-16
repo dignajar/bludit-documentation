@@ -1,0 +1,46 @@
+Title: Mein erstes Theme
+Position: 2
+Content:
+
+Lege zuerst die Verzeichnis-Struktur an (bei diesem Beispiel heisst das Theme `Coffee`).
+
+- Lege das Verzeichnis für das neue Theme im  Verzeichnis `/themes/` an, so dass Du ein Verzeichnis `/themes/coffee/` hast.
+- Lege das Verzeichnis `languages` im Verzeichnis `/themes/coffee/` an.
+- Lege eine Datei `index.php` im Verzeichnis `/themes/coffee/` an mit dem folgenden HTML- und PHP-Code:
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bludit</title>
+</head>
+<body>
+	<?php foreach ($posts as $Post): ?>
+
+	<div><?php echo $Post->title() ?></div>
+	<div><?php echo $Post->content() ?></div>
+
+	<hr>
+
+	<?php endforeach; ?>
+</body>
+</html>
+</code></pre>
+
+Lege einne Datei `en_US.json` im Verzeichnis `/themes/coffee/languages/` mit den Informationen zum Theme an. In unserem Beispiel mit dem JSON-Code:
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Coffee",
+		"description": "This is my first theme for Bludit.",
+		"author": "Diego",
+		"email": "",
+		"website": "http://www.bludit.com",
+		"version": "1.0",
+		"releaseDate": "2015-10-23"
+	}
+}
+</code></pre>
+
+Das Theme wird dir nun im Backend unter "Themes" angezeigt. Dieses Theme zeigt dir nur die Beiträge auf der ersten Seite.
