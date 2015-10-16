@@ -2,9 +2,9 @@ Title: Grundlagen
 Position: 1
 Content:
 
-Für Themes kannst Du ein beliebiges Framework verwenden ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/) usw.), JavaScript oder was auch immer Du möchtest.
+Für Themes kannst du ein beliebiges Framework verwenden ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/) usw.), JavaScript oder was auch immer du möchtest.
 
-Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene Struktur von Unterverzeichnissen, die jedoch nur verwendet werden muss, wenn Bludit Helpers verwendet werden.
+Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene Struktur von Unterverzeichnissen, die jedoch nur verwendet werden muss, wenn "Bludit Helpers" verwendet werden.
 
 ### Inhalt
 1. [Verzeichnisstruktur für Themes](#simple-structure-for-themes)
@@ -34,13 +34,13 @@ Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene St
 | PHP-Dateien           | /themes/THEME_NAME/php/      |                              | PATH_THEME_PHP              |
 
 
-*Anmerkung: Mit dieser Struktur können Bludit Helpers verwendet werden.*
+*Anmerkung: Mit dieser Struktur können "Bludit Helpers" verwendet werden.*
 
 ---
 
 ## Informationen zum Theme <a id="information"></a>
 
-Zu jedem Theme gehört eine Datei mit Informationen, welche unter `/themes/THEME_NAME/languages/en_US.json` abgelegt ist. Die Standardsprache ist Englisch und die Lokalisierung `en_US`, also wird die Datei `en_US.json` verwendet. Jede Zeile ist ein Paar aus einem Schlüssel und einem Werte, mit dem Schlüssel links und dem Wert rechts.
+Zu jedem Theme gehört eine Datei mit Informationen, die unter `/themes/THEME_NAME/languages/en_US.json` abgelegt ist. Die Standardsprache ist Englisch und die Lokalisierung `en_US`, es wird also die Datei `en_US.json` verwendet. Jede Zeile ist ein Paar bestehend aus einem Schlüssel (links) und einem dazugehörigen Wert (rechts).
 
 Das ist beispielsweise ein gültiger JSON-Aufbau:
 
