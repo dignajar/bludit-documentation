@@ -6,14 +6,14 @@ There are two ways to make a page. The easy mode, with graphic user interface, a
 
 ### Content
 1. [Easy mode](#easy-mode)
-1. [Advanced mode](#advanced-mode)
+1. [Advanced mode or Cli mode](#advanced-mode)
 
 ---
 
 ## Easy mode <a id="easy-mode"></a>
-Login to Admin panel and go to **New page** on the left menu.
+Login to Admin panel and go to **New page** on the top menu.
 
-Complete the form and click on the button **Publish now**.
+Complete the form and click on the button **Save**.
 
 The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -22,7 +22,10 @@ The content support HTML and Markdown code, here is a [Markdown cheatsheet](http
 ---
 
 ## <a id="advanced-mode"></a> Advanced mode
-You can make a new page editing the filesystem.
+
+First enable `Cli mode` on Bludit, go to the **Admin panel->Settings->Advanced->Cli mode->Enabled**, now you can create, edit, or remove pages from from the command line, without need of the Dashboard.
+
+For example to create a new page:
 - Create a directory in `/content/pages/`
 - The directory name will be the uri of the new page.
 - Create a new file named `index.txt` inside of the new directory.
