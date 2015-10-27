@@ -3,8 +3,8 @@ Position: 2
 Content:
 
 1. Descargue la ultima versión desde http://www.bludit.com/bludit_latest.zip
-2. Descomprima el archivo zip en un directorio por ejemplo `bludit`.
-3. Copie el directorio `bludit` al servidor o hosting.
+2. Descomprima el archivo zip en un directorio, por ejemplo `bludit`.
+3. Copie el directorio `bludit` al servidor web.
 4. Visite su sitio por ejemplo `http://domain.com/bludit`
 
-_Nota: Usted puede subir los archivos al directorio root del web server en vez de a un directorio._
+_Nota: Usted puede subir los archivos al directorio raiz del servidor web en vez de a un directorio._

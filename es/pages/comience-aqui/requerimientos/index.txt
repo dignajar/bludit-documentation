@@ -1,10 +1,11 @@
-Title: Requirements
+Title: Requerimientos
 Position: 1
 Content:
-You just need a web server with PHP support.
+Solo necesita un servidor web con soporte PHP.
 
-- PHP v5.3 or higher.
-- PHP module [mbstring](http://php.net/manual/en/book.mbstring.php) for full UTF-8 support.
-- Web server:
-  * Apache with module [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
-  * Ngnix with module [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)
+- PHP v5.3 o superior.
+- Modulo PHP [mbstring](http://php.net/manual/en/book.mbstring.php) para un mejor soporte de UTF-8.
+- Servidor web:
+  * Apache con el modulo [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
+  * Lighttpd con el modulo [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite)
+  * Ngnix con el modulo [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)

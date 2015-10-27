@@ -11,9 +11,9 @@ There are two ways to make a post. The easy mode, with graphic user interface, a
 ---
 
 ## Easy mode <a id="easy-mode"></a>
-Login to Admin panel and go to **New post** on the left menu.
+Login to Admin panel and go to **New post** on the top menu.
 
-Complete the form and click on the button **Publish**.
+Complete the form and click on the button **Save**.
 
 The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 

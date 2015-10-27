@@ -11,9 +11,9 @@ There are two ways to make a page. The easy mode, with graphic user interface, a
 ---
 
 ## Easy mode <a id="easy-mode"></a>
-Login to Admin panel and go to **New page** on the left menu.
+Login to Admin panel and go to **New page** on the top menu.
 
-Complete the form and click on the button **Publish now**.
+Complete the form and click on the button **Save**.
 
 The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
