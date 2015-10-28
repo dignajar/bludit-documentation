@@ -23,7 +23,8 @@ Um Dateien auf den Server zu laden oder vom Server auf den eigenen Computer heru
 
 ### Zugangsdaten
 
-Der Servername für FTP ist normalerweise die Domain (ohne http://). Es kann aber auch den Name des Servers verwendet werden (die Angabe dazu sind im Admin-Panel des Hostings oder in der Bestätigungsmail für das Hostingpaket zu finden).
-Web-FTP
+Der Servername für FTP ist normalerweise die Domain (ohne http://). Es kann aber auch der Name des Servers verwendet werden (die Angabe dazu sind im Admin-Panel des Hostings oder in der Bestätigungsmail für das Hostingpaket zu finden).
+
+### Web-FTP
 
 Einige Hoster bieten im Administrationsbereich ein Web-FTP an, das FTP-Funktionen im Browser erlaubt.
