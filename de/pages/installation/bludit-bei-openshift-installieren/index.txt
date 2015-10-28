@@ -1,4 +1,4 @@
-Title: Bludit bei OpenShift installieren.
+Title: Installation bei OpenShift
 Position: 4
 Content:
 
