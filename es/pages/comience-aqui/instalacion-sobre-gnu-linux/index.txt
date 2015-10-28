@@ -1,50 +1,47 @@
-Title: Instalacion en GNU/Linux
+Title: Instalación en GNU/Linux
 Position: 3
 Content:
 
-Todos los ejemplos son instalacion out-of-the-box. Si desea puede enviar los pasos para instalar en otras distribuciones, puede subir la informacion en el [foro](http://forum.bludit.com) o hacer un pull request en [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
+Todos los ejemplos son instalación out-of-the-box sobre Apache Web Server. Si desea puede enviar los pasos para instalar Bludit en otras distribuciones, puede subir la información en el [foro](http://forum.bludit.com) o hacer un pull request en [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
 
 ### Content
-1. [Instalacion sobre Ubuntu 14.04](#ubuntu)
-2. [Installation on Centos 7 / RedHat 7](#centos)
-3. [Installation on GNU/Linux](#default)
+1. [Instalación sobre Ubuntu 14.04](#ubuntu)
+2. [Instalación sobre CentOS 7 / RedHat 7](#centos)
+3. [Instalación sobre GNU/Linux](#default)
 
 ---
 
-## <a id="ubuntu"></a> Installation on Ubuntu 14.04 LTS
+## <a id="ubuntu"></a> Instalación sobre Ubuntu 14.04 LTS
 
-Install Apache Webserver, PHP and some tools.
+Instale el servidor web Apache con soporte de PHP.
 
 ```
-$ sudo apt-get install -y apache2
-$ sudo apt-get install -y php
-$ sudo apt-get install -y unzip
-$ sudo apt-get install -y wget
+$ sudo apt-get install -y apache2 php unzip wget
 ```
 
-Enable mod_rewrite.
+Habilite el modulo `mod_rewrite`.
 ```
 $ sudo a2enmod rewrite
 ```
 
-Edit the next file, you can use the following commands: vi, nano, gedit, etc.
+Edité el siguiente archivo, puede utilizar las siguientes aplicaciones: vi, nano, gedit, etc.
 ```
 $ sudo vi /etc/apache2/sites-available/000-default.conf
 ```
 
-Search for `DocumentRoot /var/www/html` and add the following lines directly below.
+Busque la linea `DocumentRoot /var/www/html` y agregue las siguientes lineas a continuación.
 ```
 <Directory "/var/www/html">
     AllowOverride All
 </Directory>
 ```
 
-Restart Apache.
+Reinicie el demonio Apache.
 ```
 sudo service apache2 restart
 ```
 
-Download Bludit and install it.
+Descargue e instale Bludit.
 ```
 $ cd /tmp
 $ wget http://www.bludit.com/bludit_latest.zip
@@ -52,32 +49,29 @@ $ unzip bludit_latest.zip
 $ sudo mv bludit /var/www/html/
 ```
 
-Directory permissions.
+Permisos de escritura.
 ```
 sudo chown -R www-data:www-data /var/www/html/bludit/content
 ```
 
-Now you need to open your browser and navigate to http://localhost/bludit/
+Ingrese con su navegador a http://localhost/bludit/
 
 ---
 
-## <a id="centos"></a> Installation on Centos 7 / Red Hat 7
+## <a id="centos"></a> Instalación sobre CentOS 7 / RedHat 7
 
-Install Apache Webserver, PHP and some tools.
+Instale el servidor web Apache con soporte de PHP.
 
 ```
-$sudo yum install -y httpd
-$sudo yum install -y php php-dom
-$sudo yum install -y unzip
-$sudo yum install -y wget
+$sudo yum install -y httpd php php-dom unzip wget
 ```
 
-Restart Apache.
+Reinicie el demonio Apache.
 ```
 sudo service httpd restart
 ```
 
-Download Bludit and install it.
+Descargue e instale Bludit.
 ```
 $ cd /tmp
 $ wget http://www.bludit.com/bludit_latest.zip
@@ -85,19 +79,19 @@ $ unzip bludit_latest.zip
 $ sudo mv bludit /var/www/html/
 ```
 
-Directory permissions.
+Permisos de escritura.
 ```
 sudo chown -R www-data:www-data /var/www/html/bludit/content
 ```
 
-Now you need to open your browser and navigate to http://localhost/bludit/
+Ingrese con su navegador a http://localhost/bludit/
 
 ---
 
-## <a id="default"></a> Installation on GNU/Linux
-First, you need a running Webserver on your machine or have some server/hosting with SSH enabled.
+## <a id="default"></a> Instalación sobre GNU/Linux
+Primero, necesita tener un servidor web corriendo, en este tutorial lo haremos sobre el servidor Apache.
 
-Once you have installed a Webserver, download and install Bludit.
+Una vez instalado el servidor web, descargue e instale Bludit.
 ```
 $ cd /tmp
 $ wget http://www.bludit.com/bludit_latest.zip
@@ -105,17 +99,17 @@ $ unzip bludit_latest.zip
 $ mv bludit /var/www/html/
 ```
 
-If you don’t have the command wget, you can try with the curl command.
+Si no tiene el comando wget, puede probar con el comando curl de la siguiente forma.
 ```
 $ curl --remote-name http://www.bludit.com/bludit_latest.zip
 ```
 
-Get the user associated with the Webserver process, to set the correct permissions to the directory `content`. For example if you are running Apache you can do this:
+Ahora necesitamos asignarle los permisos al directorio `content`, para eso es necesario buscar el usuario que esta corriendo el demonio del web server, en nuestro caso buscamos el proceso apache o httpd.
 ```
 $ sudo ps axo user | egrep '(apache|httpd)' | uniq
 ```
 
-Now you can set the username to the directory `content`. And fix some permissions to files and directories.
+Una vez obtenido el usuario podemos cambiar el owner del directorio `content`. Ademas corregimos permisos sobre archivos y directorios.
 ```
 $ cd /var/www/html/bludit
 $ sudo chown -R {USERNAME}:{USERNAME} content
@@ -123,7 +117,7 @@ $ sudo find . -type f | xargs chmod 664
 $ sudo find . -type d | xargs chmod 755
 ```
 
-Other way, but I don’t recommend it, is setting the permissions for all read/write/execute (777).
+Otra forma, pero no es recomendado es asignar los permisos lectura/escritura/ejecución a todos los usuarios.
 ```
 $ cd /var/www/html/bludit
 $ sudo chmod 777 content

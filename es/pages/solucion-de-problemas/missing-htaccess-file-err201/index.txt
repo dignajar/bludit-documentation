@@ -45,12 +45,21 @@ Link: http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-w
 If you use Nginx Webserver you need the following configuration in `nginx.conf` file.
 
 <pre><code data-language="bash"># nginx configuration
-charset utf-8;
-location ~ ^/content/(.*)\.(txt)$ {
+autoindex off; # disable directory listening for security purposes
+charset utf-8; # default charset
+
+location ~ /\. {
+	# block access to dot files (e.g. htaccess for non-apache webservers)
+	deny all;
 }
-location / {
-if (!-e $request_filename){
-rewrite ^/(.*) /index.php break;
+
+location ~* ^/content/(.*)\.txt$ {
+	# block direct access to posts and pages
+	deny all;
 }
+
+if (!-f $request_filename) {
+	# if file does not exist, rewrite to index file...
+	rewrite ^/(.*) /index.php break;
 }
 </code></pre>

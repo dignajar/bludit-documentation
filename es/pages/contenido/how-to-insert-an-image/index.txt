@@ -18,6 +18,8 @@ Example:
 ![My new test image](test.jpg)
 ```
 
+---
+
 ## Group in folders
 
 You can create folders inside `/content/uploads/` and link the images.
@@ -26,7 +28,7 @@ Example:
 1. Create the folder `animals` on `/content/uploads/`
 2. Upload the images `dog.jpg` and `cat.jpg` on `/content/uploads/animals/`
 3. Create the post or page.
-4. Insert the HTML code img tag.
+4. Insert the HTML or Markdown code img tag.
 
 *HTML*
 ```
