@@ -38,28 +38,3 @@ RewriteRule ^(.*) index.php [L]
 When rename a file on Windows with the name .htaccess you have the alert ```You must type a file name```. To solve this problem, you can create the file with **Notepad**, and go to **File->Save as->Write .htaccess** and choose ```All Files``` as the type.
 
 Link: http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-with-a-dot-prefix-in-windows-for-example-htacce
-
----
-
-## <a id="nginx"></a> Configuration for Nginx Webserver
-If you use Nginx Webserver you need the following configuration in `nginx.conf` file.
-
-<pre><code data-language="bash"># nginx configuration
-autoindex off; # disable directory listening for security purposes
-charset utf-8; # default charset
-
-location ~ /\. {
-	# block access to dot files (e.g. htaccess for non-apache webservers)
-	deny all;
-}
-
-location ~* ^/content/(.*)\.txt$ {
-	# block direct access to posts and pages
-	deny all;
-}
-
-if (!-f $request_filename) {
-	# if file does not exist, rewrite to index file...
-	rewrite ^/(.*) /index.php break;
-}
-</code></pre>
