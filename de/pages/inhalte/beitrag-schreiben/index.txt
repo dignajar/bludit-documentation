@@ -2,7 +2,7 @@ Title: Einen Beitrag schreiben
 Position: 1
 Content:
 
-Es gibt zwei Möglichkeiten, einen Beitrag zu schreiben. Einen "Easy Mode" mit einer grafischen Oberfläche, und einen "Advanced Mode" oder CLI-Modus. Wenn Du den "Advanced Mode" verwenden möchtest, schau dir bitte die Erklärung zu [Variablen für Beiträge und Seiten](../content/variables-for-posts-and-pages) an.
+Es gibt zwei Möglichkeiten, einen Beitrag zu schreiben. Einen "Easy Mode" mit einer grafischen Oberfläche, und einen "Advanced Mode" oder CLI-Modus (Command-line Interface). Wenn du den "Advanced Mode" verwenden möchtest, schau dir bitte die Erklärungen [Variablen für Beiträge und Seiten](../content/variables-for-posts-and-pages) an.
 
 #### Inhalt
 1. [Easy Mode](#easy-mode)
@@ -11,9 +11,9 @@ Es gibt zwei Möglichkeiten, einen Beitrag zu schreiben. Einen "Easy Mode" mit e
 ---
 
 ## Easy Mode <a id="easy-mode"></a>
-Melde Dich im Admin-Bereich an und wähle `Neuer Beitrag` in der horizontalen Menüleiste.
+Melde Dich im Admin-Bereich an und wähle `Neuer Beitrag` in der horizontalen Menüleiste oder auf der Dashboard-Seite.
 
-Fülle die Felder aus und klicke den Button  **Veröffentlichen**.
+Fülle die Felder aus und klicke den Button  **Speichern**.
 
 Zur Formatierung des Inhalts kannst du HTML- und Markdown-Code verwenden. Hier findest du ein [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -22,18 +22,18 @@ Zur Formatierung des Inhalts kannst du HTML- und Markdown-Code verwenden. Hier f
 ---
 
 ## <a id="advanced-mode"></a> Advanced Mode
-Du kannst neue Beiträge erstellen, indem du das Dateisystem bearbeitest.
-- Erstelle ein Unterzeichnis im Verzeichnis `/content/posts/`
-- Der Ordnername wird die URI des neuen Beitrages sein
-- Erstelle eine neue Datei mit dem Namen `index.txt` innerhalb des neuen Verzeichnises
-- Bearbeite die Datei `index.txt`
-- Füge zwei Variablen hinzu: `Title:` und `Content:`
+Du kannst neue Beiträge auch erstellen, indem du das Dateisystem bearbeitest.
+- Erstelle ein Unterzeichnis im Verzeichnis `/content/posts/`.
+- Der Ordnername wird die URI des neuen Beitrages sein.
+- Erstelle eine neue Datei mit dem Namen `index.txt` innerhalb des neuen Verzeichnises.
+- Bearbeite die Datei `index.txt`.
+- Füge zwei Variablen hinzu: `Title:` und `Content:`.
 
-### Example
-- Erstelle das Verzeichnis `/content/posts/test`
-- Erstelle die Datei `index.txt` in `/content/posts/test/`
-- Bearbeite die Datei `index.txt`
-- Führe deine Änderungen durch
+### Beispiel
+- Erstelle das Verzeichnis `/content/posts/test`.
+- Erstelle die Datei `index.txt` in `/content/posts/test/`.
+- Bearbeite die Datei `index.txt`.
+- Gib den Titel und den Inhalt des Beitrags ein.
 
 ```
 Title: Neuer Beitrag-Test
