@@ -2,7 +2,7 @@ Title: How to make a post
 Position: 1
 Content:
 
-There are two ways to make a post. The easy mode, with graphic user interface, and the advanced mode; if you choose the second option, check the [variables for posts and pages](../content/variables-for-posts-and-pages).
+There are two ways to make a post. The easy mode, with graphic user interface, and the advanced mode or CLI mode ((Command-line Interface); if you choose the second option, check the [variables for posts and pages](../content/variables-for-posts-and-pages).
 
 ### Content
 1. [Easy mode](#easy-mode)
@@ -11,7 +11,7 @@ There are two ways to make a post. The easy mode, with graphic user interface, a
 ---
 
 ## Easy mode <a id="easy-mode"></a>
-Login to Admin panel and go to **New post** on the top menu.
+Login to Admin panel and go to **New post** on the top menu or on the dashboard.
 
 Complete the form and click on the button **Save**.
 
