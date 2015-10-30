@@ -1,5 +1,5 @@
 Title: Translate plugins
-Content: Translate a plugin is very easy, each plugin has a folder called `languages`, in this folder you have the differents dictionary for each language.
+Content: Each plugin have a folder called `languages`, in this folder you have the differents dictionary files for each language.
 
 ```
 /plugins/PLUGIN_NAME/languages/
@@ -10,13 +10,13 @@ Content: Translate a plugin is very easy, each plugin has a folder called `langu
 	...
 ```
 
-*Note: The default language on Bludit is the English (United States), the locale name is en_US.*
+*Note: The default language on Bludit is English (United States), the locale name is `en_US`, and the filename is `en_US.json`.*
 
-*Note: All dictionary files are JSON files.*
+*Note: All dictionary files are **JSON** files, and are saved by the encoding **UTF-8**.*
 
 ---
 
-This is an example of the English (United States) dictionary `en_US.json`. Each line in en_US.json file is a key-value pair with the key on the left and the value on the right.
+This is an example for English (United States) dictionary `en_US.json`. Each line in en_US.json file is a key-value pair with the key on the left and the value on the right.
 
 <pre><code data-language="JSON"> {
 	"plugin-data":
@@ -35,7 +35,7 @@ This is an example of the English (United States) dictionary `en_US.json`. Each 
 }
 </code></pre>
 
-and this is an example of the Español (Argentina) dictionary `es_AR.json`.
+This is an example for Spanish (Argentina) dictionary, the locale name is `es_AR` then the filename is `es_AR.json`.
 
 <pre><code data-language="JSON"> {
 	"plugin-data":
@@ -49,6 +49,6 @@ and this is an example of the Español (Argentina) dictionary `es_AR.json`.
 }
 </code></pre>
 
-As you can see, you have a field called `plugin-data`, this has all information about the plugin (name, description, author, etc). And the next fields are phrase for the plugin as `home` and `show-home-link`.
+As you can see, you have a field called `plugin-data`, this have all information about the plugin (name, description, author, etc). And the next fields are phrase for the plugin as `home` and `show-home-link`.
 
 *Note: You don't need translate the fields author, email, website, version and releaseDate because Bludit take this information from the dictionary en_US.json.*

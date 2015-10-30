@@ -1,0 +1,38 @@
+Title: Ngnix
+Position: 1
+Content: This is the configuration to run Bludit over Nginx web server.
+
+> NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. NGINX is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption. https://www.nginx.com/resources/wiki/
+
+Setting up a new virtual host for Bludit, for that, generate a new file with the configuration in `/etc/nginx/conf.d/bludit.conf`, this directory could be different in others distributions of GNU/Linux, for example in Ubuntu will be `/etc/nginx/sites-enabled/bludit.conf`.
+
+In this example we have the Bludit files in `/var/www/html/bludit`, you can change the directory in the configuration file.
+
+```
+server {
+	listen 80;
+	server_name bludit.local;
+
+	charset utf-8;
+	root /var/www/html/bludit;
+
+	index index.php;
+	try_files $uri $uri/ /index.php$args;
+
+	access_log /var/log/nginx/bludit_access.log;
+	error_log /var/log/nginx/bludit_error.log;
+
+	location ~ \.php$ {
+		try_files $uri =404;
+		fastcgi_pass 127.0.0.1:9000;
+		fastcgi_index index.php;
+		include /etc/nginx/fastcgi_params;
+		fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+	}
+
+	# if file does not exist, rewrite to index.php
+	if (!-f $request_filename) {
+		rewrite ^/(.*) /index.php break;
+	}
+}
+```

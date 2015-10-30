@@ -1,10 +1,10 @@
 Title: Getting started
 Position: 1
 Content:
-## Hi!,
+Bludit is a simple web application to make your own blog in seconds, it's completly free and open source. Bludit uses flat-files (text files in JSON format) to store the posts and pages, you don't need to install or configure a database.
 
 What do I need to install Bludit? [Requirements](./getting-started/requirements/)
 
-How to install Bludit ? Follow the [installation guide](./getting-started/installation-guide/) it's very easy!
+How to install Bludit ? Follow the [installation guide](./getting-started/installation-guide/)
 
 If you need more information or if you have some questions, bug report, visit the [support forum](http://forum.bludit.com)
