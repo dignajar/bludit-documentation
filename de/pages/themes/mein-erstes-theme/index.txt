@@ -4,7 +4,7 @@ Content:
 
 Lege zuerst die Verzeichnis-Struktur an (bei diesem Beispiel heisst das Theme `Coffee`).
 
-- Lege das Verzeichnis für das neue Theme im  Verzeichnis `/themes/` an, so dass Du ein Verzeichnis `/themes/coffee/` hast.
+- Lege das Verzeichnis für das Theme im  Verzeichnis `/themes/` an, so dass Du ein Verzeichnis `/themes/coffee/` hast.
 - Lege das Verzeichnis `languages` im Verzeichnis `/themes/coffee/` an.
 - Lege eine Datei `index.php` im Verzeichnis `/themes/coffee/` an mit dem folgenden HTML- und PHP-Code:
 

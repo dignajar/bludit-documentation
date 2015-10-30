@@ -1,0 +1,23 @@
+Title: File Transfer Protocol (FTP)
+Position: 1
+Content:
+
+## File Transfer Protocol (FTP)
+
+Um Dateien auf den Server zu laden oder vom Server auf den eigenen Computer herunterzuladen, wird das File Transfer Protocol (FPT) verwendet. Die Verbindung kann mit einem FTP-Client hergestellt werden.
+
+### FTP-Clients
+
+[FileZilla](https://filezilla-project.org), kostenloses FTP-Programm für Windows, Mac, Linux und andere Betriebssysteme.
+
+[WINSCP](https://winscp.net/eng/docs/lang:de), kostenloses FTP-Programm.
+
+[Cyberduck](https://cyberduck.io/?l=de), kostenloses FTP-Programm ursprünglich für Mac, das es mittlerweile auch für Windows gibt.
+
+### Zugangsdaten
+
+Der Servername für FTP ist normalerweise die Domain (ohne http://). Es kann aber auch der Name des Servers verwendet werden (die Angabe dazu sind im Admin-Panel des Hostings oder in der Bestätigungsmail für das Hostingpaket zu finden).
+
+### Web-FTP
+
+Einige Hoster bieten im Administrationsbereich ein Web-FTP an, das FTP-Funktionen im Browser erlaubt.
