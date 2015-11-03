@@ -8,7 +8,6 @@ _Note: The file name is .htaccess, begins with a dot, because is a hidden file._
 ### Content
 1. [File .htaccess for Apache Webserver](#apache)
 2. [How to create the file .htaccess on Windows](#windows)
-3. [Configuration for Nginx Webserver](#nginx)
 
 ---
 
