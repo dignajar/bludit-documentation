@@ -27,7 +27,7 @@ First, create the folder structure, in this example I will call my new theme `Co
 </html>
 </code></pre>
 
-Create the theme information, create a file called `en_US.json` inside `/themes/coffee/languages/` folder, with the next JSON code:
+Create the theme information; create a file called `en_US.json` inside `/themes/coffee/languages/` folder, with the next JSON code:
 
 <pre><code data-language="php">{
 	"theme-data":
@@ -43,4 +43,4 @@ Create the theme information, create a file called `en_US.json` inside `/themes/
 }
 </code></pre>
 
-Now you will see the theme on the **Dashboard->Themes**. This theme shows only the posts of the first page.
+Now you will see the theme on the **Admin panel->Settings->Themes**. This theme shows only the posts of the first page.
