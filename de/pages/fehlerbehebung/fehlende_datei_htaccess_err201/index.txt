@@ -1,9 +1,9 @@
 Title: Fehlende Datei .htaccess (ERR_201)
 Position: 2
 Content:
-Möglicherweise hast Du vergessen, die Datei .htaccess in Dein Stammverzeichnis zu laden.
+Möglicherweise hast du vergessen, die Datei .htaccess in dein Stammverzeichnis zu laden.
 
-_Bemerkung: Der Name der Datei ist .htaccess, der Punkt am Anfang kennzeichnet diese als eine versteckte Datei._
+_Bemerkung: Der Name der Datei ist .htaccess, der Punkt am Anfang kennzeichnet sie als eine versteckte Datei._
 
 ### Inhalt
 1. [Datei .htaccess für Apache-Webserver](#apache)
@@ -13,7 +13,7 @@ _Bemerkung: Der Name der Datei ist .htaccess, der Punkt am Anfang kennzeichnet d
 ---
 
 ## <a id="apache"></a> Datei .htaccess für Apache-Webserver 
-Wenn Du einen Webserver mit Apache verwendest, muss die Datei ```.htaccess``` inm Stammverzeichnis geladen werden und das [Module mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) aktiviert sein.
+Wenn du einen Webserver mit Apache verwendest, muss die Datei ```.htaccess``` in das Stammverzeichnis geladen werden und das [Modul mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) aktiviert sein.
 
 <pre><code data-language="bash"># Apache Konfiguration
 AddDefaultCharset UTF-8
