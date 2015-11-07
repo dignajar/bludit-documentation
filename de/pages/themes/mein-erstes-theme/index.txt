@@ -4,7 +4,7 @@ Content:
 
 Lege zuerst die Verzeichnis-Struktur an (bei diesem Beispiel heisst das Theme `Coffee`).
 
-- Lege das Verzeichnis für das Theme im  Verzeichnis `/themes/` an, so dass Du ein Verzeichnis `/themes/coffee/` hast.
+- Lege das Verzeichnis für das Theme im  Verzeichnis `/themes/` an, so dass du ein Verzeichnis `/themes/coffee/` hast.
 - Lege das Verzeichnis `languages` im Verzeichnis `/themes/coffee/` an.
 - Lege eine Datei `index.php` im Verzeichnis `/themes/coffee/` an mit dem folgenden HTML- und PHP-Code:
 
@@ -27,7 +27,7 @@ Lege zuerst die Verzeichnis-Struktur an (bei diesem Beispiel heisst das Theme `C
 </html>
 </code></pre>
 
-Lege einne Datei `en_US.json` im Verzeichnis `/themes/coffee/languages/` mit den Informationen zum Theme an. In unserem Beispiel mit dem JSON-Code:
+Lege eine Datei `en_US.json` im Verzeichnis `/themes/coffee/languages/` mit den Informationen zum Theme an. In unserem Beispiel mit dem JSON-Code:
 
 <pre><code data-language="php">{
 	"theme-data":
