@@ -1,13 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @clickwork-git
-
 Title: Mein zweites Theme
 Position: 3
 Content:
@@ -15,7 +5,7 @@ Content:
 Bei diesem Beispiel heisst das Theme `Mars`.
 
 ## 1. Verzeichnis-Struktur
-Lege zuerst das Verzeichnis für das Theme im Verzeichnis `/themes/` an, so dass Du ein Verzeichnis  `/themes/mars/` hast.
+Lege zuerst das Verzeichnis für das Theme im Verzeichnis `/themes/` an, so dass du ein Verzeichnis `/themes/mars/` hast.
 
 Dann lege die Verzeichnisse für die Sprach-, CSS- und JavaScript-Dateien an:
 - Lege das Verzeichnis `languages` im Verzeichnis `/themes/mars/` an.
@@ -29,15 +19,15 @@ Dann lege die Verzeichnisse für die Sprach-, CSS- und JavaScript-Dateien an:
 	language/
 ```
 
-## 2. Theme information
-Create the theme information file, create a file called `en_US.json` inside `/themes/mars/languages/` folder, whit the next JSON code:
+## 2. Informationen zum Theme
+Lege eine Datei `en_US.json` im Verzeichnis `/themes/mars/languages/` mit den Informationen zum Theme an. In unserem Beispiel mit dem JSON-Code:
 
 <pre><code data-language="php">{
 	"theme-data":
 	{
 		"name": "Mars",
-		"description": "This is my second theme for Bludit.",
-		"author": "Me",
+		"description": "Mein zweites Theme für Bludit.",
+		"author": "Ich",
 		"email": "",
 		"website": "http://www.bludit.com",
 		"version": "1.0",
@@ -46,8 +36,8 @@ Create the theme information file, create a file called `en_US.json` inside `/th
 }
 </code></pre>
 
-## 3. index.php
-Lets work on the file `index.php`, create the file inside `/themes/mars/` folder, with the next HTML code:
+## 3. Datei index.php
+Lege nun eine Datei `index.php` im Verzeichnis `/themes/mars/` an mit folgendem HTML-Code:
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -60,10 +50,10 @@ Lets work on the file `index.php`, create the file inside `/themes/mars/` folder
 </html>
 </code></pre>
 
-### 3.1. CSS files
-Add some CSS files, you can use the Helper `Theme::` or use the `meta tags`.
+### 3.1. CSS-Dateien
+Um CSS-Dateien hinzuzufügen, kannst du den Helper `Theme::` verwenden oder `meta tags`.
 
-Add the `blog.css` CSS file with meta tag.
+Lege die CSS-Datei `blog.css` mit einem Meta-Tag.
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
@@ -78,7 +68,7 @@ Add the `blog.css` CSS file with meta tag.
 </html>
 </code></pre>
 
-Add the `blog.css` CSS file with the Helper.
+Lege die CSS-Datei `blog.css` mit einem "Helper" an.
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
 <head>
