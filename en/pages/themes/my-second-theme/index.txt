@@ -148,7 +148,7 @@ You can add support for plugins in site head, just use the helper `Theme::plugin
 </code></pre>
 
 ### 3.4. Site title
-Let go to add the `meta tag title` and in the content of the site a heading with the title.
+Let's go to add the `meta tag title` and in the content of the site a heading with the title.
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
