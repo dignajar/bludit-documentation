@@ -122,10 +122,10 @@ Add the `blog.js` JavaScript file with the Helper.
 </html>
 </code></pre>
 
-As you can see, with the Helper is less code :D.
+Wie Du siehst, braucht der "Helper" weniger Code. :D
 
-### 3.3. Plugins in site head
-You can add support for plugins in site head, just use the helper `Theme::plugins`.
+### 3.3. Plugins im Header
+Um Plugins im Header einzufügen, hannst du den "Helper" `Theme::plugins` verwenden.
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -147,8 +147,8 @@ You can add support for plugins in site head, just use the helper `Theme::plugin
 </html>
 </code></pre>
 
-### 3.4. Site title
-Let go to add the `meta tag title` and in the content of the site a heading with the title.
+### 3.4. Titel der Website
+Jetzt fügen fügen wir im Header-Bereich den Meta-Tag für den Titel und Inhaltsbereich den Titel ein.
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -174,7 +174,7 @@ Let go to add the `meta tag title` and in the content of the site a heading with
 </html>
 </code></pre>
 
-### 3.5. Content (home, posts and pages)
+### 3.5. Inhalt (Hauptseite, Beiträge und Seiten)
 Now lets works with the content of the site, as posts and pages.
 
 To know where are the user browsing on your site will be use the object `$Url` and the method `whereAmI()`. For example if the user is watching a post the method `$Url->whereAmI()` returns the string `post`, or if the user is watching a page the method `$Url->whereAmI()` returns the string `page`.
@@ -306,7 +306,7 @@ If the user is watching a particular post, Bludit generate an object `$Post`, on
 </html>
 </code></pre>
 
-If the user is watching a particular page, Bludit generate an object `$Page`, on it you have a lot of methods, in this example will be use the methods `title()` and `content()`. To know other methods check the next page [object $Page](http://).
+Wenn eine Besucher oder eine Besucherin eine Seite aufruft, generiert Bludit ein Objekt `$Page`. Dieses Enhält eine Vielzahl von Methoden. In unserem Beispiel werden die Methoden `title()` und `content()` verwendet. Weitere Methoden findet Du unter [object $Page](http://).
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -356,8 +356,8 @@ If the user is watching a particular page, Bludit generate an object `$Page`, on
 </html>
 </code></pre>
 
-### 3.6. Plugins site body begins and ends
-To finish the theme, add support for plugins in the body.
+### 3.6. Pluginbereiche am Anfang und Ende des Body-Bereichs
+Zum Schluss füge den Code hinzu, der die Verwendung von Plugins erlaubt.
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -413,8 +413,3 @@ To finish the theme, add support for plugins in the body.
 </body>
 </html>
 </code></pre>
-
-    Status API Training Shop Blog About Pricing 
-
-    © 2015 GitHub, Inc. Terms Privacy Security Contact Help 
-
