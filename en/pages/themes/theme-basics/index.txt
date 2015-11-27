@@ -46,8 +46,6 @@ With this structure you are allowed to use Bludit's helpers.
 
 ## Information about the theme <a id="information"></a>
 
-Each theme have an information file located in `/themes/THEME_NAME/languages/en_US.json`, the default language is English (United States) and the locale name is `en_US`, then the file information is called `en_US.json`. Each line in `en_US.json` file is a key-value pair with the key on the left and the value on the right.
-
 The next code is the information of Pure theme.
 
 <pre><code data-language="php">{
@@ -63,3 +61,10 @@ The next code is the information of Pure theme.
 	}
 }
 </code></pre>
+
+Each theme has the information file located in `/themes/THEME_NAME/languages/en_US.json`.
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+The default language in Bludit is the English from United States, the locale name is **en_US**, and the filename is **en_US.json**.
+</div>

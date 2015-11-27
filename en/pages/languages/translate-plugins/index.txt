@@ -1,5 +1,5 @@
 Title: Translate plugins
-Content: Each plugin have a folder called `languages`, in this folder you have the differents dictionary files for each language.
+Content: Each plugin has a folder called `languages`, in this folder you have the different dictionary files for each language.
 
 ```
 /plugins/PLUGIN_NAME/languages/
@@ -12,7 +12,7 @@ Content: Each plugin have a folder called `languages`, in this folder you have t
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>
-The default language in Bludit it's the English language from United States, the locale name is **en_US**, and the filename is **en_US.json**.
+The default language in Bludit is the English from United States, the locale name is **en_US**, and the filename is **en_US.json**.
 </div>
 
 <div markdown="1" class="note">
@@ -22,7 +22,7 @@ All dictionary files are **JSON** files, and are saved by the encoding **UTF-8**
 
 ---
 
-This is an example for English (United States) dictionary `en_US.json`. Each line in en_US.json file is a key-value pair with the key on the left and the value on the right.
+This is an example of an English (United States) dictionary `en_US.json`. Each line in en_US.json file is a key-value pair with the key on the left and the value on the right.
 
 <pre><code data-language="JSON"> {
 	"plugin-data":
@@ -41,14 +41,14 @@ This is an example for English (United States) dictionary `en_US.json`. Each lin
 }
 </code></pre>
 
-As you can see, you have a field called `plugin-data`, this have all information about the plugin (name, description, author, etc). And the next fields are phrase for the plugin as `home` and `show-home-link`.
+As you can see, you have a field called `plugin-data`, this has all the information about the plugin (name, description, author, etc). And the next fields are phrases for the plugin as `home` and `show-home-link`.
 
 <div markdown="1" class="note">
 <div class="note-title">IMPORTANT !</div>
-You don't need translate the fields author, email, website, version and releaseDate because Bludit take this information from the English dictionary **en_US.json**.
+You don't need to translate the following fields: author, email, website, version and releaseDate because Bludit takes this information from the English dictionary.
 </div>
 
-This is an example for Spanish (Argentina) dictionary, the locale name is `es_AR` then the filename will be `es_AR.json`.
+This is an example of a Spanish (Argentina) dictionary, the locale name is `es_AR` then the filename will be `es_AR.json`.
 
 <pre><code data-language="JSON"> {
 	"plugin-data":
