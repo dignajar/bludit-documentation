@@ -7,12 +7,14 @@ Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http:
 All themes resides into `themes` directory, and they have a default structure of directories, this structure is necesary only if you are going to use Bludit's helpers.
 
 ### Content
-1. [Simple structure for themes](#simple-structure-for-themes)
+1. [Structure for themes](#structure-for-themes)
 2. [Information about the theme](#information)
 
 ---
 
-## <a id="simple-structure-for-themes"></a> Simple structure for themes
+## <a id="structure-for-themes"></a> Simple structure for themes
+
+This is a simple directory structure for themes.
 
 ```
 /themes/THEME_NAME/
@@ -23,6 +25,8 @@ All themes resides into `themes` directory, and they have a default structure of
 	php/
 	index.php
 ```
+
+The next table shows PHP CONSTANSTS for developers.
 
 | Description 		| Real path                    | HTML paths in PHP constant | Real path in PHP constant|
 | ----------------------|------------------------------|----------------------------|--------------------------|

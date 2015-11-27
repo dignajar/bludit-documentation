@@ -6,5 +6,10 @@ Content:
 2. Extract the zip file into a directory like `bludit`.
 3. Upload the directory `bludit` to your server/hosting.
 4. Visit your domain `http://domain.com/bludit`
+5. Follow the Bludit Installer to configure the website.
 
 _Note: You can use an FTP client to upload files to the hosting. Check this page [FTP](../misc/ftp)._
+
+<div markdown="1" class="note">
+This is *true* markdown text.
+</div>
