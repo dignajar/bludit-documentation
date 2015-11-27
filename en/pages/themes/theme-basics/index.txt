@@ -14,7 +14,7 @@ All themes resides into `themes` directory, and they have a default structure of
 
 ## <a id="structure-for-themes"></a> Simple structure for themes
 
-This is a simple directory structure for themes.
+This is a simple folder structure for themes.
 
 ```
 /themes/THEME_NAME/
@@ -37,8 +37,10 @@ The next table shows PHP CONSTANSTS for developers.
 | Languages files       | /themes/THEME_NAME/languages/|                            | PATH_THEME_LANG          |
 | PHP files             | /themes/THEME_NAME/php/      |                            | PATH_THEME_PHP           |
 
-
-*Note: With this structure you are allowed to use Bludit's helpers.*
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+With this structure you are allowed to use Bludit's helpers.
+</div>
 
 ---
 
