@@ -3,8 +3,9 @@ Position: 2
 Content:
 
 1. Lade die neueste Version von Bludit von http://www.bludit.com/bludit_latest.zip herunter.
-2. Entpacke die ZIP-Datei in ein Verzeichnis, dass du beispielsweise `bludit` benennst.
+2. Entpacke das ZIP-Archiv in ein Verzeichnis, dass du beispielsweise `bludit` benennst.
 3. Lade das Verzeichnis `bludit` mit FTP auf deinen Server.
 4. Rufe im Browser die Domain mit der Installation auf, beispielsweise `http://domain.com/bludit`.
+5. Der Bludit Installer führt dich nun in zwei Schritten durch die Einrichtung der Website.
 
-_Hinweis: _Note: Um die Dateien auf den Server zu laden, kannst Du einen FTP-Client verwenden. Vgl. dazu [FTP](../verschiedenes/ftp)._
+_Hinweis: Um die Dateien auf den Server zu laden, kannst Du einen FTP-Client verwenden. Vgl. dazu [FTP](../verschiedenes/ftp)._
