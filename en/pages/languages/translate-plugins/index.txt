@@ -1,4 +1,5 @@
 Title: Translate plugins
+Position: 2
 Content: Each plugin has a folder called `languages`, in this folder you have the different dictionary files for each language.
 
 ```
