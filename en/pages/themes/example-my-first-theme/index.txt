@@ -1,4 +1,4 @@
-Title: My first theme
+Title: Example: My first theme
 Position: 2
 Content:
 

@@ -12,7 +12,7 @@ If you get this alert when trying to install Bludit, you need to set the correct
 
 ## Hosting server change permissions via FTP <a id="ftp"></a>
 
-If you have access to your Webserver via FTP, you can set the permission right-clicking on the directory/folder `content`, set permissions. First try to set the permission to 755, if the error continues then try with 777 permission.
+If you have access to your web server via FTP, you can set the permission right-clicking on the directory/folder `content`, set permissions. First try to set the permission to 755, if the error continues then try with 777 permission.
 
 ---
 

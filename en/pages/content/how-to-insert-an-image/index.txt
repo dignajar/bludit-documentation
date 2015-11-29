@@ -2,42 +2,17 @@ Title: How to insert an image
 Position: 3
 Content:
 
-First you need to upload the image on `/content/uploads/` then you can use this image on your posts or pages.
+Create a new post or page, then open the tab **Images** at the right menu.
 
-Example:
-1. Upload the image `test.jpg` on `/content/uploads/test.jpg`
-2. Create a post or page, you can use Markdown or HTML code to link the image.
+Drag and drop the image to the gray box or click on it to select an image.
 
-*HTML*
-```
-<img src=test.jpg alt="My new test image">
-```
+![Drag and drop image](bludit-insert-image-drag-and-drop.png)
 
-*Markdown*
-```
-![My new test image](test.jpg)
-```
+Once you have uploaded the image, select it and click on the button **Insert image**.
 
----
+![Drag and drop image](bludit-insert-image.png)
 
-## Group in folders
-
-You can create folders inside `/content/uploads/` and link the images.
-
-Example:
-1. Create the folder `animals` on `/content/uploads/`
-2. Upload the images `dog.jpg` and `cat.jpg` on `/content/uploads/animals/`
-3. Create the post or page.
-4. Insert the HTML or Markdown code img tag.
-
-*HTML*
-```
-<img src=animals/dog.jpg alt="My dog Echo">
-<img src=animals/cat.jpg alt="The cat">
-```
-
-*Markdown*
-```
-![My dog Echo](animals/dog.jpg)
-![The cat](animals/cat.jpg)
-```
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+The code inserted will be different for each HTML Editor.
+</div>

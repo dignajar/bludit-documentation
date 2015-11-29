@@ -7,12 +7,14 @@ Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http:
 All themes resides into `themes` directory, and they have a default structure of directories, this structure is necesary only if you are going to use Bludit's helpers.
 
 ### Content
-1. [Simple structure for themes](#simple-structure-for-themes)
+1. [Structure for themes](#structure-for-themes)
 2. [Information about the theme](#information)
 
 ---
 
-## <a id="simple-structure-for-themes"></a> Simple structure for themes
+## <a id="structure-for-themes"></a> Simple structure for themes
+
+This is a simple folder structure for themes.
 
 ```
 /themes/THEME_NAME/
@@ -24,6 +26,8 @@ All themes resides into `themes` directory, and they have a default structure of
 	index.php
 ```
 
+The next table shows PHP CONSTANSTS for developers.
+
 | Description 		| Real path                    | HTML paths in PHP constant | Real path in PHP constant|
 | ----------------------|------------------------------|----------------------------|--------------------------|
 | Theme root            | /themes/THEME_NAME/          | HTML_PATH_THEME            | PATH_THEME               |
@@ -33,14 +37,14 @@ All themes resides into `themes` directory, and they have a default structure of
 | Languages files       | /themes/THEME_NAME/languages/|                            | PATH_THEME_LANG          |
 | PHP files             | /themes/THEME_NAME/php/      |                            | PATH_THEME_PHP           |
 
-
-*Note: With this structure you are allowed to use Bludit's helpers.*
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+With this structure you are allowed to use Bludit's helpers.
+</div>
 
 ---
 
 ## Information about the theme <a id="information"></a>
-
-Each theme have an information file located in `/themes/THEME_NAME/languages/en_US.json`, the default language is English (United States) and the locale name is `en_US`, then the file information is called `en_US.json`. Each line in `en_US.json` file is a key-value pair with the key on the left and the value on the right.
 
 The next code is the information of Pure theme.
 
@@ -57,3 +61,10 @@ The next code is the information of Pure theme.
 	}
 }
 </code></pre>
+
+Each theme has the information file located in `/themes/THEME_NAME/languages/en_US.json`.
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+The default language in Bludit is the English from United States, the locale name is **en_US**, and the filename is **en_US.json**.
+</div>
