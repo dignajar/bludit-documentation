@@ -29,7 +29,7 @@ Bearbeite folgende Datei (du kannst dazu die folgenden Befehle verwenden: vi, na
 $ sudo vi /etc/apache2/sites-available/000-default.conf
 ```
 
-Suche nach `DocumentRoot /var/www/html` und füge folgendes hinzu.
+Suche nach `DocumentRoot /var/www/html` und füge folgendes hinzu:
 ```
 <Directory "/var/www/html">
     AllowOverride All
@@ -89,9 +89,9 @@ Jetzt kannst du im Browser http://localhost/bludit/ aufrufen.
 ---
 
 ## <a id="default"></a> Installation on GNU/Linux
-First, you need a running Webserver on your machine or have some server/hosting with SSH enabled.
+Für die Installation benötigst du einen Webserver, der auf deinem Computer läuft, oder einen Server, bei dem SSH aktiviert ist.
 
-Once you have installed a Webserver, download and install Bludit.
+Wenn du den Webserver installiert hast, kannst Du Bludit herunterladen und installieren.
 ```
 $ cd /tmp
 $ wget http://www.bludit.com/bludit_latest.zip
@@ -99,17 +99,17 @@ $ unzip bludit_latest.zip
 $ mv bludit /var/www/html/
 ```
 
-If you don’t have the command wget, you can try with the curl command.
+Wenn du den Befehl wget nicht verwenden kannst, kannst Du es mit dem Befehl curl versuchen.
 ```
 $ curl --remote-name http://www.bludit.com/bludit_latest.zip
 ```
 
-Get the user associated with the Webserver process, to set the correct permissions to the directory `content`. For example if you are running Apache you can do this:
+Setze für den Benutzer, der für die Prozesse des Webservers definiert wird, die richtigen Berechtigungen für das Verzeichnis `content`. Wenn du Apache verwendest, kannst du das wie folgt machen:
 ```
 $ sudo ps axo user | egrep '(apache|httpd)' | uniq
 ```
 
-Now you can set the username to the directory `content`. And fix some permissions to files and directories.
+Jetzt kannst du den Benutzernamen für das Verzeichnis `content` einrichten. Zudem müssen Berechtigungen für Dateien und Verzeichnssse vergeben werden.
 ```
 $ cd /var/www/html/bludit
 $ sudo chown -R {USERNAME}:{USERNAME} content
@@ -117,7 +117,7 @@ $ sudo find . -type f | xargs chmod 664
 $ sudo find . -type d | xargs chmod 755
 ```
 
-Other way, but I don’t recommend it, is setting the permissions for all read/write/execute (777).
+Möglich wäre auch, wenn es auch nicht zu empfehlen ist, die Berechtigung read/write/execute (777) für alles zu geben.
 ```
 $ cd /var/www/html/bludit
 $ sudo chmod 777 content
