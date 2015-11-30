@@ -10,5 +10,5 @@ Content:
 
 <div markdown="1" class="note">
 <div class="note-title">Hinweis</div>
-Um die Dateien auf den Server zu laden, kannst du ein FTP-Client verwenden. Vgl. dazu [FTP](../verschiedenes/ftp)._
+Um die Dateien auf den Server zu laden, kannst du ein FTP-Client verwenden. Vgl. dazu [FTP](../verschiedenes/ftp).
 </div>
