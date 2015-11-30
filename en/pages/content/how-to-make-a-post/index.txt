@@ -23,7 +23,7 @@ The content support HTML and Markdown code, here is a [Markdown cheatsheet](http
 
 ## <a id="advanced-mode"></a> Advanced mode or Cli mode
 
-First enable `Cli mode` on Bludit, go to the **Admin panel->Settings->Advanced->Cli mode->Enabled**, now you can create, edit, or remove posts from from the command line, without need of the Dashboard.
+First enable `Cli mode` on Bludit, go to the **Admin panel->Settings->Advanced->Cli mode->Enabled**, now you can create, edit, or remove posts from the command line, without need of the Dashboard.
 
 For example to create a new post:
 - Create a directory in `/content/posts/`
