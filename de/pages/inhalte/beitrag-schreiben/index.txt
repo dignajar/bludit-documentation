@@ -2,16 +2,16 @@ Title: Einen Beitrag schreiben
 Position: 1
 Content:
 
-Es gibt zwei Möglichkeiten, einen Beitrag zu schreiben. Einen "Easy Mode" mit einer grafischen Oberfläche, und einen "Advanced Mode" oder CLI-Modus (Command-line Interface). Wenn du den "Advanced Mode" verwenden möchtest, schau dir bitte die Erklärungen [Variablen für Beiträge und Seiten](../content/variables-for-posts-and-pages) an.
+Es gibt zwei Möglichkeiten, einen Beitrag zu schreiben. Einen "Easy Mode" mit einer grafischen Oberfläche und einen "Advanced Mode" oder CLI-Mode (Command-line Interface), also Kommandozeilen-Modus. Wenn du den "Advanced Mode" verwenden möchtest, schau dir bitte die Erklärungen [Variablen für Beiträge und Seiten](../content/variables-for-posts-and-pages) an.
 
 #### Inhalt
 1. [Easy Mode](#easy-mode)
-1. [Advanced Mode](#advanced-mode)
+1. [Advanced Mode oder CLI Mode](#advanced-mode)
 
 ---
 
 ## Easy Mode <a id="easy-mode"></a>
-Melde Dich im Admin-Bereich an und wähle `Neuer Beitrag` in der horizontalen Menüleiste oder auf der Dashboard-Seite.
+Melde dich im Admin-Bereich an und wähle `Neuer Beitrag` in der horizontalen Menüleiste oder auf der Dashboard-Seite.
 
 Fülle die Felder aus und klicke den Button  **Speichern**.
 
@@ -21,11 +21,15 @@ Zur Formatierung des Inhalts kannst du HTML- und Markdown-Code verwenden. Hier f
 
 ---
 
-## <a id="advanced-mode"></a> Advanced Mode
-Du kannst neue Beiträge auch erstellen, indem du das Dateisystem bearbeitest.
+## <a id="advanced-mode"></a> Advanced Mode oder CLI Mode (Kommandozeilen-Modus)
+
+Aktiviere zuerst den CLI Mode im Admin-Bludit von Bludit unter Einstellungen -> Erweitert -> Kommandozeilen-Modus -> CLI Mode: Aktiviert. Jetzt kannst Du einen Beitrag erstellen, ändern oder löschen, indem du direkt das Dateisystem bearbeitest, also ohne den Editor des Dashboards zu verwenden.
+
+Beispielsweise kannst du einen neuen Beitrag so erstellen:
+
 - Erstelle ein Unterzeichnis im Verzeichnis `/content/posts/`.
-- Der Ordnername wird die URI des neuen Beitrages sein.
-- Erstelle eine neue Datei mit dem Namen `index.txt` innerhalb des neuen Verzeichnises.
+- Der Ordnername wird die URI des neuen Beitrags sein.
+- Erstelle eine neue Datei mit dem Namen `index.txt` im neuen Verzeichnis.
 - Bearbeite die Datei `index.txt`.
 - Füge zwei Variablen hinzu: `Title:` und `Content:`.
 
@@ -33,17 +37,17 @@ Du kannst neue Beiträge auch erstellen, indem du das Dateisystem bearbeitest.
 - Erstelle das Verzeichnis `/content/posts/test`.
 - Erstelle die Datei `index.txt` in `/content/posts/test/`.
 - Bearbeite die Datei `index.txt`.
-- Gib den Titel und den Inhalt des Beitrags ein.
+- Gib folgenden Text ein:
 
 ```
 Title: Neuer Beitrag-Test
 
 Content:
-<h1>Hello Lorem</h1>
+<h1>Hallo Lorem</h1>
 
-## Subtitle for Lorem
+## Untertitel für Lorem
 
 It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
-**Bold text in Markdown format**
+**Fetter Text in Markdown-Formatierung**
 ```
