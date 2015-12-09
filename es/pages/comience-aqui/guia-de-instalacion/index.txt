@@ -6,5 +6,14 @@ Content:
 2. Descomprima el archivo zip en un directorio, por ejemplo `bludit`.
 3. Copie el directorio `bludit` al servidor web.
 4. Visite su sitio por ejemplo `http://domain.com/bludit`
+5. Siga las instrucciones del instalador web para terminar de configurar su sitio.
 
-_Nota: Usted puede subir los archivos al directorio raiz del servidor web en vez de a un directorio._
+<div markdown="1" class="note">
+<div class="note-title">IMPORTANT!</div>
+Después de la instalación, se recomienda que configure correctamente la zona horaria desde *Panel de administración->Configuración->Idioma y zona horaria->Zona horaria*.
+</div>
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+Para subir los archivos a su servidor puede utilizar un cliente de [FTP](../misc/ftp).
+</div>
