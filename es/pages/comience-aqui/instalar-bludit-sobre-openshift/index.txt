@@ -1,43 +1,43 @@
-Title: Running Bludit on OpenShift
+Title: Instalar Bludit sobre Openshift
 Position: 4
 Content:
 
-OpenShift is a very good platform for running Bludit, it's easy and free.
+Openshift es una plataforma excelente para correr Bludit, es fácil y gratis.
 
 > OpenShift is a next-generation cloud application platform that makes it easy to develop, deploy, and scale applications in the cloud – public or private. https://www.openshift.com/products/architecture
 
-## Sign Up for an account
+## Registrarse en Openshift
 
-Go to https://www.openshift.com and sign up for an account.
+Vaya a https://www.openshift.com y registrese.
 
-You only need to sign up for a free account.
+Solo necesita una cuenta gratis.
 
-## Log In to OpenShift
+## Ingrese en Openshift
 
-On the dashboard, click on **Create your first application now**
+En el panel de administración, haga click en **Create your first application now**
 
 ![OpenShift Dashboard](bludit-openshift-dashboard.png)
 
-## Look for PHP cartridge
+## Busque el cartridge PHP
 
-Type "PHP" into "Search by keyword or tag" input field to filter.
+Escriba "PHP" sobre el buscador "Search by keyword or tag"
 
-Select the version PHP 5.4.
+Seleccione la versión de PHP 5.4.
 
 ![OpenShift PHP Cartridge](bludit-openshift-search-php.png)
 
-## Configure the application
+## Configurar la aplicación
 
-Complete the fields:
-- Public URL: Set your blog URL.
+Complete los siguientes campos:
+- Public URL: Ingrese un nombre para la url de su blog.
 - Source code: **https://github.com/dignajar/bludit-openshift**
 
-Click on **Create Application** button.
+Haga clic sobre el botón **Create Application**.
 
 ![OpenShift Configure Application](bludit-openshift-configure-application.png)
 
-## Finish the installation
+## Finalizando la instalación
 
-Visit your public URL to finish the installation.
+Visite la URL para finalizar con la instalación vía web.
 
 ![OpenShift finish installation](bludit-openshift-finish-installation.png)

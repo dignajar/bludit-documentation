@@ -6,6 +6,7 @@ Solo necesita un servidor web con soporte PHP.
 - PHP v5.3 o superior.
 - Modulo PHP [mbstring](http://php.net/manual/en/book.mbstring.php) para un mejor soporte de UTF-8.
 - Servidor web:
+  * PHP Built-in web server
   * Apache con el modulo [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
   * Lighttpd con el modulo [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite)
   * Ngnix con el modulo [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)
