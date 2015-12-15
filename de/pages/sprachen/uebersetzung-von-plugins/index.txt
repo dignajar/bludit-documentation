@@ -1,8 +1,9 @@
-Title: Übersetzung von Themes
-Content: Jedes Theme verfügt über ein Verzeichnis `languages`, in dem sich die Übersetzungen für verschiedene Sprachen befinden.
+Title: Ubersetzung von Plugins
+Position: 2
+Content: Jedes Plugin verfügt über ein Verzeichnis `languages`, in dem sich die Übersetzungen für verschiedene Sprachen befinden.
 
 ```
-/themes/THEME_NAME/languages/
+/plugins/PLUGIN_NAME/languages/
 	de_DE.json
 	en_US.json
 	es_AR.json
@@ -24,21 +25,24 @@ Alle Sprachdateien sind **JSON**-Dateien, die im Format **UTF-8** gespeichert si
 
 Dies ist ein Beispiel für eine englische Sprachdatei (US-Englisch) `en_US.json`. Jede Zeile der Datei en_US.json besteht aus einem Paar bestehend aus einem Namen und einem Wert, wobei der Name links, der Wert rechts steht.
 
-<pre><code data-language="JSON">{
-	"theme-data":
+<pre><code data-language="JSON"> {
+	"plugin-data":
 	{
-		"name": "Pure",
-		"description": "Simple and clean, based on the framework Pure.css.",
+		"name": "Page list",
+		"description": "Shows the list of pages in order.",
 		"author": "Bludit",
 		"email": "",
-		"website": "https://github.com/dignajar/bludit-themes",
-		"version": "0.6",
-		"releaseDate": "2015-11-13"
-	}
+		"website": "http://www.bludit.com",
+		"version": "0.1",
+		"releaseDate": "2015-08-02"
+	},
+
+    "home": "Home",
+    "show-home-link": "Show home link"
 }
 </code></pre>
 
-Das Feld `theme-data` enthält alle Informationen zum Theme (Name des Themes, Beschreibung, Autor usw.).
+Das Feld `plugin-data` enthält alle Informationen zum Theme (Name des Themes, Beschreibung, Autor usw.). Die weiteren Felder enthalten vom Plugin verwendete Wörter. Sätze und Satzteile wie im Beispiel `und` and `show-home-link`.
 
 <div markdown="1" class="note">
 <div class="note-title">Wichtig!</div>
@@ -47,11 +51,14 @@ Die folgenden Felder müssen nicht übersetzt werden: author (Autor), email (E-m
 
 Dies ist ein Beispiel für eine spanischee Sprachdatei (Argentinisches Spanisch) mit der Lokalisierungsbezeichnung `es_AR` und dem Dateinamen `es_AR.json`.
 
-<pre><code data-language="JSON">{
-	"theme-data":
+<pre><code data-language="JSON"> {
+	"plugin-data":
 	{
-		"name": "Pure",
-		"description": "Simple y minimalista, basado en el framework Pure.css."
-	}
+		"name": "Listado de paginas",
+		"description": "Muestra el listado de paginas en orden."
+	},
+
+    "home": "Inicio",
+    "show-home-link": "Mostrar link de la pagina de incio"
 }
 </code></pre>
