@@ -12,7 +12,7 @@ Content: Jedes Theme verfügt über ein Verzeichnis `languages`, in dem sich die
 
 <div markdown="1" class="note">
 <div class="note-title">Hinweis</div>
-Die von Bludit standardmässig vorgegeben Sprache ist Englisch (USA). Ihre Bezeichnung für die Lokalisierung ist **en_US**, die Bezeichnung der Sprachdatei **en_US.json**.
+Die von Bludit standardmässig vorgegebene Sprache ist Englisch (USA). Ihre Bezeichnung für die Lokalisierung ist **en_US**, die Bezeichnung der Sprachdatei **en_US.json**.
 </div>
 
 <div markdown="1" class="note">
@@ -22,7 +22,7 @@ Alle Sprachdateien sind **JSON**-Dateien, die im Format **UTF-8** gespeichert si
 
 ---
 
-Die ist ein Beispiel für eine englische Sprachdatei (US-Englisch) `en_US.json`. Jede Zeile der Datei en_US.json besteht aus einem Paar bestehend aus einem Namen und einem Wert, wobei der Name links, der Wert rechts steht.
+Dies ist ein Beispiel für eine englische Sprachdatei (US-Englisch) `en_US.json`. Jede Zeile der Datei en_US.json besteht aus einem Paar bestehend aus einem Namen und einem Wert, wobei der Name links, der Wert rechts steht.
 
 <pre><code data-language="JSON">{
 	"theme-data":
@@ -38,7 +38,7 @@ Die ist ein Beispiel für eine englische Sprachdatei (US-Englisch) `en_US.json`.
 }
 </code></pre>
 
-Das Feld `theme-data` enthält alle Informationen über das Theme (Name des Themes, Beschreibung, Autor usw.).
+Das Feld `theme-data` enthält alle Informationen zum Theme (Name des Themes, Beschreibung, Autor usw.).
 
 <div markdown="1" class="note">
 <div class="note-title">Wichtig!</div>
