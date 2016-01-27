@@ -1,8 +1,10 @@
 Title: Translate themes
-Content: Each theme has a folder called `languages`, in this folder you have the different dictionary files for each language.
+Content:
+
+Each theme has a folder called `languages`, inside this folder you have the different dictionary files for each language.
 
 ```
-/themes/THEME_NAME/languages/
+/bl-themes/{THEME_NAME}/languages/
 	de_DE.json
 	en_US.json
 	es_AR.json
@@ -28,22 +30,12 @@ This is an example of an English (United States) dictionary `en_US.json`. Each l
 	"theme-data":
 	{
 		"name": "Pure",
-		"description": "Simple and clean, based on the framework Pure.css.",
-		"author": "Bludit",
-		"email": "",
-		"website": "https://github.com/dignajar/bludit-themes",
-		"version": "0.6",
-		"releaseDate": "2015-11-13"
+		"description": "Simple and clean, based on the framework Pure.css."
 	}
 }
 </code></pre>
 
-As you can see, you have a field called `theme-data`, this has all the information about the theme (name, description, author, etc).
-
-<div markdown="1" class="note">
-<div class="note-title">IMPORTANT !</div>
-You don't need to translate the following fields: author, email, website, version and releaseDate because Bludit takes this information from the English dictionary.
-</div>
+As you can see, you have a field called `theme-data`, this has the name and description of the theme.
 
 This is an example of a Spanish (Argentina) dictionary, the locale name is `es_AR` then the filename will be `es_AR.json`.
 

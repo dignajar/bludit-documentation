@@ -1,9 +1,11 @@
 Title: Translate plugins
 Position: 2
-Content: Each plugin has a folder called `languages`, in this folder you have the different dictionary files for each language.
+Content:
+
+Each plugin has a folder called `languages`, in this folder you have the different dictionary files for each language.
 
 ```
-/plugins/PLUGIN_NAME/languages/
+/bl-plugins/{PLUGIN_NAME}/languages/
 	de_DE.json
 	en_US.json
 	es_AR.json
@@ -29,20 +31,15 @@ This is an example of an English (United States) dictionary `en_US.json`. Each l
 	"plugin-data":
 	{
 		"name": "Page list",
-		"description": "Shows the list of pages in order.",
-		"author": "Bludit",
-		"email": "",
-		"website": "http://www.bludit.com",
-		"version": "0.1",
-		"releaseDate": "2015-08-02"
+		"description": "Shows the list of pages in order."
 	},
 
-    "home": "Home",
-    "show-home-link": "Show home link"
+	"home": "Home",
+	"show-home-link": "Show home link"
 }
 </code></pre>
 
-As you can see, you have a field called `plugin-data`, this has all the information about the plugin (name, description, author, etc). And the next fields are phrases for the plugin as `home` and `show-home-link`.
+As you can see, you have a field called `plugin-data`, this has the name and description of the plugin, and the next fields are phrases for the plugin as `home` and `show-home-link`.
 
 <div markdown="1" class="note">
 <div class="note-title">IMPORTANT !</div>
