@@ -13,7 +13,7 @@ bl-themes/
 ```
 
 ## bl-content
-This folder is very important, is where Bludit store all files, as databases and images. Before make some update it's highly recommended make a backup of this folder.
+This folder is very important, it is where Bludit stores all files, as well as databases and images. Before making some update it's highly recommended to make a backup of this folder.
 
 ```
 bl-content/
