@@ -1,0 +1,58 @@
+Title: Tłumaczenie wtyczki
+Content: Każda wtyczka zawiera folder o nazwie languages, który przetrzymuje pliki językowe dla wybranych lokalizacji.
+
+```
+/bl-plugins/{NAZWA_WTYCZKI}/languages/
+	de_DE.json
+	en_US.json
+	es_AR.json
+	fr_FR.json
+	...
+```
+
+<div markdown="1" class="note">
+<div class="note-title">UWAGA</div>
+Domyślny język Bludit to język angielski (amerykański). Jego nazwa lokalizacji to **en_US** zaś pliku - **en_US.json**.
+</div>
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+Wszystkie pliki **JSON** zapisywane są z wykorzystaniem kodowania **UTF-8**.
+</div>
+
+---
+
+To jest przykład angielskiego (amerykańskiego) tłumaczenia zawierający się w pliku `en_US.json`. Każda linia w en_US.json posiada parę – klucz-wartość – występującą po lewej (klucz) i prawej (wartość) stronie.
+
+<pre><code data-language="JSON"> {
+	"plugin-data":
+	{
+		"name": "Page list",
+		"description": "Shows the list of pages in order."
+	},
+
+	"home": "Home",
+	"show-home-link": "Show home link"
+}
+</code></pre>
+
+Jak widać, pole nazwane `plugin-data` zawiera nazwę i opis tej wtyczki. Następne pola to `home` oraz `show-home-link`.
+
+<div markdown="1" class="note">
+<div class="note-title">ARCYWAŻNE</div>
+Następujące pola nie muszą być przekładane na inne języki: author, email, website, version i releaseDate . Bludit automatycznie pobierze te informacje ze słownika angielskiego.
+</div>
+
+To jest przykład lokalizacji hiszpańskiej (Argentyna). Jej skrót to `es_AR` zaś nazwa pliku `es_AR.json`.
+
+<pre><code data-language="JSON"> {
+	"plugin-data":
+	{
+		"name": "Listado de paginas",
+		"description": "Muestra el listado de paginas en orden."
+	},
+
+    "home": "Inicio",
+    "show-home-link": "Mostrar link de la pagina de incio"
+}
+</code></pre>

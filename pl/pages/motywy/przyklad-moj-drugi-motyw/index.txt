@@ -1,0 +1,426 @@
+Title: Przykład: Mój drugi motyw
+Content: W tym przykładzie mój nowy motyw nazywać się będzie 'Mars'.
+
+## 1. Struktura folderów
+Tworzę strukturę folderów wewnątrz katalogu `/bl-themes/` na wzór `/bl-themes/mars/`.
+
+Następnie tworzę foldery languages, css i js:
+- folder `languages` umieszczam wewnątrz `/bl-themes/mars/`
+- folder `css` umieszczam wewnątrz `/bl-themes/mars/`
+- folder `js` umieszczam wewnątrz `/bl-themes/mars/`
+
+```
+/bl-themes/mars/
+	css/
+	js/
+	language/
+```
+
+## 2. Informacje o motywie
+Tworzę plik z informacjami o motywie. Plik ten oczywiście znajdować się musi wewnątrz mojego motywu z nazwą `metadata.json` i nastepującą zawartością:
+
+<pre><code data-language="php">{
+	"author": "Bludit",
+	"email": "",
+	"website": "",
+	"version": "1.0",
+	"releaseDate": "2016-01-15",
+	"license": "MIT",
+	"requires": "Bludit v1.0",
+	"notes": ""
+}
+</code></pre>
+
+Teraz tworzę nowy plik językowy z nazwą i opisem motywu. Nazwę go `en_US.json` i umieszczę wewnątrz `/bl-themes/mars/languages/`.
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Mars",
+		"description": "This is my second theme for Bludit."
+	}
+}
+</code></pre>
+
+## 3. index.php
+Czas na plik główny - `index.php`. Tworzę go wewnątrz `/bl-themes/mars/` i umieszczam przykładowy kod HTML:
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+### 3.1. Pliki CSS
+Pora dodać plik(i) CSS. W tym wypadku skorzystaj z wyrażeń `Theme::` lub umieść je bezpośrednio w `meta tagach`. O tym pierwszym pisałem już nieco w strukturach motywu.
+
+Bezpośrednio w meta dodajemy plik blog.css .
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="<?php echo HTML_PATH_THEME_CSS.'blog.css' ?>">
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+Przy pomocy dokumentacji Bludit i stałych dodajemy plik `blog.css` .
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+### 3.2. Pliki JavaScript
+Identyczna sprawa jak wyżej. Korzystając z `dokumentacji` lub umieszczając bezpośrednio w znacznikach `meta `dodajemy pliki JavaScript.
+
+Bezpośrednio w meta dodajemy plik `blog.js` .
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="<?php echo HTML_PATH_THEME_CSS.'blog.css' ?>">
+
+	<!-- Javascript -->
+	<script src="<?php echo HTML_PATH_THEME_JS.'blog.js' ?>"></script>
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+Przy pomocy dokumentacji Bludit i stałych dodajemy plik `blog.js` .
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+Jak już z pewnością zauważyłeś, praca z wykorzystaniem dokumentacji zajmuje znacznie mniej miejsca w kodzie :D
+
+### 3.3. Wtyczki w sekcji head
+Do implementacji wtyczek na stronie w sekcji head posłużymy się po prostu `Theme::plugins`.
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+### 3.4. Tytuł strony
+Nasz motyw nie potrafi wyświetlać jeszcze nazwy naszej strony. Czas położyć temu kres!
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+</body>
+</html>
+</code></pre>
+
+### 3.5. Zawartość (strona główna, wpisy, strony)
+Czas na wyświetlanie tego, co najważniejsze, a więc zawartości witryny.
+
+Aby wyświetlić informację o tym, gdzie aktualnie przebywa użytkownik na naszej stronie, wykorzystaj obiekt `$Url` i metodę `whereAmI()`. Dla przykładu, jeśli użytkownik przegląda właśnie jeden z naszych wpisów, metoda `$Url->whereAmI()` zwróci `post`. W analogicnzy sposób dzieje się tak dla `page` z wykorzystaniem `$Url->whereAmI()`.
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+			echo 'The user is browsing the Home page';
+		}
+		elseif($Url->whereAmI()=='post') {
+			echo 'The user is browsing a particular post';
+		}
+		elseif($Url->whereAmI()=='page') {
+			echo 'The user is browsing a particular page';
+		}
+	?>
+</body>
+</html>
+</code></pre>
+
+Jeśli użytkownik przegląda stronę główną, Bludit wygeneruje `$posts`, a więc wszystkie wpisy opublikowane na stronie. Sprawdź [$Post](https://).
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+
+			foreach($posts as $Post) {
+				echo '<h1>'.$Post->title().'</h1>';
+				echo '<div>'.$Post->content().'</div>';
+				echo '<hr>';
+			}
+
+		}
+		elseif($Url->whereAmI()=='post') {
+			echo 'The user is browsing a particular post';
+		}
+		elseif($Url->whereAmI()=='page') {
+			echo 'The user is browsing a particular page';
+		}
+	?>
+</body>
+</html>
+</code></pre>
+
+Jeśli użytkownik przegląda wpis, Bludit wygeneruje obiekt `$Post`. Aby zapoznać się z metodami, sprawdź stronę [$Post](http://).
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+
+			foreach($posts as $Post) {
+				echo '<h1>'.$Post->title().'</h1>';
+				echo '<div>'.$Post->content().'</div>';
+				echo '<hr>';
+			}
+
+		}
+		elseif($Url->whereAmI()=='post') {
+
+			echo '<h1>'.$Post->title().'</h1>';
+			echo '<div>'.$Post->content().'</div>';
+
+		}
+		elseif($Url->whereAmI()=='page') {
+			echo 'The user is browsing a particular page';
+		}
+	?>
+</body>
+</html>
+</code></pre>
+
+Jeśli użytkownik przegląda wpis, Bludit wygeneruje obiekt `$Page`. Aby zapoznać się z metodami, sprawdź stronę [$Page](http://).
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+
+			foreach($posts as $Post) {
+				echo '<h1>'.$Post->title().'</h1>';
+				echo '<div>'.$Post->content().'</div>';
+				echo '<hr>';
+			}
+
+		}
+		elseif($Url->whereAmI()=='post') {
+
+			echo '<h1>'.$Post->title().'</h1>';
+			echo '<div>'.$Post->content().'</div>';
+
+		}
+		elseif($Url->whereAmI()=='page') {
+
+			echo '<h1>'.$Page->title().'</h1>';
+			echo '<div>'.$Page->content().'</div>';
+
+		}
+	?>
+</body>
+</html>
+</code></pre>
+
+### 3.6. Wtyczki w sekcji body
+Na zakończenie zajmijmy się wyświetlaniem wtyczek w sekcji body.
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Plugins site body begin -->
+	<?php Theme::plugins('siteBodyBegin') ?>
+
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+
+			foreach($posts as $Post) {
+				echo '<h2>'.$Post->title().'</h2>';
+				echo '<div>'.$Post->content().'</div>';
+				echo '<hr>';
+			}
+
+		}
+		elseif($Url->whereAmI()=='post') {
+
+			echo '<h2>'.$Post->title().'</h2>';
+			echo '<div>'.$Post->content().'</div>';
+
+		}
+		elseif($Url->whereAmI()=='page') {
+
+			echo '<h2>'.$Page->title().'</h2>';
+			echo '<div>'.$Page->content().'</div>';
+
+		}
+	?>
+
+	<!-- Plugins site body end -->
+	<?php Theme::plugins('siteBodyEnd') ?>
+
+</body>
+</html>
+</code></pre>
+
+<div markdown="1" class="note">
+<div class="note-title">POBIERANIE</div>
+Możesz pobrać motyw Mars [stąd](https://github.com/dignajar/bludit-themes/tree/master/example-mars).
+</div>

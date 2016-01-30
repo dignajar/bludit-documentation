@@ -1,0 +1,83 @@
+Title: Podstawy
+Content: Do pomocy w tworzeniu własnego motywu możesz wykorzystać gotowe frameworki, takie jak ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/), etc), dowolny Javascript, czy cokolwiek, co sobie zażyczysz.
+
+Wszystkie motywy znajdują się w katalogu `bl-themes`. Każdy z nich oparty jest o pewne struktury folderów niezbędne do prawidłowego zrozumienia dokumentacji Bludit.
+
+### Treść
+1. [Struktura motywu](#structure-for-themes)
+2. [Informacje o motywie](#information)
+
+---
+
+## <a id="structure-for-themes"></a> Struktura motywu
+
+Poniżej znajdziesz przykład struktury motywu.
+
+```
+/bl-themes/NAZWA_MOTYWU/
+	css/
+	img/
+	js/
+	language/
+	php/
+	metadata.json
+	index.php
+```
+
+Następująca tabela przedstawia STAŁE PHP dla twórców.
+
+| Opis 		| Prawdziwa ścieżka                        | Ścieżka HTML                   | Prawdziwa ścieżka                |
+| ----------------------|-----------------------------------|------------------------------|--------------------------|
+| Theme root            | /bl-themes/{THEME_NAME}/          | HTML_PATH_THEME              | PATH_THEME               |
+| CSS files             | /bl-themes/{THEME_NAME}/css/      | HTML_PATH_THEME_CSS          | PATH_THEME_CSS           |
+| Images files          | /bl-themes/{THEME_NAME}/img/      | HTML_PATH_THEME_IMG          | PATH_THEME_IMG           |
+| Javascript files      | /bl-themes/{THEME_NAME}/js/       | HTML_PATH_THEME_JS           | PATH_THEME_JS            |
+| Languages files       | /bl-themes/{THEME_NAME}/languages/|                              | PATH_THEME_LANG          |
+| PHP files             | /bl-themes/{THEME_NAME}/php/      |                              | PATH_THEME_PHP           |
+| Uploaded images       | /bl-content/uploads/              | HTML_PATH_UPLOADS            | PATH_UPLOADS             |
+| Profiles images       | /bl-content/uploads/profiles/     | HTML_PATH_UPLOADS_PROFILES   | PATH_UPLOADS_PROFILES    |
+| Thumbnails images     | /bl-content/uploads/thumbnails/   | HTML_PATH_UPLOADS_THUMBNAILS | PATH_THUMBNAILS          |
+
+
+<div markdown="1" class="note">
+<div class="note-title">UWAGA</div>
+Powyższe struktury gwarantują poprawność tworzenia motywu z dokumentacja Bludit.
+</div>
+
+---
+
+## Informacje o motywie <a id="information"></a>
+
+Każdy motyw obsługuje dodatkowy plik z informacjami dodatkowymi o nazwie `metadata.json`, znajdującym się w `/bl-themes/{NAZWA_MOTYWU}/metadata.json`.
+
+Przykład pliku `metadata.json` :
+
+<pre><code data-language="php">{
+	"author": "Bludit",
+	"email": "",
+	"website": "https://github.com/dignajar/bludit-themes",
+	"version": "1.0",
+	"releaseDate": "2016-01-15",
+	"license": "MIT",
+	"requires": "Bludit v1.0",
+	"notes": ""
+}
+</code></pre>
+
+Nazwa i opis motywu znajdują się w pliku `/bl-themes/{NAZWA_MOTYWU}/languages/en_US.json`.
+
+Przykład pliku `en_US.json` :
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Pure",
+		"description": "Simple and clean, based on the framework Pure.css."
+	}
+}
+</code></pre>
+
+<div markdown="1" class="note">
+<div class="note-title">UWAGA</div>
+Domyślny język Bludit to język angielski (amerykański). Jego nazwa lokalizacji to **en_US** zaś pliku - **en_US.json**.
+</div>

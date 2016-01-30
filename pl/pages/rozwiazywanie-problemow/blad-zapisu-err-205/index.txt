@@ -1,0 +1,18 @@
+Title: Błąd zapisu (ERR_205)
+Content: Jeśli otrzymujesz wspomniany błąd podczas instalacji Bludit, koniecznie musisz ustawić odpowiednie uprawnienia do katalogu `content`.
+
+### Treść
+1. [Zmiana zezwoleń z wykorzystaniem klienta FTP](#ftp)
+1. [Zezwolenia na systemach GNU/Linux](#linux)
+
+---
+
+## Zmiana zezwoleń z wykorzystaniem klienta FTP <a id="ftp"></a>
+
+Jeśli masz dostęp do serwera poprzez protokół FTP, możesz ustawić zezwolenia klikając prawym przyciskiem myszy na katalog `content`. Na początku ustaw wartość 755, jeśli to nie pomoże, spróbuj wartości 777.
+
+---
+
+## Zezwolenia na systemach GNU/Linux <a id="linux"></a>
+
+Sprawdź dokument [instalacja na GNU/Linux](../getting-started/instalacja-na-gnu-linux#default).

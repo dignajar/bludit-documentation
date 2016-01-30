@@ -1,0 +1,37 @@
+Title: Ngnix
+Content: Przykładowa konfiguracja do uruchomienia Bludit na serwerze Nginx.
+
+> NGINX to darmowy, otwarty, wysoce wydajny serwer WWW oraz proxy stworzony dla HTTP i IMAP/POP3. NGINX ceniony jest przede wszystkim za stabilność i możliwości oraz prostą konfigurację. https://www.nginx.com/resources/wiki/
+
+Aby skonfigurować maszynę wirtualną dla Bludit, musisz wygenerować i umieścić plik w lokalizacji `/etc/nginx/conf.d/bludit.conf` . Uwaga! Katalog może się różnić w niektórych przypadkach. Dla przykładu, w Ubuntu jego lokalizacja to `/etc/nginx/sites-enabled/bludit.conf`.
+
+W tym wypadku pliki Bludit przechowywane są w ścieżce `/var/www/html/bludit`. Możesz ją zmienić w pliku konfiguracyjnym.
+
+```
+server {
+	listen 80;
+	server_name bludit.local;
+
+	charset utf-8;
+	root /var/www/html/bludit;
+
+	index index.php;
+	try_files $uri $uri/ /index.php$args;
+
+	access_log /var/log/nginx/bludit_access.log;
+	error_log /var/log/nginx/bludit_error.log;
+
+	location ~ \.php$ {
+		try_files $uri =404;
+		fastcgi_pass 127.0.0.1:9000;
+		fastcgi_index index.php;
+		include /etc/nginx/fastcgi_params;
+		fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+	}
+
+	# if file does not exist, rewrite to index.php
+	if (!-f $request_filename) {
+		rewrite ^/(.*) /index.php break;
+	}
+}
+```

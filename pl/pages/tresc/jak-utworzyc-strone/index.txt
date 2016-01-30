@@ -1,0 +1,49 @@
+Title: Jak utworzyć stronę
+Content: Istnieją dwa sposoby na dodanie wpisu. Sposób prosty przebiega z wykorzystaniem graficznego interfejsu użytkownika, zaś zaawansowany wykorzystuje tryb CLI (Command-line Interface). Jeśli zdecydujesz się na ten drugi, koniecznie sprawdź stronę [wyrażenia dla wpisów i stron](../content/wyrazenia-dla-wpisow-i-stron).
+
+### Treść
+1. [Tryb prosty](#easy-mode)
+1. [Tryb zaawansowany zwany CLI](#advanced-mode)
+
+---
+
+## Tryb prosty <a id="easy-mode"></a>
+Zaloguj się do kokpitu a następnie kliknij w odnośnik **Nowa strona** znajdujący w nawigacji strony.
+
+Uzupełnij formularz a następnie wciśnij przycisk **Zapisz**.
+
+Do pomocy w formatowaniu treści wykorzystaj znaczniki HTML i kod Markdown. Tutaj znajdziesz przykłady wykorzystania [Markdownu](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+![Bludit New Post](bludit-new-page.png)
+
+---
+
+## <a id="advanced-mode"></a> Tryb zaawansowany zwany CLI
+
+Na początku należy aktywować `tryb CLI`. W tej sprawie udajemy się do **Kokpit->Ustawienia->Zaawansowane->Tryb Cli->Włączony**. Od teraz możesz już tworzyć, edytować i usuwać wpisy z poziomu linii poleceń bez żadnych ingerencji w kokpicie.
+
+Przykład tworzenia nowej strony:
+- Tworzymy nowy folder w katalogu `/content/pages/`,
+- nazwa katalogu równocześnie będzie adresem url wpisu,
+- wewnątrz katalogu utwórz plik o nazwie `index.txt`,
+- dokonaj edycji pliku `index.txt`,
+- dodaj dwa wyrażenia: `Title:` oraz `Content:`.
+
+### Przykład
+- Tworzę folder test w lokalizacji `/content/pages/test`,
+- tworzę nowy plik `index.txt` w `/content/pages/test/`,
+- edytuję plik `index.txt`,
+- umieszczam następującą zawartość:
+
+```
+Title: Mix Markdown and HTML code
+
+Content:
+<h1>Hello Lorem</h1>
+
+## Subtitle for Lorem
+
+It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+**Bold text in Markdown format**
+```

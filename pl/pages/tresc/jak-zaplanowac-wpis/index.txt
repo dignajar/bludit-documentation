@@ -1,0 +1,11 @@
+Title: Jak zaplanować wpis
+Content: Możesz przygotować i zaplanować wpis na swojej stronie, który zostanie opublikowany o wskazanym czasie.
+
+Aby zaplanować wpis, należy:
+1. Utwórz nowy wpis, **Kokpit->Nowy wpis**
+2. Kliknij na **Zaawansowane**.
+3. Wybierz datę i czas publikacji wpisu.
+4. Uzupełnij wpis o tytuł i treść.
+4. Kliknij w przycisk **Zapisz**.
+
+![Schedule a post on Bludit](bludit-schedule-post.png)

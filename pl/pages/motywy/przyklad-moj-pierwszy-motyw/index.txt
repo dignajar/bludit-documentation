@@ -1,0 +1,57 @@
+Title: Przykład: Mój pierwszy motyw
+Content: Na początku tworzymy strukturę katalogów. Umówmy się, że mój motyw nazywać się będzie `Coffee`.
+
+- Tworzę nowy folder w katalogu `/bl-themes/`, na wzór `/bl-themes/coffee/`,
+- tworzę nowy folder `languages`, w lokalizacji `/bl-themes/coffee/`,
+- tworzę plik `index.php` wewnątrz `/bl-themes/coffee/` zawierający:
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bludit</title>
+</head>
+<body>
+	<?php foreach ($posts as $Post): ?>
+
+	<h1><?php echo $Post->title() ?></h1>
+	<div><?php echo $Post->content() ?></div>
+
+	<hr>
+
+	<?php endforeach; ?>
+</body>
+</html>
+</code></pre>
+
+Tworzę plik z informacjami, który musi znajdować się wewnątrz motywu, z zawartością:
+
+<pre><code data-language="php">{
+	"author": "Bludit",
+	"email": "",
+	"website": "",
+	"version": "1.0",
+	"releaseDate": "2016-01-15",
+	"license": "MIT",
+	"requires": "Bludit v1.0",
+	"notes": ""
+}
+</code></pre>
+
+Następnie tworzę nowy plik z nazwą i opisem mojego motywu; o nazwie `en_US.json` wewnątrz `/bl-themes/coffee/languages/`. Zawierać będzie następujące dane:
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Coffee",
+		"description": "This is my first theme for Bludit."
+	}
+}
+</code></pre>
+
+Jeśli już wykonałeś powyższe czynności powinieneś dostrzec, że w **Kokpit->Ustawienia->Motywy** zobaczysz swój motyw.
+
+<div markdown="1" class="note">
+<div class="note-title">POBIERANIE</div>
+Możesz pobrać motyw Coffe [stąd](https://github.com/dignajar/bludit-themes/tree/master/example-coffee).
+</div>

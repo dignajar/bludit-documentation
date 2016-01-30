@@ -1,0 +1,10 @@
+Title: Wymagania
+Content: Wszystko czego potrzebujesz to serwer ze wsparciem PHP. Konkrety:
+
+- PHP w wersji v5.3 lub wyższej,
+- moduł [mbstring](http://php.net/manual/en/book.mbstring.php) dla pełnego wsparcia UTF-8.
+- Wspierane serwery:
+  * Z dostępnym środowiskiem PHP,
+  * Apache z modułem [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html),
+  * Lighttpd z modułem [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite),
+  * Ngnix z modułem [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html).
