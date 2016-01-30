@@ -1,0 +1,7 @@
+Title: Add a read more link
+Position: 5
+Content:
+
+To break the content in a post or page you only need to add the tag `<!-- pagebreak -->`
+
+![Bludit read more](bludit-read-more.png)
