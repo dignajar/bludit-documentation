@@ -1,0 +1,15 @@
+Title: Jak wstawić obrazek
+Content: Przejdź do edycji nowego wpisu lub strony a następnie wybierz opcję **Obrazki** dostępną w menu po prawej stronie.
+
+Kliknij w **Więcej obrazków**, przeciągnij i upuść obrazek na aktywnym oknie lub po prostu w nie kliknij, aby wskazać wybrany obrazek.
+
+![Drag and drop image](bludit-insert-image-drag-and-drop.png)
+
+Kiedy wybierzesz już obrazek rozpocznie się jego wysyłanie. **Podwójne kliknięcie** myszy automatycznie umieści go w treści.
+
+![Drag and drop image](bludit-insert-image.png)
+
+<div markdown="1" class="note">
+<div class="note-title">Wskazówka</div>
+Znaczniki obrazków mogą się od siebie różnić w zależności od używanego edytora tekstu.
+</div>

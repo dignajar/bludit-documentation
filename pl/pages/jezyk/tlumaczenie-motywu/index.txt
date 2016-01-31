@@ -1,0 +1,42 @@
+Title: Tłumaczenie motywu
+Content: Każdy motyw zawiera folder o nazwie `languages`, który przetrzymuje pliki językowe dla wybranych lokalizacji.
+
+```
+/bl-themes/{NAZWA_MOTYWU}/languages/
+	de_DE.json
+	en_US.json
+	es_AR.json
+	fr_FR.json
+	...
+```
+
+<div markdown="1" class="note">
+<div class="note-title">Uwaga</div>
+Wszystkie pliki **JSON** zapisywane są z wykorzystaniem kodowania **UTF-8**.
+</div>
+
+---
+
+To jest przykład angielskiego (amerykańskiego) tłumaczenia zawierający się w pliku `en_US.json`. Każda linia w en_US.json posiada parę – klucz-wartość – występującą po lewej (klucz) i prawej (wartość) stronie.
+
+<pre><code data-language="JSON">{
+	"theme-data":
+	{
+		"name": "Pure",
+		"description": "Simple and clean, based on the framework Pure.css."
+	}
+}
+</code></pre>
+
+Jak widać, pole nazwane `theme-data` zawiera nazwę i opis tego motywu.
+
+To jest przykład lokalizacji hiszpańskiej (Argentyna). Jej skrót to `es_AR` zaś nazwa pliku `es_AR.json`.
+
+<pre><code data-language="JSON">{
+	"theme-data":
+	{
+		"name": "Pure",
+		"description": "Simple y minimalista, basado en el framework Pure.css."
+	}
+}
+</code></pre>

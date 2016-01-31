@@ -1,0 +1,17 @@
+Title: Przebieg instalacji
+Content: 1. Sięgnij po najnowszą wersję Bludit http://www.bludit.com/bludit_latest.zip
+2. Rozpakuj archiwum .zip do oddzielnego katalogu na przykład `bludit`.
+3. Prześlij katalog `bludit` na swój serwer/hosting.
+4. Odwiedź swoją witrynę internetową `http://domena.pl/bludit`
+5. Podążaj za instrukcjami kreatora instalacji.
+
+<div markdown="1" class="note">
+<div class="note-title">ARCYWAŻNE!</div>
+Po zakończonej instalacji zaleca się zmianę strefy czasowej. Aby tego dokonać, przejdź kolejno do  *Kokpit->Ustawienia->Język i czas->Strefa czasowa*.
+</div>
+
+
+<div markdown="1" class="note">
+<div class="note-title">WSKAZÓWKA</div>
+Do przesłania plików możesz użyć dedykowanego klienta FTP. W tym celu odwiedź stronę [FTP](../misc/ftp).
+</div>

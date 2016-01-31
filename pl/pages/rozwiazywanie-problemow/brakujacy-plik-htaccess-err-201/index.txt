@@ -1,0 +1,40 @@
+Title: Brakujący plik .htaccess (ERR_201)
+Content: Możliwe, że zapomniałeś przesłać pliku .htaccess , który powinien znajdować się w głównym katalogu strony.
+
+<div markdown="1" class="note">
+<div class="note-title">UWAGA</div>
+Nazwa omawianego pliku to .htaccess i zaczyna się od kropki, ponieważ jest to ukryty system plików typu UNIX.
+</div>
+
+### Treść
+1. [Plik .htaccess dla serwerów Apache](#apache)
+2. [Jak utworzyć plik .htaccess w systemie Windows](#windows)
+
+---
+
+##Plik .htaccess dla serwerów Apache <a id="apache"></a>
+Jeśli używasz serwera Apache, koniecznie potrzebujesz pliku ```.htaccess``` w głównym katalogu Twojej strony oraz włączony moduł rewrite module](http://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+
+<pre><code data-language="bash"># Apache configuration
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+
+# Enable rewrite rules
+RewriteEngine on
+
+# Deny direct access to .txt files
+RewriteRule ^bl-content/(.*)\.txt$ - [R=404,L]
+
+# All URL process by index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*) index.php [PT,L]
+
+</IfModule></code></pre>
+
+---
+
+## <a id="windows"></a> Jak utworzyć plik .htaccess w systemie Windows
+Kiedy zmienimy nazwę pliku w systemach Windows na .htaccess otrzymamy komunikat podobny do tego - ```Musisz wprowadzić nazwę pliku```. Aby rozwiązać ten problem, skorzystaj z programu **Notatnika** i z nawigacji wybierz kolejno **Plik->Zapisz jako->Wpisz .htaccess** i zaznacz ```Wszystkie pliki``` jako typ zapisywanego pliku.
+
+Link (w języku angielskim): http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-with-a-dot-prefix-in-windows-for-example-htacce

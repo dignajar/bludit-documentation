@@ -1,0 +1,15 @@
+Title: Zaczynamy
+Content: Bludit to darmowa i otwarta aplikacja internetowa umożliwiająca założenie własnego bloga zaledwie w kilka sekund. Bludit używa prostej bazy danych (pliki tekstowe w formacie JSON) w celu przechowywania wpisów i stron. Dodatkowa instalacja lub konfiguracja bazy danych nie jest wymagana.
+
+### Śledź Bludit
+Skorzystaj z poniższych odnośników by skontaktować się z twórcami i użytkownikami projektu.
+
+* [Twitter](https://twitter.com/bludit) @bludit
+* [Facebook](https://www.facebook.com/bluditcms)
+* [Google+](https://plus.google.com/+Bluditcms)
+* [Freenode](https://webchat.freenode.net) IRC kanał #Bludit
+* [Gitter](https://gitter.im/dignajar/bludit) async czat 
+* [Forum wsparcia](http://forum.bludit.com)
+
+### Licencja
+Bludit to oprogramowanie otwarte, rozpowszechniane na [licencji MIT](https://tldrlegal.com/license/mit-license).

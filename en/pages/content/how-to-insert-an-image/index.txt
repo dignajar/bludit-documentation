@@ -4,11 +4,11 @@ Content:
 
 Create a new post or page, then open the tab **Images** at the right menu.
 
-Drag and drop the image to the gray box or click on it to select an image.
+Click on the button **More images**, drag and drop the image to the gray box or click on it to select an image.
 
 ![Drag and drop image](bludit-insert-image-drag-and-drop.png)
 
-Once you have uploaded the image, select it and click on the button **Insert image**.
+Once you have uploaded the image, **double click** on the image to insert it.
 
 ![Drag and drop image](bludit-insert-image.png)
 

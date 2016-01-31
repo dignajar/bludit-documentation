@@ -1,0 +1,10 @@
+Title: File Transfer Protocol (FTP)
+Content: File Transfer Protocol (FTP) to protokół używany do przesyłania i pobierania plików między serwerem a Twoim urządzeniem. Połączenie może zostać zainicjowane dzięki specjalnemu klientowi FTP.
+
+## Klient FTP
+
+[FileZilla](https://filezilla-project.org), darmowy klient FTP dla systemów operacyjnych typu Windows, Mac OS, Linux i innych.
+
+[WINSCP](https://winscp.net), darmowy klient FTP.
+
+[Cyberduck](https://cyberduck.io), darmowy klient FTP stworzony na potrzeby systemów operacyjnych Mac OS, a od niedawna także dla Windows.

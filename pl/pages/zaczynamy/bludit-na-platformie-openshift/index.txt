@@ -1,0 +1,38 @@
+Title: Bludit na platformie OpenShift
+Content: OpenShift to (podobno) dobra platforma do obsługi Bludit. Jest prosta i darmowa.
+
+> OpenShift to platforma nowej generacji działająca w chmurze, która ułatwia opracowywanie i wdrażanie aplikacji. Publicznie bądź prywatnie. https://www.openshift.com/products/architecture .
+
+## Zakładanie konta
+
+Udaj się do  https://www.openshift.com i załóż konto.
+
+Prowadzenie konta jest całkowicie darmowe.
+
+## Zaloguj się do OpenShift
+
+W kokpicie, kliknij na przycisk **Create your first application now**.
+
+![Kokpit OpenShift](bludit-openshift-dashboard.png)
+
+## Wyszukaj wyrażenie PHP
+
+Wpisz "PHP" w polu "Search by keyword or tag".
+
+![OpenShift PHP](bludit-openshift-search-php.png)
+
+## Skonfiguruj aplikację
+
+Uzupełnij pola:
+- Public URL: ustaw adres URL bloga.
+- Source code: wklej odnośnik **https://github.com/dignajar/bludit-openshift**
+
+Kliknij w przycisk **Create Application**.
+
+![OpenShift Configure Application](bludit-openshift-configure-application.png)
+
+## Zakończ instalację
+
+Odwiedź swój publiczny adres URL w celu zakończenia instalacji.
+
+![OpenShift finish installation](bludit-openshift-finish-installation.png)

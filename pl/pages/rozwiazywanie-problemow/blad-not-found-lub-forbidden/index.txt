@@ -1,0 +1,4 @@
+Title: Błąd not found lub forbidden
+Content: Jeśli problem występuje podczas, na przykład, próby otwierania wpisu lub strony na Twojej witrynie sprawdź, czy moduł mod_rewrite został włączony. Jeśli nie masz takiej możliwości, skontaktuj się z biurem obsługi klienta Twojego hostingu.
+
+![Bludit Not found error](bludit-notfound.png)
