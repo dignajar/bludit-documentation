@@ -2,6 +2,6 @@ Title: Weiterlesen-Link einfügen
 Position: 5
 Content:
 
-Um vom Inhalt eines Beitrags oder einer Seite nur einen Ausschnitt zu zeigen, kann das Code-Schnipsel `<!-- pagebreak -->` eingefügt werden.
+Um vom Inhalt eines Beitrags nur einen Ausschnitt zu zeigen, kann das Code-Schnipsel `<!-- pagebreak -->` eingefügt werden.
 
 ![Bludit read more](bludit-read-more.png)
