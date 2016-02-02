@@ -19,6 +19,11 @@ The content support HTML and Markdown code, here is a [Markdown cheatsheet](http
 
 ![Bludit New Post](bludit-new-post.png)
 
+<div markdown="1" class="note">
+<div class="note-title">VIDEO TUTORIAL</div>
+https://www.youtube.com/watch?v=jzFhPssZ-Lg
+</div>
+
 ---
 
 ## <a id="advanced-mode"></a> Advanced mode or Cli mode
