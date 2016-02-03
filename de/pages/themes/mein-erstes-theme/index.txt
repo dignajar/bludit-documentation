@@ -47,12 +47,7 @@ Erstelle nun eine Datei mit dem Namen und der Beschreibung des Themes. Sie hat d
 	"theme-data":
 	{
 		"name": "Coffee",
-		"description": "This is my first theme for Bludit.",
-		"author": "Diego",
-		"email": "",
-		"website": "http://www.bludit.com",
-		"version": "1.0",
-		"releaseDate": "2015-10-23"
+		"description": "This is my first theme for Bludit."
 	}
 }
 </code></pre>
