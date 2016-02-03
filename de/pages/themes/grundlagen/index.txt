@@ -4,7 +4,7 @@ Content:
 
 Für Themes kannst du ein beliebiges Framework verwenden ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/) usw.), JavaScript oder was auch immer du möchtest.
 
-Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene Struktur von Unterverzeichnissen, die jedoch nur verwendet werden muss, wenn "Bludit Helpers" verwendet werden.
+Alle Themes befinden sich im Verzeichnis `bl-themes`. Sie haben eine vorgegebene Struktur von Unterverzeichnissen, die jedoch nur verwendet werden muss, wenn "Bludit Helpers" verwendet werden.
 
 ### Inhalt
 1. [Verzeichnisstruktur für Themes](#simple-structure-for-themes)
@@ -15,7 +15,7 @@ Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene St
 ## <a id="simple-structure-for-themes"></a> Verzeichnisstruktur für Themes
 
 ```
-/themes/THEME_NAME/
+/bl-themes/THEME_NAME/
 	css/
 	img/
 	js/
@@ -24,36 +24,57 @@ Alle Themes befinden sich im Verzeichnis `themes`. Sie haben eine vorgegebene St
 	index.php
 ```
 
-| Beschreibung 		      | Relativer Pfad               | PHP-Konstante absoluter Pfad | PHP-Konstante relativer Pfad|
-| ----------------------|------------------------------|------------------------------|-----------------------------|
-| Stammverzeichnis      | /themes/THEME_NAME/          | HTML_PATH_THEME              | PATH_THEME                  |
-| CSS-Dateien           | /themes/THEME_NAME/css/      | HTML_PATH_THEME_CSS          | PATH_THEME_CSS              |
-| Bild-Dateien          | /themes/THEME_NAME/img/      | HTML_PATH_THEME_IMG          | PATH_THEME_IMG              |
-| Javascript-Dateien    | /themes/THEME_NAME/js/       | HTML_PATH_THEME_JS           | PATH_THEME_JS               |
-| Sprach-Dateien        | /themes/THEME_NAME/languages/|                              | PATH_THEME_LANG             |
-| PHP-Dateien           | /themes/THEME_NAME/php/      |                              | PATH_THEME_PHP              |
+| Beschreibung 	     | Relativer Pfad                     | PHP-Konstante absoluter Pfad | PHP-Konstante relativer Pfad |
+| -------------------|------------------------------------|------------------------------|------------------------------|
+| Stammverzeichnis   | /bl-themes/(THEME_NAME)/           | HTML_PATH_THEME              | PATH_THEME                   |
+| CSS-Dateien        | /bl-themes/(THEME_NAME)/css/       | HTML_PATH_THEME_CSS          | PATH_THEME_CSS               |
+| Bild-Dateien       | /bl-themes/(THEME_NAME)/img/       | HTML_PATH_THEME_IMG          | PATH_THEME_IMG               |
+| Javascript-Dateien | /bl-themes/(THEME_NAME)/js/        | HTML_PATH_THEME_JS           | PATH_THEME_JS                |
+| Sprach-Dateien     | /bl-themes/(THEME_NAME)/languages/ |                              | PATH_THEME_LANG              |
+| PHP-Dateien        | /bl-themes/(THEME_NAME)/php/       |                              | PATH_THEME_PHP               |
+| Bilder	     | /bl-content/uploads/               | HTML_PATH_UPLOADS            | PATH_UPLOADS                 |
+| Profil-Bilder      | /bl-content/uploads/profiles/      | HTML_PATH_UPLOADS_PROFILES   | PATH_UPLOADS_PROFILES        |
+| Vorschau-Bilder    | /bl-content/uploads/thumbnails/    | HTML_PATH_UPLOADS_THUMBNAILS | PATH_THUMBNAILS              |
 
-
-*Anmerkung: Mit dieser Struktur können "Bludit Helpers" verwendet werden.*
+<div markdown="1" class="note">
+<div class="note-title">HINWEIS</div>
+Mit dieser Struktur können "Bludit Helpers" verwendet werden.
+</div>
 
 ---
 
 ## Informationen zum Theme <a id="information"></a>
 
-Zu jedem Theme gehört eine Datei mit Informationen, die unter `/themes/THEME_NAME/languages/en_US.json` abgelegt ist. Die Standardsprache ist Englisch und die Lokalisierung `en_US`, es wird also die Datei `en_US.json` verwendet. Jede Zeile ist ein Paar bestehend aus einem Schlüssel (links) und einem dazugehörigen Wert (rechts).
+Zu jedem Theme gehört eine Datei mit Informationen mit dem Namen `metadata.json`. Abgelegt wird sie unter `/bl-themes/{THEME_NAME}/metadata.json`.
 
-Das ist beispielsweise ein gültiger JSON-Aufbau:
+Die folgende JSON-Datei ist ein Beispiel für eine Datei `metadata.json`:
+
+<pre><code data-language="php">{
+	"author": "Bludit",
+	"email": "",
+	"website": "https://github.com/dignajar/bludit-themes",
+	"version": "1.0",
+	"releaseDate": "2016-01-15",
+	"license": "MIT",
+	"requires": "Bludit v1.0",
+	"notes": ""
+}
+</code></pre>
+
+Der Name des Themes und seine Beschreibung enhält die Sprachdatei des Themes, die unter `/bl-themes/{THEME_NAME}/languages/en_US.json` ist.
+
+Die folgende JSON-Datei ist ein Beispiel für die Datei `en_US.json`:
 
 <pre><code data-language="php">{
 	"theme-data":
 	{
 		"name": "Pure",
-		"description": "Pure is based on the framework Pure.css. Website: http://purecss.io",
-		"author": "Diego",
-		"email": "",
-		"website": "http://www.bludit.com",
-		"version": "1.0",
-		"releaseDate": "2015-10-23"
+		"description": "Pure is based on the framework Pure.css."
 	}
 }
 </code></pre>
+
+<div markdown="1" class="note">
+<div class="note-title">Hinweis</div>
+Die Standardsprache ist Englisch (US), Bezeichnung für die Lokalisierung **en_US**, der Dateiname **en_US.json**. 
+</div>
