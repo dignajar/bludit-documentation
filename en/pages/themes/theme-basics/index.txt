@@ -17,7 +17,7 @@ All themes resides into `themes` directory, and they have a default structure of
 This is a simple folder structure for themes.
 
 ```
-/themes/THEME_NAME/
+/bl-themes/THEME_NAME/
 	css/
 	img/
 	js/
@@ -51,7 +51,7 @@ With this structure you are allowed to use Bludit's helpers.
 
 ## Information about the theme <a id="information"></a>
 
-Each theme have an information file, called `metadata.json`, located in `/bl-themes/{THEME_NAME}/metadata.json`.
+Each theme has an information file, called `metadata.json`, located in `/bl-themes/{THEME_NAME}/metadata.json`.
 
 The next JSON is an example of the `metadata.json` file.
 

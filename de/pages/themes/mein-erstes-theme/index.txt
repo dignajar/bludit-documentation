@@ -4,9 +4,9 @@ Content:
 
 Lege zuerst die Verzeichnis-Struktur an (bei diesem Beispiel heisst das Theme `Coffee`).
 
-- Lege das Verzeichnis für das Theme im  Verzeichnis `/themes/` an, so dass du ein Verzeichnis `/themes/coffee/` hast.
-- Lege das Verzeichnis `languages` im Verzeichnis `/themes/coffee/` an.
-- Lege eine Datei `index.php` im Verzeichnis `/themes/coffee/` an mit dem folgenden HTML- und PHP-Code:
+- Lege das Verzeichnis für das Theme im  Verzeichnis `/bl-themes/` an, so dass du ein Verzeichnis `/bl-themes/coffee/` hast.
+- Lege das Verzeichnis `languages` im Verzeichnis `/bl-themes/coffee/` an.
+- Lege eine Datei `index.php` im Verzeichnis `/bl-themes/coffee/` an mit dem folgenden HTML- und PHP-Code:
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -27,20 +27,29 @@ Lege zuerst die Verzeichnis-Struktur an (bei diesem Beispiel heisst das Theme `C
 </html>
 </code></pre>
 
-Lege eine Datei `en_US.json` im Verzeichnis `/themes/coffee/languages/` mit den Informationen zum Theme an. In unserem Beispiel mit dem JSON-Code:
+Erstelle eine Datei mit den Informationen zum Theme. Sie hat den Namen `metadata.json`, wird im Verzeichnis `/bl-themes/coffee/ abgelegt und enthält folgenden JSON-Code:
+
+<pre><code data-language="php">{
+	"author": "Bludit",
+	"email": "",
+	"website": "",
+	"version": "1.0",
+	"releaseDate": "2016-01-15",
+	"license": "MIT",
+	"requires": "Bludit v1.0",
+	"notes": ""
+}
+</code></pre>
+
+Erstelle nun eine Datei mit dem Namen und der Beschreibung des Themes. Sie hat den Namen `en_US.json`, wird im Verzeichnis `/bl-themes/coffee/languages/` abgelegt und enthält den JSON-Code:
 
 <pre><code data-language="php">{
 	"theme-data":
 	{
 		"name": "Coffee",
-		"description": "This is my first theme for Bludit.",
-		"author": "Diego",
-		"email": "",
-		"website": "http://www.bludit.com",
-		"version": "1.0",
-		"releaseDate": "2015-10-23"
+		"description": "This is my first theme for Bludit."
 	}
 }
 </code></pre>
 
-Das Theme wird dir nun im Backend unter "Themes" angezeigt. Dieses Theme zeigt dir nur die Beiträge auf der ersten Seite.
+Das Theme wird dir nun im Admin-Bereich unter "Einstellungen" > "Themes" angezeigt. Dieses Theme zeigt nur die Beiträge auf der ersten Seite.
