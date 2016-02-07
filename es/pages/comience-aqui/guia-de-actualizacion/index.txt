@@ -1,0 +1,20 @@
+Title: Guía de actualización
+Position: 4
+Content:
+
+1. Realice un backup de todo el contenido, tanto archivos como directorios.
+2. Descargue la ultima versión de Bludit desde http://www.bludit.com/bludit_latest.zip
+3. Descomprima el archivo zip.
+4. Reemplace todos los archivos por los nuevos.
+5. Ingrese a su panel de control.
+6. Listo
+
+<div markdown="1" class="note">
+<div class="note-title">IMPORTANT!</div>
+Luego de la actualización es recomendado verificar sus configuraciones.
+</div>
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+Para subir los archivos a su servidor puede utilizar un cliente de [FTP](../misc/ftp).
+</div>
