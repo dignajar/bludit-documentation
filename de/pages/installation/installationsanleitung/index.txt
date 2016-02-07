@@ -15,5 +15,5 @@ Es empfiehlt sich, nach der Installation die entsprechende Zeitzone einzustellen
 
 <div markdown="1" class="note">
 <div class="note-title">Hinweis</div>
-Um die Dateien auf den Server zu laden, kannst du ein FTP-Client verwenden. Vgl. dazu [FTP](../verschiedenes/ftp).
+Um die Dateien auf den Server zu laden, kannst du einen FTP-Client verwenden. Vgl. dazu [FTP](../verschiedenes/ftp).
 </div>
