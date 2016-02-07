@@ -1,4 +1,4 @@
-Title: Getting started
+Title: Introduction
 Position: 1
 Content:
 
