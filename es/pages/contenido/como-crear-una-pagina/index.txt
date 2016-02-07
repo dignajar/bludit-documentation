@@ -2,7 +2,7 @@ Title: Como crear una pagina
 Position: 2
 Content:
 
-Hay dos formas para crear una pagina. La primera que es la mas fácil, es utilizando la interfaz web; La segunda forma es editando el sistema de archivos.
+Hay dos formas para crear una pagina en Bludit. La primera que es la mas fácil, es utilizando la interfaz web; La segunda forma es editando el sistema de archivos.
 
 ### Indice
 1. [Modo fácil](#facil)
@@ -36,7 +36,7 @@ Para utilizar este método es necesario activar el modo `Cli mode` y acceso a lo
 
 <div markdown="1" class="note">
 <div class="note-title">NOTA</div>
-El nombre de las variables `Title:` y `Content:` tienen que estar en ingles, seguida de dos puntos.
+El nombre de las variables Title: y Content: tienen que estar en ingles, seguida de dos puntos.
 </div>
 
 ### Ejemplo
