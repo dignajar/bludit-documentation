@@ -1,5 +1,5 @@
 Title: Voraussetzungen
-Position: 1
+Position: 2
 Content:
 
 Um Bludit verwenden zu können, braucht es einen Webserver, auf dem PHP läuft:

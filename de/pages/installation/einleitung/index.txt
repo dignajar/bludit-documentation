@@ -1,0 +1,21 @@
+Title: Einleitung
+Position: 1
+Content:
+
+Bludit ist eine einfache Web-Anwendung, mit der schnell ein eigener **Blog** oder eine eigene **Website** eingerichtet werden kann. Bludit ist **kostenlos und Open Source**. Es verwendet Dateien (Textdateien im JSON-Format), um Beiträge und Seiten zu speichern, somit muss keine Datenbank installiert und konfiguriert werden.
+
+### Kontakt
+Um mit den Entwicklern und anderen Benutzern von Bludit Kontakt aufzunehmen, bestehen verschiedene Möglichkeiten:
+
+* [Twitter](https://twitter.com/bludit) **@bludit**
+* [Facebook](https://www.facebook.com/bluditcms)
+* [Google+](https://plus.google.com/+Bluditcms)
+* [Freenode](https://webchat.freenode.net) IRC channel **#Bludit**
+* [Gitter](https://gitter.im/dignajar/bludit) assynchroner Chat
+* [Support-Forum](https://forum.bludit.com)
+
+### Lizenz
+Bludit ist Open Source unter der [MIT-Lizenz](https://tldrlegal.com/license/mit-license).
+
+### Mitarbeit
+Diese Dokumentation kann bearbeitet werden bei GitHub unter [Bludit documentation](https://github.com/dignajar/bludit-documentation).
