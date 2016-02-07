@@ -1,5 +1,5 @@
 Title: Instalación en GNU/Linux
-Position: 3
+Position: 5
 Content:
 
 Todos los ejemplos son instalación out-of-the-box sobre Apache Web Server. Si desea puede enviar los pasos para instalar Bludit en otras distribuciones, puede subir la información en el [foro](http://forum.bludit.com) o hacer un pull request en [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).

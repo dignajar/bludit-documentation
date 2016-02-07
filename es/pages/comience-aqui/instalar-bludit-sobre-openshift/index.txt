@@ -1,5 +1,5 @@
 Title: Instalar Bludit sobre Openshift
-Position: 4
+Position: 6
 Content:
 
 Openshift es una plataforma excelente para correr Bludit, es fácil y gratis.

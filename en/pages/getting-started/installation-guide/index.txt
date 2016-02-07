@@ -1,5 +1,5 @@
 Title: Installation guide
-Position: 2
+Position: 3
 Content:
 
 1. Download the latest version from http://www.bludit.com/bludit_latest.zip

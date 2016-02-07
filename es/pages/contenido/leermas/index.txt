@@ -1,0 +1,12 @@
+Title: Como agregar un enlace "leer mas"
+Position: 5
+Content:
+
+Para partir el contenido de una entrada o una pagina solo tiene que agregar el tag `<!-- pagebreak -->` donde quiere cortar el contenido. En la siguiente imagen puede ver un ejemplo.
+
+![Bludit leer mas](bludit-read-more.png)
+
+<div markdown="1" class="note">
+<div class="note-title">VIDEO TUTORIAL</div>
+https://www.youtube.com/watch?v=8M7RqkwmAoY
+</div>

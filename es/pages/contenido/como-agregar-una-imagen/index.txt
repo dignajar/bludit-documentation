@@ -1,0 +1,18 @@
+Title: Como agregar una imagen
+Position: 3
+Content:
+
+Cree una nueva entrada o pagina, luego vaya a la solapa **Imágenes** sobre el menú de la derecha.
+
+Haga clic sobre el botón **Mas imágenes**, luego arrastre y suelte la imagen sobre el rectángulo gris o haga clic sobre el mismo para seleccionar una imagen.
+
+![Drag and drop image](bludit-insert-image-drag-and-drop.png)
+
+Una vez que se subió la imagen, haga doble clic en la imagen para agregarla al contenido.
+
+![Drag and drop image](bludit-insert-image.png)
+
+<div markdown="1" class="note">
+<div class="note-title">NOTa</div>
+El código insertado puede variar dependiendo del editor HTML.
+</div>
