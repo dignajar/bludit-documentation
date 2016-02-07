@@ -1,5 +1,5 @@
 Title: Variables for posts and pages
-Position: 5
+Position: 6
 Content:
 
 There are many fields/variables to make a post or a page. Each field ends with a colon.
@@ -20,7 +20,6 @@ The last field should be `Content:`.
 | Title 		| The title for the post or page |
 | Description 		| Little description, no more than 150 characters |
 | Tags 			| Tags or keywords separated by a comma |
-| AllowComments 	| True or False |
 | Status 		| Published, Draft or Scheduled |
 | Date			| Define the created time/date. Default format YYYY-MM-DD HH:mm:ss |
 | Username 		| The owner username. Needs to be a valid username. |
@@ -34,7 +33,6 @@ Title: New post test
 Status: published
 Date: 2015-11-22 22:01:00
 Username: diego
-Author: Diego Najar
 Content:
 # HTML and Markdown code support
 

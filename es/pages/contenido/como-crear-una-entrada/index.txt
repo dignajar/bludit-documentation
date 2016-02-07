@@ -1,0 +1,14 @@
+Title: Como crear una entrada
+Position: 2
+Content:
+
+Ingrese al panel de administración, sobre el menú superior, haga clic en **Nueva entrada**.
+
+Complete el formulario, ingrese un titulo para su nueva entrada y un contenido, luego haga clic en el botón **Guardar**. Eso es todo, ahora puede ingresar en su sitio y ver su nueva entrada.
+
+![Bludit Como crear una nueva entrada](bludit-new-post.png)
+
+<div markdown="1" class="note">
+<div class="note-title">NOTA</div>
+Bludit soporta contenido Markdown y HTML, aca puede encontrar una guía de código [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+</div>

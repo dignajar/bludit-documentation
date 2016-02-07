@@ -1,0 +1,10 @@
+Title: What is Cli Mode
+Position: 1
+Content:
+
+The Cli Mode (Command line Interface Mode) it's an easy way to create, edit or delete a pages or posts without the web interfaces. This is very useful if you work with the command line and you have access to the file system where you have installed Bludit.
+
+For example, I used this method on this web (Bludit documentation); I have all files on [Github](https://github.com/dignajar/bludit-documentation), then any user from Github can edit this files (make a push request) then the web server sync this repository and the content of the site is updated without any human intervention.
+
+## How to enable Cli Mode
+Log in to the admin panel, go to **Settings->Advanced->Cli mode->Enable**

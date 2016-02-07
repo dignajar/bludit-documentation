@@ -1,2 +1,2 @@
 Title: Error
-    Content: The page has not been found.
+Content: La pagina no fue encontrada.

@@ -1,0 +1,17 @@
+Title: How to insert an image with Cli Mode
+Position: 4
+Content:
+
+First you need to upload the image inside the directory `/bl-content/uploads/`
+
+Edit the file `index.txt` of the post or page, and insert the next Markdown code on the content.
+
+```
+![alt text](filename-of-the-image.jpg)
+```
+
+You can work with "folders", for example, I uploaded an image called `tux.jpg` inside the directory `/bl-content/uploads/linux/` the Markdown code to insert on the content will be:
+
+```
+![Tux](linux/tux.jpg)
+```

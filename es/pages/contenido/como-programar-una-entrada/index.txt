@@ -1,0 +1,15 @@
+Title: Como programar una entrada
+Position: 4
+Content:
+
+Usted puede crear una entrada y programar para que se publique en un horario y día especifico.
+
+Pasos para programar una entrada:
+1. Vaya al panel de administración, y haga clic en el menú superior **Nueva entrada**.
+2. Complete el titulo y contenido del post.
+3. Sobre el menú de la derecha, haga clic en **Avanzado**.
+4. Seleccione la fecha y horario de cuando quiere que la entrada sea publicada.
+5. Clic sobre el botón guardar.
+6. Listo.
+
+![Como programar una entrada en Bludit](bludit-schedule-post.png)

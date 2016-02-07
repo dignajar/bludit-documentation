@@ -2,51 +2,13 @@ Title: How to make a page
 Position: 2
 Content:
 
-There are two ways to make a page. The easy mode, with graphic user interface, and the advanced mode; if you choose the second option, check the [variables for posts and pages](../content/variables-for-posts-and-pages).
+Log in to your Admin panel and go to **New page** on the top menu.
 
-### Content
-1. [Easy mode](#easy-mode)
-1. [Advanced mode or Cli mode](#advanced-mode)
+Complete the form, write a title and a content for the new page, then click on the button **Save**.
 
----
+![Bludit new page](bludit-new-page.png)
 
-## Easy mode <a id="easy-mode"></a>
-Login to Admin panel and go to **New page** on the top menu.
-
-Complete the form and click on the button **Save**.
-
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
 The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-![Bludit New Post](bludit-new-page.png)
-
----
-
-## <a id="advanced-mode"></a> Advanced mode
-
-First enable `Cli mode` on Bludit, go to the **Admin panel->Settings->Advanced->Cli mode->Enabled**, now you can create, edit, or remove pages from from the command line, without need of the Dashboard.
-
-For example to create a new page:
-- Create a directory in `/content/pages/`
-- The directory name will be the uri of the new page.
-- Create a new file named `index.txt` inside of the new directory.
-- Edit the file `index.txt`
-- Add two variables, `Title:` and `Content:`
-
-### Example
-- Create the directory `/content/pages/test`
-- Create the file `index.txt` in `/content/pages/test/`
-- Edit the file `index.txt`
-- Add the next text
-
-```
-Title: Mix Markdown and HTML code
-
-Content:
-<h1>Hello Lorem</h1>
-
-## Subtitle for Lorem
-
-It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-**Bold text in Markdown format**
-```
+</div>

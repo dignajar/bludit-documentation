@@ -1,0 +1,26 @@
+Title: How to schedule a post with Cli Mode
+Position: 5
+Content:
+
+To schedule a post with Cli Mode is very easy, just edit the file `index.txt` of the post and add the variable `Date:`
+
+```
+Date: YYYY-MM-DD hh:mm:ss
+```
+
+For example, to schedule a post to be published on 22 Feb of 2018 at 10:00pm.
+
+```
+Title: This post is for the future
+
+Date: 2018-02-22 22:00:00
+
+Content:
+<h1>HTML Supported</h1>
+
+## Markdown supported
+
+It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+**Bold text in Markdown format**
+```
