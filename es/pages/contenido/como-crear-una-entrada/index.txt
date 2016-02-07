@@ -2,15 +2,6 @@ Title: Como crear una entrada
 Position: 2
 Content:
 
-Hay dos formas para crear una entrada en Bludit. La primera que es la mas fácil, es utilizando la interfaz web; La segunda forma es editando el sistema de archivos.
-
-### Indice
-1. [Modo fácil](#facil)
-1. [Modo avanzado o Cli mode](#avanzado-climode)
-
----
-
-## <a id="facil"></a> Modo fácil
 Ingrese al panel de administración, sobre el menú superior, haga clic en **Nueva entrada**.
 
 Complete el formulario, ingrese un titulo para su nueva entrada y un contenido, luego haga clic en el botón **Guardar**. Eso es todo, ahora puede ingresar en su sitio y ver su nueva entrada.
@@ -21,39 +12,3 @@ Complete el formulario, ingrese un titulo para su nueva entrada y un contenido, 
 <div class="note-title">NOTA</div>
 Bludit soporta contenido Markdown y HTML, aca puede encontrar una guía de código [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 </div>
-
----
-
-## <a id="avanzado-climode"></a> Modo avanzado o Cli mode
-
-Para utilizar este método es necesario activar el modo `Cli mode` y acceso a los archivos de Bludit vía SSH or FTP. Para activar el modo `Cli mode` vaya al panel de administración, sobre el menú superior **Configuración->Avanzado->Cli mode->Habilitar**.
-
-- Crear un directorio dentro de `/bl-content/posts/`
-- El nombre del directorio será el nombre de la URI que identificara a la entrada.
-- Crear un nuevo archivo llamado `index.txt` dentro del nuevo directorio.
-- Edite el contenido del archivo `index.txt`
-- Agregue las dos variables necesarias para una entrada, `Title:` y `Content:`
-
-<div markdown="1" class="note">
-<div class="note-title">NOTA</div>
-El nombre de las variables Title: y Content: tienen que estar en ingles, seguida de dos puntos.
-</div>
-
-### Ejemplo
-- Creamos el directorio `hamburgesas` dentro de `/bl-content/posts/`
-- Creamos el archivo `index.txt` dentro de `/bl-content/posts/hamburgesas/`
-- Editamos el archivo `/bl-content/posts/hamburgesas/index.txt`
-- Agregamos el siguiente texto
-
-```
-Title: Como hacer una hamburgesa
-
-Content:
-<h1>Esto es h1 en HTML</h1>
-
-## Esto es un h2 en Markdown
-
-It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-**Esto es un texto en negrita en Markdown**
-```
