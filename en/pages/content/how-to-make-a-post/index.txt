@@ -2,56 +2,13 @@ Title: How to make a post
 Position: 1
 Content:
 
-There are two ways to make a post. The easy mode, with graphic user interface, and the advanced mode or CLI mode ((Command-line Interface); if you choose the second option, check the [variables for posts and pages](../content/variables-for-posts-and-pages).
+Log in to your Admin panel and go to **New post** on the top menu.
 
-### Content
-1. [Easy mode](#easy-mode)
-1. [Advanced mode or Cli mode](#advanced-mode)
+Complete the form, write a title and the content for the new post, then click on the button **Save**.
 
----
-
-## Easy mode <a id="easy-mode"></a>
-Login to Admin panel and go to **New post** on the top menu or on the dashboard.
-
-Complete the form and click on the button **Save**.
-
-The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-![Bludit New Post](bludit-new-post.png)
+![Bludit new post](bludit-new-post.png)
 
 <div markdown="1" class="note">
-<div class="note-title">VIDEO TUTORIAL</div>
-https://www.youtube.com/watch?v=jzFhPssZ-Lg
+<div class="note-title">NOTE</div>
+The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 </div>
-
----
-
-## <a id="advanced-mode"></a> Advanced mode or Cli mode
-
-First enable `Cli mode` on Bludit, go to the **Admin panel->Settings->Advanced->Cli mode->Enabled**, now you can create, edit, or remove posts from the command line, without need of the Dashboard.
-
-For example to create a new post:
-- Create a directory in `/content/posts/`
-- The directory name will be the uri of the new post.
-- Create a new file named `index.txt` inside of the new directory.
-- Edit the file `index.txt`
-- Add two variables, `Title:` and `Content:`
-
-### Example
-- Create the directory `/content/posts/test`
-- Create the file `index.txt` in `/content/posts/test/`
-- Edit the file `index.txt`
-- Add the next text
-
-```
-Title: New post test
-
-Content:
-<h1>Hello Lorem</h1>
-
-## Subtitle for Lorem
-
-It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-**Bold text in Markdown format**
-```

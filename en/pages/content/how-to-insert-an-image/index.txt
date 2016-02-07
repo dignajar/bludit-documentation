@@ -2,7 +2,7 @@ Title: How to insert an image
 Position: 3
 Content:
 
-Create a new post or page, then open the tab **Images** at the right menu.
+Create a new post or page, then click the tab **Images** at the right menu.
 
 Click on the button **More images**, drag and drop the image to the gray box or click on it to select an image.
 
