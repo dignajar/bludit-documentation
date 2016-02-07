@@ -1,5 +1,5 @@
 Title: Installationsanleitung
-Position: 2
+Position: 3
 Content:
 
 1. Lade die neueste Version von Bludit von http://www.bludit.com/bludit_latest.zip herunter.
@@ -9,6 +9,11 @@ Content:
 5. Der Bludit Installer führt dich durch die Einrichtung der Website.
 
 <div markdown="1" class="note">
+<div class="note-title">WICHTIG</div>
+Es empfiehlt sich, nach der Installation die entsprechende Zeitzone einzustellen im Administrationsbereich unter *Einstellungen -> Sprache und Zeitzone -> Zeitzone".
+</div>
+
+<div markdown="1" class="note">
 <div class="note-title">Hinweis</div>
-Um die Dateien auf den Server zu laden, kannst du ein FTP-Client verwenden. Vgl. dazu [FTP](../verschiedenes/ftp).
+Um die Dateien auf den Server zu laden, kannst du einen FTP-Client verwenden. Vgl. dazu [FTP](../verschiedenes/ftp).
 </div>
