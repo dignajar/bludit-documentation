@@ -18,4 +18,4 @@ Contact with the developers and users on different social networks.
 Bludit is opensource software licensed under the [MIT license.](https://tldrlegal.com/license/mit-license)
 
 ### Colaborate
-You can edit this documentation on [Github: Bludit documentation](https://github.com/dignajar/bludit-documentation)
+You can edit this documentation on [Github: Bludit documentation](https://github.com/dignajar/bludit-documentation).
