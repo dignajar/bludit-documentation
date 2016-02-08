@@ -1,0 +1,10 @@
+Title: Der Kommandozeilen-Modus
+Position: 1
+Content:
+
+Der Kommandozeilen-Modus erlaubt es, Beiträge und Seiten zu erstellen, zu bearbeiten oder zu löschen ohne die Web-Oberfläche zu verwenden. Er eignet sich besonders, wenn du es gewöhnt bist, mit der Kommandozeile zu arbeiten und damit direkten Zugang zu den Dateien deiner Bludit-Installation hast.
+
+Diese Methode wird beispielsweise für diese Dokumentation verwendet. Alle Dateien befinden sich auf [Github](https://github.com/dignajar/bludit-documentation), wo jeder, der ein Konto bei Github hat, sie bearbeiten kann (indem er einen Push Request macht), danach werden die GitHub-Dateien auf den Server geladen und dadurch die Dokumentation automatisch aufdatiert.
+
+## Aktivierung des Kommandozeilen-Modus 
+Den Kommandozeilen-Modus kannst du Administrationsbereich unter **Einstellungen->Erweitert->Kommandozeilen-Modus->Aktiviert** aktivieren.
