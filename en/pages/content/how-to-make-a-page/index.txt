@@ -6,7 +6,7 @@ Log in to your Admin panel and go to **New page** on the top menu.
 
 Complete the form, write a title and a content for the new page, then click on the button **Save**.
 
-![Bludit new page](bludit-new-page.png)
+![Bludit new page](https://cdn.rawgit.com/dignajar/bludit-documentation/master/en/uploads/bludit-new-page.png)
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>
