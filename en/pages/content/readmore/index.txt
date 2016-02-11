@@ -4,7 +4,7 @@ Content:
 
 To break the content in a post or page you only need to add the tag `<!-- pagebreak -->`
 
-![Bludit read more](bludit-read-more.png)
+![Bludit read more link](https://s3.amazonaws.com/bludit-s3/bludit-documentation/en/readmore-link-en.png)
 
 <div markdown="1" class="note">
 <div class="note-title">VIDEO TUTORIAL</div>
