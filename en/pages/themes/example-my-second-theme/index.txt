@@ -186,7 +186,7 @@ Let's go to add the `meta tag title` and in the content of the site a heading wi
 ### 3.5. Content (home, posts and pages)
 Now lets works with the content of the site.
 
-To know where is the user browsing on your site will be use the object `$Url` and the method `whereAmI()`. For example, if the user is watching a post the method `$Url->whereAmI()` returns the string `post`, or if the user is watching a page the method `$Url->whereAmI()` returns the string `page`.
+To locate what page the user is browsing on the site use the object `$Url` and the method `whereAmI()`. For example, if the user is watching a post the method `$Url->whereAmI()` returns the string `post`, or if the user is watching a page the method `$Url->whereAmI()` returns the string `page`.
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
