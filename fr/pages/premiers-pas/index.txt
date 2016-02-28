@@ -1,0 +1,17 @@
+Title: Premiers pas
+Position: 1
+Content:
+Bludit est une application web très simple et moderne pour réaliser votre propre blog en quelques secondes, il est complètement gratuit et open source. Bludit utilise des fichiers (fichiers texte au format JSON) pour y stocker les articles et les pages, vous n’avez pas besoin d’installer ou de configurer une base de données.
+
+### Suivez Bludit
+Gardez le contact avec les développeurs et les utilisateurs sur les différents réseaux sociaux.
+
+* [Twitter](https://twitter.com/bludit) @bludit
+* [Facebook](https://www.facebook.com/bluditcms)
+* [Google+](https://plus.google.com/+Bluditcms)
+* [Freenode](https://webchat.freenode.net) channel IRC  #Bludit
+* [Gitter](https://gitter.im/dignajar/bludit) async chat online
+* [Support forum](http://forum.bludit.com)
+
+### License
+Bludit is opensource software licensed under the [MIT license](https://tldrlegal.com/license/mit-license)

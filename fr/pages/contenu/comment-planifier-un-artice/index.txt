@@ -1,0 +1,14 @@
+Title: Comment planifier un article
+Position: 4
+Content:
+
+Vous pouvez préparer un article et le planifier pour qu’il soit publié sur votre site à une date différé.
+
+Pour ce faire, suivez l’étape ci-dessous :
+1. Publier un article, **Panneau d'administration -> Nouvel article**.
+2. Cliquez sur l’onglet **Avancée**.
+3. Choisissez la date et l’heure a laquelle vous voulez que votre billet soit publié.
+4. Il ne vous reste plus qu’a remplir le champ titre et contenu de votre article.
+4. Cliquez sur le bouton **Sauvegarder**.
+
+![Planification d’un billet sur Bludit](bludit-schedule-post.png)

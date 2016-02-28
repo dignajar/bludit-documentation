@@ -1,0 +1,19 @@
+Title: Guide d’installation
+Position: 2
+Content:
+
+1. Téléchargez la dernière version sur http://www.bludit.com/bludit_latest.zip
+2. Extraire le fichier zip dans un répertoire comme `bludit`.
+3. Envoyer le répertoire `bludit` sur votre serveur.
+4. Visitez votre domaine `http://domain.com/bludit` depuis votre navigateur.
+5. Suivez les instructions pour configurer et installer Bludit.
+
+<div markdown="1" class="note">
+<div class="note-title">IMPORTANT!</div>
+Après l’installation, il est fortement recommandé de réglé le fuseau horaire depuis le *Panneau d’administration -> Paramètres > Langue et Fuseau horaire*.
+</div>
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+Vous pouvez utiliser un client FTP pour transférer des fichiers sur votre hébergement. Consultez cette page [FTP](../misc/ftp).
+</div>

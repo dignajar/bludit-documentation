@@ -1,0 +1,52 @@
+Title: Comment publier un article
+Position: 1
+Content:
+
+Il existe deux méthodes pour publier un billet. La méthode facile, avec une interface utilisateur graphique, et la méthode avancée ou dite mode CLI (Interface en ligne de commande). Si vous choisissez la deuxième option, cochez la case proposée. [Variables disponible pour les pages et les articles](../contenu/variables-disponible-pour-les-pages-et-articles).
+
+### Sommaire
+1. [Méthode facile](#easy-mode)
+1. [Méthode avançé ou mode Cli](#advanced-mode)
+
+---
+
+## La méthode facile <a id="easy-mode"></a>
+Connectez-vous au panneau d’administration et allez au **Nouvel article** dans le menu en haut ou sur le tableau de bord.
+
+Remplissez le formulaire et cliquez sur le bouton **Sauvegarder**.
+
+Le contenu supporte le code HTML et le format Markdown, voici une [antisèche Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) si vous n’êtes pas familiarisé avec ce format.
+
+![Bludit New Post](bludit-new-post.png)
+
+---
+
+## Méthode avançée ou mode Cli <a id="advanced-mode"></a>
+
+Premièrement, activer le `mode Cli` sur Bludit, aller au panneau d’administration, puis **Paramètres -> Avancés -> mode Cli -> Activé**, maintenant vous pouvez créer, modifier ou supprimer des messages à partir de la ligne de commande, sans avoir besoin du tableau de bord.
+
+Par exemple, pour créer un nouveau billet :
+- Créez un répertoire dans `/bl-content/posts/`
+- Le nom du répertoire sera l’URL du nouvel article.
+- Créer un nouveau fichier nommé `index.txt` à l’intérieur du nouveau répertoire.
+- Modifiez le fichier `index.txt`
+- Ajouter deux variables, `Title:` et `Content:`
+
+### Exemple
+- Créez un répertoire `/bl-content/posts/test`
+- Créer un fichier `index.txt` dans `/bl-content/posts/test/`
+- Éditez le fichier `index.txt`
+- Ajouter le texte suivant
+
+```
+Title: Nouveau billet test
+
+Content:
+<h1>Hello Lorem</h1>
+
+## Subtitle for Lorem
+
+It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+**Bold text in Markdown format**
+```

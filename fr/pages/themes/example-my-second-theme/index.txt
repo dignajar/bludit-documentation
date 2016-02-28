@@ -1,0 +1,429 @@
+Title: Example: My second theme
+Position: 3
+Content:
+
+In this example I will call the new theme `Mars`.
+
+## 1. Folder structure
+First create the folder for the theme inside the folder `/bl-themes/`, you will get `/bl-themes/mars/`.
+
+Next, create the languages, css and js folders:
+- Create the folder `languages` inside the folder `/bl-themes/mars/`
+- Create the folder `css` inside the folder `/bl-themes/mars/`
+- Create the folder `js` inside the folder `/bl-themes/mars/`
+
+```
+/bl-themes/mars/
+	css/
+	js/
+	language/
+```
+
+## 2. Theme information
+Create a file with the theme information; the file will be in the root theme folder, called `metadata.json`, with the next JSON code:
+
+<pre><code data-language="php">{
+	"author": "Bludit",
+	"email": "",
+	"website": "",
+	"version": "1.0",
+	"releaseDate": "2016-01-15",
+	"license": "MIT",
+	"requires": "Bludit v1.0",
+	"notes": ""
+}
+</code></pre>
+
+Now create another file with the name and description of the theme; create a file called `en_US.json` inside the folder `/bl-themes/mars/languages/`, with the next JSON code:
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Mars",
+		"description": "This is my second theme for Bludit."
+	}
+}
+</code></pre>
+
+## 3. index.php
+Lets work on the file `index.php`, create the file inside the folder `/bl-themes/mars/`, with the next HTML code:
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+### 3.1. CSS files
+Add some CSS files, you can use the Helper `Theme::` or use the `meta tags`.
+
+Add the `blog.css` CSS file with meta tag.
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="<?php echo HTML_PATH_THEME_CSS.'blog.css' ?>">
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+Add the `blog.css` CSS file with the Helper.
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+### 3.2. JavaScript files
+Add some JavaScript files, you can use the Helper `Theme::` or use the `meta tag`.
+
+Add the `blog.js` JavaScript file with meta tag.
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="<?php echo HTML_PATH_THEME_CSS.'blog.css' ?>">
+
+	<!-- Javascript -->
+	<script src="<?php echo HTML_PATH_THEME_JS.'blog.js' ?>"></script>
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+Add the `blog.js` JavaScript file with the Helper.
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+As you can see, with the Helper is less code :D.
+
+### 3.3. Plugins in site head
+You can add support for plugins in site head, just use the helper `Theme::plugins`.
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+
+</body>
+</html>
+</code></pre>
+
+### 3.4. Site title
+Let's go to add the `meta tag title` and in the content of the site a heading with the title.
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+</body>
+</html>
+</code></pre>
+
+### 3.5. Content (home, posts and pages)
+Now lets works with the content of the site.
+
+To know where is the user browsing on your site will be use the object `$Url` and the method `whereAmI()`. For example, if the user is watching a post the method `$Url->whereAmI()` returns the string `post`, or if the user is watching a page the method `$Url->whereAmI()` returns the string `page`.
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+			echo 'The user is browsing the Home page';
+		}
+		elseif($Url->whereAmI()=='post') {
+			echo 'The user is browsing a particular post';
+		}
+		elseif($Url->whereAmI()=='page') {
+			echo 'The user is browsing a particular page';
+		}
+	?>
+</body>
+</html>
+</code></pre>
+
+If the user is in the home page, Bludit generate an array `$posts` with all the posts, each post is an [object $Post](https://).
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+
+			foreach($posts as $Post) {
+				echo '<h1>'.$Post->title().'</h1>';
+				echo '<div>'.$Post->content().'</div>';
+				echo '<hr>';
+			}
+
+		}
+		elseif($Url->whereAmI()=='post') {
+			echo 'The user is browsing a particular post';
+		}
+		elseif($Url->whereAmI()=='page') {
+			echo 'The user is browsing a particular page';
+		}
+	?>
+</body>
+</html>
+</code></pre>
+
+If the user is watching a particular post, Bludit generate an object `$Post`, on it you have a lot of methods, in this example will be use the methods `title()` and `content()`. To know other methods check the next page [object $Post](http://).
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+
+			foreach($posts as $Post) {
+				echo '<h1>'.$Post->title().'</h1>';
+				echo '<div>'.$Post->content().'</div>';
+				echo '<hr>';
+			}
+
+		}
+		elseif($Url->whereAmI()=='post') {
+
+			echo '<h1>'.$Post->title().'</h1>';
+			echo '<div>'.$Post->content().'</div>';
+
+		}
+		elseif($Url->whereAmI()=='page') {
+			echo 'The user is browsing a particular page';
+		}
+	?>
+</body>
+</html>
+</code></pre>
+
+If the user is watching a particular page, Bludit generate an object `$Page`, on it you have a lot of methods, in this example will be use the methods `title()` and `content()`. To know other methods check the next page [object $Page](http://).
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+
+			foreach($posts as $Post) {
+				echo '<h1>'.$Post->title().'</h1>';
+				echo '<div>'.$Post->content().'</div>';
+				echo '<hr>';
+			}
+
+		}
+		elseif($Url->whereAmI()=='post') {
+
+			echo '<h1>'.$Post->title().'</h1>';
+			echo '<div>'.$Post->content().'</div>';
+
+		}
+		elseif($Url->whereAmI()=='page') {
+
+			echo '<h1>'.$Page->title().'</h1>';
+			echo '<div>'.$Page->content().'</div>';
+
+		}
+	?>
+</body>
+</html>
+</code></pre>
+
+### 3.6. Plugins site body begins and ends
+To finish the theme, add support for plugins in the body.
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Meta tag Title -->
+	<title><?php echo $Site->title() ?></title>
+
+	<!-- CSS -->
+	<?php Theme::css('blog.css') ?>
+
+	<!-- Javascript -->
+	<?php Theme::javascript('blog.js') ?>
+
+	<!-- Plugins site head -->
+	<?php Theme::plugins('siteHead') ?>
+</head>
+<body>
+	<!-- Plugins site body begin -->
+	<?php Theme::plugins('siteBodyBegin') ?>
+
+	<!-- Site Title -->
+	<h1><?php echo $Site->title() ?></h1>
+
+	<?php
+		if( $Url->whereAmI()=='home' ) {
+
+			foreach($posts as $Post) {
+				echo '<h2>'.$Post->title().'</h2>';
+				echo '<div>'.$Post->content().'</div>';
+				echo '<hr>';
+			}
+
+		}
+		elseif($Url->whereAmI()=='post') {
+
+			echo '<h2>'.$Post->title().'</h2>';
+			echo '<div>'.$Post->content().'</div>';
+
+		}
+		elseif($Url->whereAmI()=='page') {
+
+			echo '<h2>'.$Page->title().'</h2>';
+			echo '<div>'.$Page->content().'</div>';
+
+		}
+	?>
+
+	<!-- Plugins site body end -->
+	<?php Theme::plugins('siteBodyEnd') ?>
+
+</body>
+</html>
+</code></pre>
+
+<div markdown="1" class="note">
+<div class="note-title">DOWNLOAD</div>
+Download the theme Mars from [here](https://github.com/dignajar/bludit-themes/tree/master/example-mars).
+</div>

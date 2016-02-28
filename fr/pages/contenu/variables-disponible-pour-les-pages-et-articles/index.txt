@@ -1,0 +1,63 @@
+Title: Variables disponible pour les articles et pages
+Position: 5
+Content:
+
+Il ya beaucoup de champs/variables pour faire un article ou une page. Chaque champ se termine par un colon.
+
+Le dernier champ devrait être `Content:`.
+
+#### Sommaire
+1. [Champs/Variables](#fields)
+2. [Example pour un article](#post-example)
+3. [Exemple pour une page](#page-example)
+
+---
+
+### Champs/Variables <a id="fields"></a>
+
+| Champ 		| Description |
+| ----------------------|-----------------|
+| Title 		| Le titre d’un article ou d’une page |
+| Description 		| Courte description, pas plus de 150 caractères |
+| Tags 			| Tags ou mots-clés séparés par une virgule |
+| AllowComments 	| True ou False |
+| Status 		| Publié, Brouillon ou Planifiée |
+| Date			| Défini l’heure et la date de création. Le format par défaut YYYY-MM-DD HH:mm:ss |
+| Username 		| Le Nom d’utilisateur. Doit être un identifiant valide. |
+| Content 		| Le contenu de l’article / page, supporte le code HTML et le format Markdown. |
+
+---
+
+### Exemple d’article <a id="post-example"></a>
+```
+Title: Nouvel article de test
+Status: published
+Date: 2015-11-22 22:01:00
+Username: diego
+Author: Diego Najar
+Content:
+# HTML and Markdown code support
+
+## Some Markdown code
+**Black Lorem** Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+<h2> Some HTML code </h2>
+<strong>It is a long established</strong> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+```
+
+---
+
+### Exemple de page <a id="page-example"></a>
+```
+Title: Nouvelle page de test
+Status: published
+Username: diego
+Content:
+# HTML and Markdown code support
+
+## Some Markdown code
+**Black Lorem** Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+<h2> Some HTML code </h2>
+<strong>It is a long established</strong> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+```

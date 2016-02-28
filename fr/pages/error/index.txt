@@ -1,0 +1,2 @@
+Title: Erreur
+Content: La page n’a pas été trouvée.

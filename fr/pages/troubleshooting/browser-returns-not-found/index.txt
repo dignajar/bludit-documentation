@@ -1,0 +1,6 @@
+Title: Browser returns not found or forbidden
+Position: 1
+Content:
+If you have a problem when browsing your site, for example, when you go to some page or post. Check if you have enable the rewrite module on your web server. If you have a Hosting Server contact the support team to enable it.
+
+![Bludit Not found error](bludit-notfound.png)

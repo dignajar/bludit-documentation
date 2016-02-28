@@ -1,0 +1,19 @@
+Title: Coment insérer une image
+Position: 3
+Content:
+
+Créez une nouvelle page ou un nouvel article, puis ouvrez l’onglet **Images** dans le menu de droite.
+
+
+Cliquez sur le bouton **Plus d’images**, faites les glisser dans l’encadré grisé ou cliquez dessus pour en sélectionner une.
+
+![Image par glissé/déposé](bludit-insert-image-drag-and-drop.png)
+
+Une fois que vous avez importé l’image, **double-cliquez dessus** pour l’insérer.
+
+![Drag and drop image](bludit-insert-image.png)
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+Le code introduit sera différent suivant l’éditeur HTML utilisé.
+</div>
