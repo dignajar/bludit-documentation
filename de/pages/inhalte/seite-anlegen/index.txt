@@ -2,7 +2,7 @@ Title: Eine Seite anlegen
 Position: 2
 Content:
 
-Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" (Einfachen Modus) mit einer grafischen Oberfläche, und einen "Advanced Mode" (Fortgeschrittenem Modus). Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
+Es gibt zwei Möglichkeiten, eine Seite anzulegen. Einen "Easy Mode" (Einfachen Modus) mit einer grafischen Oberfläche, und einen "Advanced Mode" (Fortgeschrittenem Modus). Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](https://docs.bludit.com/en/cli-mode/variables-for-posts-and-pages).
 
 #### Inhalt
 1. [Easy Mode](#easy-mode)
