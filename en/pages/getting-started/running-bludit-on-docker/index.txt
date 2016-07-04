@@ -1,0 +1,25 @@
+Title: Running Bludit on Docker
+Position: 6
+Content:
+
+Bludit has an official Docker image in Docker HUB. https://hub.docker.com/r/dignajar/bludit/
+
+This images is based on the official Nginx image and use PHP-FPM. The [Dockerfile](https://github.com/dignajar/docker-bludit/blob/master/Dockerfile) and other files are in [Github](https://github.com/dignajar/docker-bludit).
+
+## Create the container
+
+```
+$ docker run --name bludit -p 8000:80 -d dignajar/bludit
+```
+
+## Check logs and errors
+
+```
+$ docker logs bludit
+```
+
+## Stop the container
+
+```
+$ docker stop bludit
+```

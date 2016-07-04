@@ -2,7 +2,7 @@ Title: Introduction
 Position: 1
 Content:
 
-Bludit is a simple web application to make your own **blog** or **site** in seconds, it's completly **free and open source**. Bludit uses flat-files (text files in JSON format) to store the posts and pages, you don't need to install or configure a database.
+Bludit is a simple web application to make your own **blog** or **site** in seconds, it's completly **free and open source**. Bludit uses flat-files to store the posts and pages, you don't need to install or configure a database.
 
 ### Follow Bludit on
 Contact with the developers and users on different social networks.
