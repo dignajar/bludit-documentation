@@ -1,5 +1,5 @@
 Title: Installation unter GNU/Linux
-Position: 3
+Position: 5
 Content:
 
 Bei allen Beispielen handelt es sich um Out-of-the-box-Installationen mit einem Apache-Webserver. Wenn dir das Vorgehen bei anderen Distributionen bekannt ist, kannnst du es gerne im Forum veröffentlichen oder als Pull-Request  bei [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
