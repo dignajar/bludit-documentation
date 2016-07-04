@@ -1,0 +1,25 @@
+Title: Bludit mit Docker installieren
+Position: 6
+Content:
+
+Bludit hat ein offizielles Docker-Image bei Docker unter https://hub.docker.com/r/dignajar/bludit/.
+
+Dieses image basiert auf dem offiziellen Nginx-Image und verwendet PHP-FPM. Die [Docker-Datei](https://github.com/dignajar/docker-bludit/blob/master/Dockerfile) und andere Dateien sind zu finden bei [Github](https://github.com/dignajar/docker-bludit).
+
+## Container kreieren
+
+```
+$ docker run --name bludit -p 8000:80 -d dignajar/bludit
+```
+
+## Logs und Fehler kontrollieren
+
+```
+$ docker logs bludit
+```
+
+## Container anhalten
+
+```
+$ docker stop bludit
+```
