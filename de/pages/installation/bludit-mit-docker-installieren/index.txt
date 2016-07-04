@@ -1,5 +1,5 @@
 Title: Bludit mit Docker installieren
-Position: 6
+Position: 7
 Content:
 
 Bludit hat ein offizielles Docker-Image bei Docker unter https://hub.docker.com/r/dignajar/bludit/.
