@@ -2,15 +2,15 @@ Title: Installationsanleitung
 Position: 3
 Content:
 
-1. Lade die neueste Version von Bludit von http://www.bludit.com/bludit_latest.zip herunter.
-2. Entpacke das ZIP-Archiv in ein Verzeichnis, dass du beispielsweise `bludit` benennst.
+1. Lade die neueste Version von Bludit von https://s3.amazonaws.com/bludit-s3/bludit-builds/bludit_latest.zip herunter.
+2. Entpacke das ZIP-Archiv in ein Verzeichnis, das du beispielsweise `bludit` benennst.
 3. Lade das Verzeichnis `bludit` auf deinen Server.
 4. Rufe im Browser die Domain mit der Installation auf, beispielsweise `http://domain.com/bludit`.
-5. Der Bludit Installer führt dich durch die Einrichtung der Website.
+5. Der Bludit-Installer führt dich danach durch die Einrichtung der Website.
 
 <div markdown="1" class="note">
 <div class="note-title">WICHTIG</div>
-Es empfiehlt sich, nach der Installation die entsprechende Zeitzone einzustellen im Administrationsbereich unter *Einstellungen -> Sprache und Zeitzone -> Zeitzone".
+Es empfiehlt sich, nach der Installation die entsprechende Zeitzone einzustellen im Administrationsbereich unter *Einstellungen -> Sprache und Zeitzone -> Zeitzone*.
 </div>
 
 <div markdown="1" class="note">
