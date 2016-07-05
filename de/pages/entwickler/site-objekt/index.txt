@@ -1,0 +1,62 @@
+Title: Site-Objekt
+Position: 100
+Content:
+
+Das Objekt `$Site` enthält alle informationen, die in der Datenbank `/bl-content/databases/site.php` gespeichert sind.
+
+## Methoden und Beispiele
+
+### URL-Filter
+Bei den zurückgegebenen Werte handelt es sich um vorgegebene Werte. Sie können selbst angepasst werden.
+
+<pre><code data-language="php"># Get the admin filter
+$Site->uriFilters('admin'); # returns /admin/
+
+#Beitragsfilter
+$Site->uriFilters('post'); # gibt /post/ zurück
+
+#Seitenfilter
+$Site->uriFilters('page'); # gibt / zurück
+
+#Schlagwörter-Filter
+$Site->uriFilters('tag'); # gibt /tag/ zurück
+
+#Blog-Filter
+$Site->uriFilters('blog'); # gibt /blog/ zurück
+</code></pre>
+
+### Print the site title
+<pre><code data-language="php">echo $Site->title();</code></pre>
+
+### Print the site slogan
+<pre><code data-language="php">echo $Site->slogan();</code></pre>
+
+### Print the site description
+<pre><code data-language="php">echo $Site->description();</code></pre>
+
+### Print the footer text
+<pre><code data-language="php">echo $Site->footer();</code></pre>
+
+### Get the current theme for the site
+<pre><code data-language="php">$theme = $Site->theme();</code></pre>
+
+### Get the current theme for the admin panel
+<pre><code data-language="php">$theme = $Site->adminTheme();</code></pre>
+
+### Get the defined timezone
+<pre><code data-language="php">echo $Site->timezone();</code></pre>
+
+### Get the defined language
+<pre><code data-language="php">echo $Site->language();</code></pre>
+
+### Get the defined locale
+<pre><code data-language="php">echo $Site->locale();</code></pre>
+
+### Get the defined homepage
+<pre><code data-language="php">echo $Site->homepage();</code></pre>
+
+### Get the number of posts to show on one page
+<pre><code data-language="php">echo $Site->postsPerPage();</code></pre>
+
+### Get the current build of Bludit
+<pre><code data-language="php">echo $Site->currentBuild();</code></pre>
