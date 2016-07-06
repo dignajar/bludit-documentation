@@ -1,5 +1,5 @@
 Title: Running Bludit on Docker
-Position: 6
+Position: 7
 Content:
 
 Bludit has an official Docker image in Docker HUB. https://hub.docker.com/r/dignajar/bludit/

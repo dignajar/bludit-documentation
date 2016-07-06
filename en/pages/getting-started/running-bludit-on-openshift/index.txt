@@ -1,5 +1,5 @@
 Title: Running Bludit on OpenShift
-Position: 5
+Position: 6
 Content:
 
 OpenShift is a very good platform for running Bludit, it's easy and free.

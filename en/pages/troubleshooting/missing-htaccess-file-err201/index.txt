@@ -1,11 +1,12 @@
 Title: Missing .htaccess file (ERR_201)
 Position: 2
 Content:
-May have forgotten upload the .htaccess file in the root directory.
+
+You may have forgotten to upload the .htaccess file in the root directory.
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>
-The file name is .htaccess, begins with a dot, because is a hidden UNIX file system.
+The file name is .htaccess, begins with a dot, because it is a hidden UNIX file system.
 </div>
 
 ### Content
@@ -37,6 +38,7 @@ RewriteRule ^(.*) index.php [PT,L]
 ---
 
 ## <a id="windows"></a> How to create the file .htaccess on Windows
-When rename a file on Windows with the name .htaccess you have the alert ```You must type a file name```. To solve this problem, create the file with **Notepad**, and go to **File->Save as->Write .htaccess** and choose ```All Files``` as the type.
+
+If you try to rename a file on Windows with the name .htaccess, an error would occur stating ```You must type a file name```. To solve this problem, create the file with **Notepad**, go to **File->Save as->Write .htaccess** and choose ```All Files``` as the type.
 
 Link: http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-with-a-dot-prefix-in-windows-for-example-htacce

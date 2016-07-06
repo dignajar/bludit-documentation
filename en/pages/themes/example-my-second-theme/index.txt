@@ -29,7 +29,7 @@ Create a file with the theme information; the file will be in the root theme fol
 	"version": "1.0",
 	"releaseDate": "2016-01-15",
 	"license": "MIT",
-	"requires": "Bludit v1.0",
+	"compatible": "1.4",
 	"notes": ""
 }
 </code></pre>

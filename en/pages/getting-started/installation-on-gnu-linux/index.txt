@@ -1,5 +1,5 @@
 Title: Installation on GNU/Linux
-Position: 4
+Position: 5
 Content:
 
 All examples are out of the box installation, with Apache Webserver. If you have the steps for other distribution, you can publish this on the [forum](http://forum.bludit.com) or make a pull request on [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
