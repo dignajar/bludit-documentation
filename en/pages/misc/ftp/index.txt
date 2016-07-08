@@ -2,7 +2,7 @@ Title: File Transfer Protocol (FTP)
 Position: 1
 Content:
 
-The File Transfer Protocol (FTP) is used for uploading files to and downloading files from the server to your PC. The connection can be made with a FTP client.
+The File Transfer Protocol (FTP) is used to upload and download files between your computer and the server. The connection can be made with a FTP client.
 
 ## FTP Clients
 

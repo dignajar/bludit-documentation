@@ -10,10 +10,10 @@ Content:
 
 <div markdown="1" class="note">
 <div class="note-title">IMPORTANT!</div>
-After installation, it's highly recommended set the correct timezone from the *Admin panel->Settings->Language and timezone->Timezone*.
+After installation, it's highly recommended to set the correct timezone from the *Admin panel->Settings->Language and timezone->Timezone*.
 </div>
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>
-You can use an FTP client to upload files to the hosting. Check this page [FTP](../misc/ftp).
+You can use a FTP client to upload files to the hosting. Check this page [FTP](../misc/ftp).
 </div>
