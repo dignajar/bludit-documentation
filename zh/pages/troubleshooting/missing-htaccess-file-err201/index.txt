@@ -1,0 +1,44 @@
+Title: Missing .htaccess file (ERR_201)
+Position: 2
+Content:
+
+You may have forgotten to upload the .htaccess file in the root directory.
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+The file name is .htaccess, begins with a dot, because it is a hidden UNIX file system.
+</div>
+
+### Content
+1. [File .htaccess for Apache Webserver](#apache)
+2. [How to create the file .htaccess on Windows](#windows)
+
+---
+
+## File .htaccess for Apache Webserver <a id="apache"></a>
+If you are running Apache Webserver you will need the ```.htaccess``` file in your root directory and enable the [rewrite module](http://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+
+<pre><code data-language="bash"># Apache configuration
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+
+# Enable rewrite rules
+RewriteEngine on
+
+# Deny direct access to .txt files
+RewriteRule ^bl-content/(.*)\.txt$ - [R=404,L]
+
+# All URL process by index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*) index.php [PT,L]
+
+</IfModule></code></pre>
+
+---
+
+## <a id="windows"></a> How to create the file .htaccess on Windows
+
+If you try to rename a file on Windows with the name .htaccess, an error would occur stating ```You must type a file name```. To solve this problem, create the file with **Notepad**, go to **File->Save as->Write .htaccess** and choose ```All Files``` as the type.
+
+Link: http://stackoverflow.com/questions/5004633/how-to-manually-create-a-file-with-a-dot-prefix-in-windows-for-example-htacce

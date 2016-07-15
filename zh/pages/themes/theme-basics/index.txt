@@ -1,0 +1,86 @@
+Title: Theme basics
+Position: 1
+Content:
+
+Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/), etc), any Javascript code, whatever you want.
+
+All themes resides into `themes` directory, and they have a default structure of directories, this structure is necesary only if you are going to use Bludit's helpers.
+
+### Content
+1. [Structure for themes](#structure-for-themes)
+2. [Information about the theme](#information)
+
+---
+
+## <a id="structure-for-themes"></a> Simple structure for themes
+
+This is a simple folder structure for themes.
+
+```
+/bl-themes/THEME_NAME/
+	css/
+	img/
+	js/
+	language/
+	php/
+	metadata.json
+	index.php
+```
+
+The next table shows PHP CONSTANSTS for developers.
+
+| Description 		| Real path                         | HTML paths                   | Real path                |
+| ----------------------|-----------------------------------|------------------------------|--------------------------|
+| Theme root            | /bl-themes/{THEME_NAME}/          | HTML_PATH_THEME              | PATH_THEME               |
+| CSS files             | /bl-themes/{THEME_NAME}/css/      | HTML_PATH_THEME_CSS          | PATH_THEME_CSS           |
+| Images files          | /bl-themes/{THEME_NAME}/img/      | HTML_PATH_THEME_IMG          | PATH_THEME_IMG           |
+| Javascript files      | /bl-themes/{THEME_NAME}/js/       | HTML_PATH_THEME_JS           | PATH_THEME_JS            |
+| Languages files       | /bl-themes/{THEME_NAME}/languages/|                              | PATH_THEME_LANG          |
+| PHP files             | /bl-themes/{THEME_NAME}/php/      |                              | PATH_THEME_PHP           |
+| Uploaded images       | /bl-content/uploads/              | HTML_PATH_UPLOADS            | PATH_UPLOADS             |
+| Profiles images       | /bl-content/uploads/profiles/     | HTML_PATH_UPLOADS_PROFILES   | PATH_UPLOADS_PROFILES    |
+| Thumbnails images     | /bl-content/uploads/thumbnails/   | HTML_PATH_UPLOADS_THUMBNAILS | PATH_THUMBNAILS          |
+
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+With this structure you are allowed to use Bludit's helpers.
+</div>
+
+---
+
+## Information about the theme <a id="information"></a>
+
+Each theme has an information file, called `metadata.json`, located in `/bl-themes/{THEME_NAME}/metadata.json`.
+
+The next JSON is an example of the `metadata.json` file.
+
+<pre><code data-language="php">{
+	"author": "Bludit",
+	"email": "",
+	"website": "https://github.com/dignajar/bludit-themes",
+	"version": "1.0",
+	"releaseDate": "2016-01-15",
+	"license": "MIT",
+	"compatible": "1.4",
+	"notes": ""
+}
+</code></pre>
+
+The theme's name and description are in the language file of the theme, located in `/bl-themes/{THEME_NAME}/languages/en_US.json`.
+
+The next JSON is an example of the `en_US.json` file.
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Pure",
+		"description": "Simple and clean, based on the framework Pure.css."
+	}
+}
+</code></pre>
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+The default language in Bludit is the English from United States, the locale name is **en_US**, and the filename is **en_US.json**.
+</div>
