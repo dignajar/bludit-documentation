@@ -1,7 +1,7 @@
 title:页面（Page）对象
 Position: 100
 Status: 草稿
-content:If the user filter by a particular page there will be an object `$Page`. To check if the user is filtering by a page you can uses the object `$Url` and the method `whereAmI()`.
+content:如果用户过滤器是某一特定页面的话，将会有一个对象`$Page`存在。通过使用对象`$Url` 的 `whereAmI()`方法，可以检查用户是否为一页面。
 
 <pre><code data-language="php">if( $Url->whereAmI()==='page' ) {
 	echo 'The page filtered is '.$Page->title();
@@ -13,63 +13,63 @@ else {
 
 ### 方法以及使用范例
 
-Print page title.
+输出页面标题。
 <pre><code data-language="php">echo $Page->title();</code></pre>
 
-Print page description.
+输出页面描述
 <pre><code data-language="php">echo $Page->description();</code></pre>
 
-Print page content.
+输出页面内容
 <pre><code data-language="php">echo $Page->content();</code></pre>
 
-Get content in raw format, without parse.
+获取原始内容（未解析）
 <pre><code data-language="php">$raw = $Page->contentRaw();</code></pre>
 
-Print page tags.
+输出页面标签
 <pre><code data-language="php">echo $Page->tags();</code></pre>
 
-Print page tags from the array tags.
+输出标签数组中的页面标签
 <pre><code data-language="php">$tags = $Page->tagsArray();
 foreach($tags as $tag) {
   echo $tag;
 }
 </code></pre>
 
-Print page position.
+输出页面位置
 <pre><code data-language="php">echo $Page->position();</code></pre>
 
-Print page username.
+输出页面用户名
 <pre><code data-language="php">echo $Page->username();</code></pre>
 
-Print author of the page.
+输出页面作者
 <pre><code data-language="php">echo $Page->author();</code></pre>
 
-Get created date in unix time stamp and format it.
+获取unix时间戳格式的创建日期
 <pre><code data-language="php">$time = $Page->unixTimeCreated();
 
 // Format time
 echo date('Y-m-d', $time);
 </code></pre>
 
-Print created page date, according to locale settings and format settings.
+根据地区及格式设定，输出页面创建日期
 <pre><code data-language="php">echo $Page->dateCreated();</code></pre>
 
-Print last modified date, according to locale settings and format settings.
+根据地区及格式设定，输出页面最近修改日期
 <pre><code data-language="php">echo $Page->dateModified();</code></pre>
 
-Print the time ago.
+输出时间
 <pre><code data-language="php">echo $Page->timeago();</code></pre>
 
-Get slug url.
+输出 slug url
 <pre><code data-language="php">$slug = $Page->slug();</code></pre>
 
-Get page key.
+获取页面 key
 <pre><code data-language="php">$key = $Page->key();</code></pre>
 
-Get page permalink. This is the absolute link of the page.
+获取页面地址。此为页面的绝对地址
 <pre><code data-language="php">$permalink = $Page->permalink();</code></pre>
 
-Get page parent key. If the page does't have a parent then return FALSE.
+获取父页面的 key。如果页面没有父页面，则返回 FALSE
 <pre><code data-language="php">$parentKey = $Page->parentKey();
 if($parentKey!==false) {
   echo 'The page have a parent';
@@ -79,14 +79,14 @@ else {
 }
 </code></pre>
 
-Get children of the page.
+获取子页面
 <pre><code data-language="php">$children = $Page->children();
 forech($children as $childKey) {
 	echo 'The child key is '.$childKey;
 }
 </code></pre>
 
-Get page status, this method returns TRUE if the page is published, FALSE otherwise.
+获取页面状态， 如果页面发布，则返回 TRUE，否则返回 FALSE
 <pre><code data-language="php">if( $Page->published() ) {
 	echo 'Page published';
 }
@@ -98,18 +98,18 @@ else {
 
 ## <a id="page-array"></a> $pages array
 
-This array contains all published pages. Each item from the array is a [Page Object](../themes/page-object).
+此数组包括所有已发布的页面。数组的每一项都是一个[Page 对象](../themes/page-object)。
 
-### Examples
+### 示例
 
-Print all pages title
+输出所有页面标题
 <pre><code data-language="php">foreach($pages as $page)
 {
 	echo $page->title();
 }
 </code></pre>
 
-Print all pages title and content
+输出所有页面标题及内容
 <pre><code data-language="php">foreach($pages as $page)
 {
 	echo '<h1>'.$page->title().'</h1>';
@@ -121,18 +121,18 @@ Print all pages title and content
 
 ## <a id="post-array"></a> $posts array
 
-This array contains all posts published for the current page number. Each item from the array is a [Post Object](../themes/post-object).
+此数组包括当前页中所有发布文章。数组的每一项都是一个 [Post 对象](../themes/post-object)
 
-### Examples
+### 示例
 
-Print all posts title
+输出所有文章标题
 <pre><code data-language="php">foreach($posts as $post)
 {
 	echo $post->title();
 }
 </code></pre>
 
-Print all posts title and content
+输出所有文章标题及内容
 <pre><code data-language="php">foreach($posts as $post)
 {
 	echo '<h1>'.$post->title().'</h1>';
