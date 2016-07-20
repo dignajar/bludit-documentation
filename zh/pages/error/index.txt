@@ -1,2 +1,2 @@
-Title: Error
-    Content: The page has not been found.
+Title: 错误
+    Content: 未找到页面。

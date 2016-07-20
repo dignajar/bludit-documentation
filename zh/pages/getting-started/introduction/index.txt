@@ -1,11 +1,11 @@
-Title: Introduction
+Title: 介绍
 Position: 1
 Content:
 
-Bludit is a simple web application to make your own **blog** or **site** in seconds, it's completly **free and open source**. Bludit uses flat-files to store the posts and pages, you don't need to install or configure a database.
+Bludit 是一个非常简单的 web 应用，通过它可以非常快速地构建您自己的**网站**或者**博客**。而且它完全**免费并且开源**，您甚至不需要安装或者配置数据库。
 
-### Follow Bludit on
-Contact with the developers and users on different social networks.
+### 关注 Bludit
+通过下列不同社交网络可以和开发者进行联系。
 
 * [Twitter](https://twitter.com/bludit) **@bludit**
 * [Facebook](https://www.facebook.com/bluditcms)
@@ -14,8 +14,8 @@ Contact with the developers and users on different social networks.
 * [Gitter](https://gitter.im/dignajar/bludit) async chat online
 * [Support forum](https://forum.bludit.com)
 
-### License
-Bludit is opensource software licensed under the [MIT license.](https://tldrlegal.com/license/mit-license)
+### 许可
+Bludit 是一款基于[MIT 许可证](https://tldrlegal.com/license/mit-license)的开源软件。
 
-### Collaborate with us
-You can edit this documentation on [Github: Bludit documentation](https://github.com/dignajar/bludit-documentation).
+### 与我们合作
+您可以帮助编辑此文档 [Github: Bludit documentation](https://github.com/dignajar/bludit-documentation).

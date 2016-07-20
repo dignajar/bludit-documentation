@@ -1,20 +1,20 @@
-Title: Upgrade guide
+Title: 更新指南
 Position: 4
 Content:
 
-1. Make a full backup, all files and directories.
-2. Download the latest version from https://s3.amazonaws.com/bludit-s3/bludit-builds/bludit_latest.zip
-3. Extract the zip file.
-4. Replace existing files with the new files.
-5. Log in to the admin area.
-6. Done
+1. 备份所有文件和目录。
+2. 从 https://s3.amazonaws.com/bludit-s3/bludit-builds/bludit_latest.zip 下载最新版。
+3. 解压。
+4. 替换现成的文件。
+5. 登录admin
+6. 完成
 
 <div markdown="1" class="note">
-<div class="note-title">IMPORTANT!</div>
-After the upgrade, it's highly recommended to check your settings.
+<div class="note-title">重要信息！</div>
+更新后，强烈建议检查设置部分。
 </div>
 
 <div markdown="1" class="note">
-<div class="note-title">NOTE</div>
-You can use a FTP client to upload files to the hosting. Check this page [FTP](../misc/ftp)
+<div class="note-title">注意事项</div>
+你可以通过 FTP 客户端上传文件到空间商的空间。参考此页 [FTP](../misc/ftp)。
 </div>

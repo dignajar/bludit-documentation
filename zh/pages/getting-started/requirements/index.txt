@@ -1,12 +1,12 @@
-Title: Requirements
+Title: 基本需求
 Position: 2
 Content:
-You just need a web server with PHP support.
+一台支持PHP的网络服务器是最基本的要求。
 
-- PHP v5.3 or higher.
-- PHP [mbstring](http://php.net/manual/en/book.mbstring.php) module for full UTF-8 support.
-- Supported web servers:
-  * PHP Built-in web server
-  * Apache with module [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
-  * Lighttpd with module [mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite)
-  * Ngnix with module [ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)
+- PHP v5.3 或真更高版本。
+- PHP [mbstring](http://php.net/manual/en/book.mbstring.php) 完全支持 UTF-8 的模块。
+- 支持的网络服务器包括：
+  * PHP 内嵌网络服务器
+  * 配置了模块[mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)的 Apache 服务器
+  * 配置了模块[mod_rewrite](http://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite)的 Lighttpd 服务器
+  * 配置了模块[ngx_http_rewrite_module](http://nginx.org/en/docs/http/ngx_http_rewrite_module.html)的 Ngnix 服务器
