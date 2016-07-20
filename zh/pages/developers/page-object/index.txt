@@ -1,6 +1,6 @@
-title:Page Object
+title:页面（Page）对象
 Position: 100
-Status: draft
+Status: 草稿
 content:If the user filter by a particular page there will be an object `$Page`. To check if the user is filtering by a page you can uses the object `$Url` and the method `whereAmI()`.
 
 <pre><code data-language="php">if( $Url->whereAmI()==='page' ) {
@@ -11,7 +11,7 @@ else {
 }
 </code></pre>
 
-### Methods and examples of usage
+### 方法以及使用范例
 
 Print page title.
 <pre><code data-language="php">echo $Page->title();</code></pre>

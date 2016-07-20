@@ -1,7 +1,9 @@
-title:Post Object
+title:文章（Post）对象
 Position: 100
-Status: draft
-content:If the user filter by a particular post there will be an object `$Post`. To check if the user is filtering by a post you can uses the object `$Url` and the method `whereAmI()`.
+Status: 草稿
+content:
+
+If the user filter by a particular post there will be an object `$Post`. To check if the user is filtering by a post you can uses the object `$Url` and the method `whereAmI()`.
 
 <pre><code data-language="php">if( $Url->whereAmI()==='post' ) {
 	echo 'The post filtered is '.$Post->title();
@@ -11,65 +13,65 @@ else {
 }
 </code></pre>
 
-### Methods and examples of usage
+### 方法及使用范例
 
-Print post title.
+输出标题
 <pre><code data-language="php">echo $Post->title();</code></pre>
 
-Print post content.
+输出内容
 <pre><code data-language="php">echo $Post->content();</code></pre>
 
-Get content in raw format, without parse.
+获取原始内容（未经解析）
 <pre><code data-language="php">$raw = $Post->contentRaw();</code></pre>
 
-Print post description.
+输出描述
 <pre><code data-language="php">echo $Post->description();</code></pre>
 
-Print post tags.
+输出文章标题
 <pre><code data-language="php">echo $Post->tags();</code></pre>
 
-Print post tags from array tag.
+输出文章标签
 <pre><code data-language="php">$tags = $Post->tagsArray();
 foreach($tags as $tag) {
   echo $tag;
 }
 </code></pre>
 
-Print post position.
+输出文章位置
 <pre><code data-language="php">echo $Post->position();</code></pre>
 
-Print post username.
+输出文章用户名
 <pre><code data-language="php">echo $Post->username();</code></pre>
 
-Print the author of the post.
+输出文章作者
 <pre><code data-language="php">echo $Post->author();</code></pre>
 
-Get created date in unix time stamp and format it.
+获取unix格式的文章创建时间
 <pre><code data-language="php">$time = $Post->unixTimeCreated();
 
 // Format time
 echo date('Y-m-d', $time);
 </code></pre>
 
-Print created post date, according to locale settings and format settings.
+输出根据地区以及格式设定获取文章日期
 <pre><code data-language="php">echo $Post->dateCreated();</code></pre>
 
-Print last modified date, according to locale settings and format settings.
+输出根据地区以及格式设定获取的最近修改日期
 <pre><code data-language="php">echo $Post->dateModified();</code></pre>
 
-Print time ago.
+输出时间
 <pre><code data-language="php">echo $Post->timeago();</code></pre>
 
-Get slug url.
+获取 slug 地址
 <pre><code data-language="php">$slug = $Post->slug();</code></pre>
 
-Get post key.
+获取文章 key
 <pre><code data-language="php">$key = $Post->key();</code></pre>
 
-Get post permalink.
+获取文章的地址 permalink
 <pre><code data-language="php">$permalink = $Post->permalink();</code></pre>
 
-Get post status, this method returns TRUE if the post is published, FALSE otherwise.
+获取文章状态，如果文章已发布，则此方法返回TRUE，否则返回FALSE
 <pre><code data-language="php">if( $Post->published() ) {
 	echo 'Post published';
 }

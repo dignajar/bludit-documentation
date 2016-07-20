@@ -1,8 +1,8 @@
-Title: Folder structure
+Title: 目录结构
 Position: 1
 Content:
 
-This is the folder structure of Bludit.
+以下是Bludit的目录结构。
 
 ```
 bl-content/
@@ -13,44 +13,44 @@ bl-themes/
 ```
 
 ## bl-content
-This folder is very important, it is where Bludit stores all files, as well as databases and images. Before making some update it's highly recommended to make a backup of this folder.
+此文件夹是非常重要的，所有的文件以及图片，数据库都保存在这里。强烈建议在进行任何修改前，备份此文件夹。
 
 ```
 bl-content/
 
 	databases/
-		plugins/		<-- Database: plugins
-		pages.php 		<-- Database: pages
-		posts.php		<-- Database: posts
-		security.php	<-- Database: black list, brute force protection, others
-		site.php		<-- Database: site variables, name, description, slogan, others
-		tags.php		<-- Database: tags
-		users.php		<-- Database: users
+		plugins/		<-- 数据库: 插件
+		pages.php 		<-- 数据库: 页面
+		posts.php		<-- 数据库: 文章
+		security.php	<-- 数据库: 黑名单, 针对暴力攻击进行的保护, 其他
+		site.php		<-- 数据库: 网站变量, 名称, 描述, 口号, 其他
+		tags.php		<-- 数据库: 标签
+		users.php		<-- 数据库: 用户
 
-	pages/				<-- Pages
+	pages/				<-- 页面
 		error/
 		about/
 		food/
 
-	posts/				<-- Posts
+	posts/				<-- 文章
 		my-first-post/
 		animals/
 		cake/
 
-	tmp/				<-- Temp files
+	tmp/				<-- 临时文件
 
-	uploads/			<-- Uploaded files
-		profiles/		<-- Profiles images
-		thumbnails/		<-- Thumbnails images
+	uploads/			<-- 上传的文件
+		profiles/		<-- 用户资料图片
+		thumbnails/		<-- 缩略图
 		photo1.jpg
 		photo2.png
 ```
 
 ## bl-kernel
-This folder contains the core of Bludit.
+此文件夹是Bludit的内核部分。
 
 ## bl-languages
-This folder contains all language files, each file is a JSON document, encoded in UTF-8.
+此文件夹包括所有的语言文件，每个文件都是JSON文档，使用UTF-8进行编码。
 
 ```
 bl-languages/
@@ -63,7 +63,7 @@ bl-languages/
 ```
 
 ## bl-plugins
-This folder contains all plugins, you can download new plugins and upload here.
+此文件夹包括所有插件，你可以下载新的插件然后上传到此。
 
 ```
 bl-plugins/
@@ -76,7 +76,7 @@ bl-plugins/
 ```
 
 ## bl-themes
-This folder contains all themes, you can download new themes and upload here.
+此文件夹包括所有的主题，你可以下载新的主题然后上传到此。
 
 ```
 bl-themes/

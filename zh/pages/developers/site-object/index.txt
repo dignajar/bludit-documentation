@@ -1,62 +1,62 @@
-Title: Site object
+Title: 网站（Site）对象
 Position: 100
 Content:
 
-The object `$Site` has all the information from the database `/bl-content/databases/site.php`
+可以从数据可`/bl-content/databases/site.php`中获得有关 `$Site` 对象的所有信息。
 
-## Methods and examples of usage
+## 方法以及使用范例
 
-### URL filters
-The returned values are the default, the user can change it.
+### URL 过滤器
+返回默认值，用户可以修改。
 
-<pre><code data-language="php"># Get the admin filter
-$Site->uriFilters('admin'); # returns /admin/
+<pre><code data-language="php"># 获取管理员过滤器
+$Site->uriFilters('admin'); # 返回 /admin/
 
-#Get the post filter
-$Site->uriFilters('post'); # returns /post/
+#获取文章过滤器
+$Site->uriFilters('post'); # 返回 /post/
 
-#Get the page filter
-$Site->uriFilters('page'); # returns /
+#获取页面过滤器
+$Site->uriFilters('page'); # 返回 /
 
-#Get the tag filter
-$Site->uriFilters('tag'); # returns /tag/
+#获取标签过滤器
+$Site->uriFilters('tag'); # 返回 /tag/
 
-#Get the blog filter
-$Site->uriFilters('blog'); # returns /blog/
+#获取包括过滤器
+$Site->uriFilters('blog'); # 返回 /blog/
 </code></pre>
 
-### Print the site title
+### 输出网站标题
 <pre><code data-language="php">echo $Site->title();</code></pre>
 
-### Print the site slogan
+### 输出网站口号
 <pre><code data-language="php">echo $Site->slogan();</code></pre>
 
-### Print the site description
+### 输出网站描述
 <pre><code data-language="php">echo $Site->description();</code></pre>
 
-### Print the footer text
+### 输出页脚文字
 <pre><code data-language="php">echo $Site->footer();</code></pre>
 
-### Get the current theme for the site
+### 获取网站当前的主题名
 <pre><code data-language="php">$theme = $Site->theme();</code></pre>
 
-### Get the current theme for the admin panel
+### 获取当前管理员面板主题名
 <pre><code data-language="php">$theme = $Site->adminTheme();</code></pre>
 
-### Get the defined timezone
+### 获取定义的时区
 <pre><code data-language="php">echo $Site->timezone();</code></pre>
 
-### Get the defined language
+### 获取当前语言
 <pre><code data-language="php">echo $Site->language();</code></pre>
 
-### Get the defined locale
+### 获取当前地域
 <pre><code data-language="php">echo $Site->locale();</code></pre>
 
-### Get the defined homepage
+### 获取首页地址
 <pre><code data-language="php">echo $Site->homepage();</code></pre>
 
-### Get the number of posts to show on one page
+### 获取当前每页显示文章数目
 <pre><code data-language="php">echo $Site->postsPerPage();</code></pre>
 
-### Get the current build of Bludit
+### 获取Bludit的内部版本号
 <pre><code data-language="php">echo $Site->currentBuild();</code></pre>
