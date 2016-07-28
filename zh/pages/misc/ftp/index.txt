@@ -1,0 +1,13 @@
+Title: File Transfer Protocol (FTP)
+Position: 1
+Content:
+
+The File Transfer Protocol (FTP) is used to upload and download files between your computer and the server. The connection can be made with a FTP client.
+
+## FTP Clients
+
+[FileZilla](https://filezilla-project.org), free FTP Client for Windows, Mac OS, Linux und other operating systems.
+
+[WINSCP](https://winscp.net), free FTP Client.
+
+[Cyberduck](https://cyberduck.io), free FTP-Client developed for Mac OS, but now available also for Windows.

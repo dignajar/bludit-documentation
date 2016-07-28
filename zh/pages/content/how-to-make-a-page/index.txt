@@ -1,0 +1,14 @@
+Title: How to make a page
+Position: 2
+Content:
+
+Log in to your Admin panel and go to **New page** on the top menu.
+
+Complete the form, write a title and a content for the new page, then click on the button **Save**.
+
+![Bludit new page](https://s3.amazonaws.com/bludit-s3/bludit-documentation/en/new-page-en.png)
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+The content support HTML and Markdown code, here is a [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+</div>

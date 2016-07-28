@@ -1,0 +1,62 @@
+Title: 网站（Site）对象
+Position: 100
+Content:
+
+可以从数据可`/bl-content/databases/site.php`中获得有关 `$Site` 对象的所有信息。
+
+## 方法以及使用范例
+
+### URL 过滤器
+返回默认值，用户可以修改。
+
+<pre><code data-language="php"># 获取管理员过滤器
+$Site->uriFilters('admin'); # 返回 /admin/
+
+#获取文章过滤器
+$Site->uriFilters('post'); # 返回 /post/
+
+#获取页面过滤器
+$Site->uriFilters('page'); # 返回 /
+
+#获取标签过滤器
+$Site->uriFilters('tag'); # 返回 /tag/
+
+#获取包括过滤器
+$Site->uriFilters('blog'); # 返回 /blog/
+</code></pre>
+
+### 输出网站标题
+<pre><code data-language="php">echo $Site->title();</code></pre>
+
+### 输出网站口号
+<pre><code data-language="php">echo $Site->slogan();</code></pre>
+
+### 输出网站描述
+<pre><code data-language="php">echo $Site->description();</code></pre>
+
+### 输出页脚文字
+<pre><code data-language="php">echo $Site->footer();</code></pre>
+
+### 获取网站当前的主题名
+<pre><code data-language="php">$theme = $Site->theme();</code></pre>
+
+### 获取当前管理员面板主题名
+<pre><code data-language="php">$theme = $Site->adminTheme();</code></pre>
+
+### 获取定义的时区
+<pre><code data-language="php">echo $Site->timezone();</code></pre>
+
+### 获取当前语言
+<pre><code data-language="php">echo $Site->language();</code></pre>
+
+### 获取当前地域
+<pre><code data-language="php">echo $Site->locale();</code></pre>
+
+### 获取首页地址
+<pre><code data-language="php">echo $Site->homepage();</code></pre>
+
+### 获取当前每页显示文章数目
+<pre><code data-language="php">echo $Site->postsPerPage();</code></pre>
+
+### 获取Bludit的内部版本号
+<pre><code data-language="php">echo $Site->currentBuild();</code></pre>

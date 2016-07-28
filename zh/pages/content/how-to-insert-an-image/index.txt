@@ -1,0 +1,18 @@
+Title: How to insert an image
+Position: 3
+Content:
+
+Create a new post or page, then click the tab **Images** at the right menu.
+
+Click on the button **More images**, drag and drop the image to the gray box or click on it to select an image.
+
+![Upload image](https://s3.amazonaws.com/bludit-s3/bludit-documentation/en/upload-image-en.png)
+
+Once you have uploaded the image, **click** on the image to get the options, click on **Insert image**.
+
+![How to insert an image](https://s3.amazonaws.com/bludit-s3/bludit-documentation/en/insert-image-en.png)
+
+<div markdown="1" class="note">
+<div class="note-title">NOTE</div>
+The code inserted will be different for each HTML Editor.
+</div>

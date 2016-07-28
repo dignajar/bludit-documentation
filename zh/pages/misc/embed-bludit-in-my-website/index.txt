@@ -1,0 +1,83 @@
+Title: Embed Bludit in my website
+Position: 2
+Content:
+
+Bludit comes with a plugin called `API`. The API plugin has differents functions, such as, get all posts or pages in JSON format.
+
+## Activate API plugin
+
+To add Bludit posts or pages on your website, you need to have the plugin `API` activated.
+
+Go to **Admin panel->Settings->Plugins->API->Activate**
+
+## Show posts on my website
+
+The plugin API, by default show only 15 posts, this is to prevent overload on the system.
+
+Now go to the settings of the plugin and get the link `Show all posts` to get the posts in JSON format.
+
+Go to **Admin panel->Settings->Plugins->API->Settings->Show all posts**
+
+```
+Show all posts: https://my-domain.com/api/show/all/posts/5d23c7d2a97e08e977a671df3f4f4c59
+```
+
+In your website you can copy this PHP code to show the title of the posts and a link to each post, remember change the variable `$url` with your link.
+
+```
+<?php
+
+$url = 'https://my-domain.com/api/show/all/posts/5d23c7d2a97e08e977a671df3f4f4c59';
+
+$jsonData = file_get_contents($url);
+
+$data = json_decode($jsonData, true);
+
+foreach($data as $post) {
+
+	$postPermalink = $post['permalink'];
+
+	echo $post['title'];
+
+	echo '<a href="'.$postPermalink.'">Link to post</a>';
+
+	echo '<br>';
+}
+
+?>
+```
+
+## Show pages on my website
+
+Go to the settings of the plugin and get the link `Show all pages` to get the pages in JSON format.
+
+Go to **Admin panel->Settings->Plugins->API->Settings->Show all pages**
+
+```
+Show all pages: https://my-domain.com/api/show/all/pages/5d23c7d2a97e08e977a671df3f4f4c59
+```
+
+In your website you can copy this PHP code to show the title of the pages and a link to each page, remember change the variable `$url` with your link.
+
+```
+<?php
+
+$url = 'https://my-domain.com/api/show/all/pages/5d23c7d2a97e08e977a671df3f4f4c59';
+
+$jsonData = file_get_contents($url);
+
+$data = json_decode($jsonData, true);
+
+foreach($data as $page) {
+
+	$pagePermalink = $page['permalink'];
+
+	echo $page['title'];
+
+	echo '<a href="'.$pagePermalink.'">Link to page</a>';
+
+	echo '<br>';
+}
+
+?>
+```

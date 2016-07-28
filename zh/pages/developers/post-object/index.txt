@@ -1,0 +1,80 @@
+title:文章（Post）对象
+Position: 100
+Status: 草稿
+content:
+
+If the user filter by a particular post there will be an object `$Post`. To check if the user is filtering by a post you can uses the object `$Url` and the method `whereAmI()`.
+
+<pre><code data-language="php">if( $Url->whereAmI()==='post' ) {
+	echo 'The post filtered is '.$Post->title();
+}
+else {
+	echo 'The user is not watching a particular post';
+}
+</code></pre>
+
+### 方法及使用范例
+
+输出标题
+<pre><code data-language="php">echo $Post->title();</code></pre>
+
+输出内容
+<pre><code data-language="php">echo $Post->content();</code></pre>
+
+获取原始内容（未经解析）
+<pre><code data-language="php">$raw = $Post->contentRaw();</code></pre>
+
+输出描述
+<pre><code data-language="php">echo $Post->description();</code></pre>
+
+输出文章标题
+<pre><code data-language="php">echo $Post->tags();</code></pre>
+
+输出文章标签
+<pre><code data-language="php">$tags = $Post->tagsArray();
+foreach($tags as $tag) {
+  echo $tag;
+}
+</code></pre>
+
+输出文章位置
+<pre><code data-language="php">echo $Post->position();</code></pre>
+
+输出文章用户名
+<pre><code data-language="php">echo $Post->username();</code></pre>
+
+输出文章作者
+<pre><code data-language="php">echo $Post->author();</code></pre>
+
+获取unix格式的文章创建时间
+<pre><code data-language="php">$time = $Post->unixTimeCreated();
+
+// Format time
+echo date('Y-m-d', $time);
+</code></pre>
+
+输出根据地区以及格式设定获取文章日期
+<pre><code data-language="php">echo $Post->dateCreated();</code></pre>
+
+输出根据地区以及格式设定获取的最近修改日期
+<pre><code data-language="php">echo $Post->dateModified();</code></pre>
+
+输出时间
+<pre><code data-language="php">echo $Post->timeago();</code></pre>
+
+获取 slug 地址
+<pre><code data-language="php">$slug = $Post->slug();</code></pre>
+
+获取文章 key
+<pre><code data-language="php">$key = $Post->key();</code></pre>
+
+获取文章的地址 permalink
+<pre><code data-language="php">$permalink = $Post->permalink();</code></pre>
+
+获取文章状态，如果文章已发布，则此方法返回TRUE，否则返回FALSE
+<pre><code data-language="php">if( $Post->published() ) {
+	echo 'Post published';
+}
+else {
+	echo 'Post draft';
+}</code></pre>

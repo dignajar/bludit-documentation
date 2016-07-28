@@ -1,0 +1,60 @@
+Title: Example: My first theme
+Position: 2
+Content:
+
+First, create the folder structure, in this example I will call my new theme `Coffee`.
+
+- Create the folder theme, inside the folder `/bl-themes/`, you will get `/bl-themes/coffee/`
+- Create the folder `languages`, inside the folder `/bl-themes/coffee/`
+- Create the file `index.php`, inside the folder `/bl-themes/coffee/`, with the next HTML and PHP code:
+
+<pre><code data-language="html"><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bludit</title>
+</head>
+<body>
+	<?php foreach ($posts as $Post): ?>
+
+	<h1><?php echo $Post->title() ?></h1>
+	<div><?php echo $Post->content() ?></div>
+
+	<hr>
+
+	<?php endforeach; ?>
+</body>
+</html>
+</code></pre>
+
+Create a file with the theme information; the file will be in the root theme folder, called `metadata.json`, with the next JSON code:
+
+<pre><code data-language="php">{
+	"author": "Bludit",
+	"email": "",
+	"website": "",
+	"version": "1.0",
+	"releaseDate": "2016-01-15",
+	"license": "MIT",
+	"compatible": "1.4",
+	"notes": ""
+}
+</code></pre>
+
+Next, create another file with the name and description of the theme; create a file called `en_US.json` inside the folder `/bl-themes/coffee/languages/`, with the next JSON code:
+
+<pre><code data-language="php">{
+	"theme-data":
+	{
+		"name": "Coffee",
+		"description": "This is my first theme for Bludit."
+	}
+}
+</code></pre>
+
+Now you will see the theme on the **Admin panel->Settings->Themes**. This theme shows only the posts of the first page.
+
+<div markdown="1" class="note">
+<div class="note-title">DOWNLOAD</div>
+Download the theme Coffe from [here](https://github.com/dignajar/bludit-themes/tree/master/example-coffee).
+</div>

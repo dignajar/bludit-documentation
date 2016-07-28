@@ -1,0 +1,21 @@
+Title: 介绍
+Position: 1
+Content:
+
+Bludit 是一个非常简单的 web 应用，通过它可以非常快速地构建您自己的**网站**或者**博客**。而且它完全**免费并且开源**，您甚至不需要安装或者配置数据库。
+
+### 关注 Bludit
+通过下列不同社交网络可以和开发者进行联系。
+
+* [Twitter](https://twitter.com/bludit) **@bludit**
+* [Facebook](https://www.facebook.com/bluditcms)
+* [Google+](https://plus.google.com/+Bluditcms)
+* [Freenode](https://webchat.freenode.net) IRC channel **#Bludit**
+* [Gitter](https://gitter.im/dignajar/bludit) async chat online
+* [Support forum](https://forum.bludit.com)
+
+### 许可
+Bludit 是一款基于[MIT 许可证](https://tldrlegal.com/license/mit-license)的开源软件。
+
+### 与我们合作
+您可以帮助编辑此文档 [Github: Bludit documentation](https://github.com/dignajar/bludit-documentation).

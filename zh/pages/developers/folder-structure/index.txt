@@ -1,0 +1,87 @@
+Title: 目录结构
+Position: 1
+Content:
+
+以下是Bludit的目录结构。
+
+```
+bl-content/
+bl-kernel/
+bl-languages/
+bl-plugins/
+bl-themes/
+```
+
+## bl-content
+此文件夹是非常重要的，所有的文件以及图片，数据库都保存在这里。强烈建议在进行任何修改前，备份此文件夹。
+
+```
+bl-content/
+
+	databases/
+		plugins/		<-- 数据库: 插件
+		pages.php 		<-- 数据库: 页面
+		posts.php		<-- 数据库: 文章
+		security.php	<-- 数据库: 黑名单, 针对暴力攻击进行的保护, 其他
+		site.php		<-- 数据库: 网站变量, 名称, 描述, 口号, 其他
+		tags.php		<-- 数据库: 标签
+		users.php		<-- 数据库: 用户
+
+	pages/				<-- 页面
+		error/
+		about/
+		food/
+
+	posts/				<-- 文章
+		my-first-post/
+		animals/
+		cake/
+
+	tmp/				<-- 临时文件
+
+	uploads/			<-- 上传的文件
+		profiles/		<-- 用户资料图片
+		thumbnails/		<-- 缩略图
+		photo1.jpg
+		photo2.png
+```
+
+## bl-kernel
+此文件夹是Bludit的内核部分。
+
+## bl-languages
+此文件夹包括所有的语言文件，每个文件都是JSON文档，使用UTF-8进行编码。
+
+```
+bl-languages/
+	bg_BG.json
+	cs_CZ.json
+	de_CH.json
+	en_US.json
+	es_AR.json
+	..
+```
+
+## bl-plugins
+此文件夹包括所有插件，你可以下载新的插件然后上传到此。
+
+```
+bl-plugins/
+	about/
+	disqus/
+	rss/
+	sitemap/
+	simplemed/
+	..
+```
+
+## bl-themes
+此文件夹包括所有的主题，你可以下载新的主题然后上传到此。
+
+```
+bl-themes/
+	future-imperfect/
+	pure/
+	blogme/
+	..
+```

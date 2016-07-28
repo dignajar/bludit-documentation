@@ -1,0 +1,141 @@
+title:页面（Page）对象
+Position: 100
+Status: 草稿
+content:如果用户过滤器是某一特定页面的话，将会有一个对象`$Page`存在。通过使用对象`$Url` 的 `whereAmI()`方法，可以检查用户是否为一页面。
+
+<pre><code data-language="php">if( $Url->whereAmI()==='page' ) {
+	echo 'The page filtered is '.$Page->title();
+}
+else {
+	echo 'The user is not watching a particular page';
+}
+</code></pre>
+
+### 方法以及使用范例
+
+输出页面标题。
+<pre><code data-language="php">echo $Page->title();</code></pre>
+
+输出页面描述
+<pre><code data-language="php">echo $Page->description();</code></pre>
+
+输出页面内容
+<pre><code data-language="php">echo $Page->content();</code></pre>
+
+获取原始内容（未解析）
+<pre><code data-language="php">$raw = $Page->contentRaw();</code></pre>
+
+输出页面标签
+<pre><code data-language="php">echo $Page->tags();</code></pre>
+
+输出标签数组中的页面标签
+<pre><code data-language="php">$tags = $Page->tagsArray();
+foreach($tags as $tag) {
+  echo $tag;
+}
+</code></pre>
+
+输出页面位置
+<pre><code data-language="php">echo $Page->position();</code></pre>
+
+输出页面用户名
+<pre><code data-language="php">echo $Page->username();</code></pre>
+
+输出页面作者
+<pre><code data-language="php">echo $Page->author();</code></pre>
+
+获取unix时间戳格式的创建日期
+<pre><code data-language="php">$time = $Page->unixTimeCreated();
+
+// Format time
+echo date('Y-m-d', $time);
+</code></pre>
+
+根据地区及格式设定，输出页面创建日期
+<pre><code data-language="php">echo $Page->dateCreated();</code></pre>
+
+根据地区及格式设定，输出页面最近修改日期
+<pre><code data-language="php">echo $Page->dateModified();</code></pre>
+
+输出时间
+<pre><code data-language="php">echo $Page->timeago();</code></pre>
+
+输出 slug url
+<pre><code data-language="php">$slug = $Page->slug();</code></pre>
+
+获取页面 key
+<pre><code data-language="php">$key = $Page->key();</code></pre>
+
+获取页面地址。此为页面的绝对地址
+<pre><code data-language="php">$permalink = $Page->permalink();</code></pre>
+
+获取父页面的 key。如果页面没有父页面，则返回 FALSE
+<pre><code data-language="php">$parentKey = $Page->parentKey();
+if($parentKey!==false) {
+  echo 'The page have a parent';
+}
+else {
+  echo 'The page have not a parent';
+}
+</code></pre>
+
+获取子页面
+<pre><code data-language="php">$children = $Page->children();
+forech($children as $childKey) {
+	echo 'The child key is '.$childKey;
+}
+</code></pre>
+
+获取页面状态， 如果页面发布，则返回 TRUE，否则返回 FALSE
+<pre><code data-language="php">if( $Page->published() ) {
+	echo 'Page published';
+}
+else {
+	echo 'Page draft';
+}</code></pre>
+
+---
+
+## <a id="page-array"></a> $pages array
+
+此数组包括所有已发布的页面。数组的每一项都是一个[Page 对象](../themes/page-object)。
+
+### 示例
+
+输出所有页面标题
+<pre><code data-language="php">foreach($pages as $page)
+{
+	echo $page->title();
+}
+</code></pre>
+
+输出所有页面标题及内容
+<pre><code data-language="php">foreach($pages as $page)
+{
+	echo '<h1>'.$page->title().'</h1>';
+	echo '<div>'.$page->content().'</div>';
+}
+</code></pre>
+
+---
+
+## <a id="post-array"></a> $posts array
+
+此数组包括当前页中所有发布文章。数组的每一项都是一个 [Post 对象](../themes/post-object)
+
+### 示例
+
+输出所有文章标题
+<pre><code data-language="php">foreach($posts as $post)
+{
+	echo $post->title();
+}
+</code></pre>
+
+输出所有文章标题及内容
+<pre><code data-language="php">foreach($posts as $post)
+{
+	echo '<h1>'.$post->title().'</h1>';
+	echo '<div>'.$post->content().'</div>';
+}
+</code></pre>

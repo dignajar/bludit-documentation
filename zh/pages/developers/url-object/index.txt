@@ -1,0 +1,61 @@
+Title: Url 对象
+Position: 100
+Status: 草稿
+Content:
+Url定位（whereAmI）。此方法返回用户浏览时所处的位置。
+<pre><code data-language="php">// 比如用户浏览 http://domain.com/myfirstpage 并且页面过滤为 /
+echo $Url->whereAmI(); // 那么此方法将返回 page
+
+// 如果用户浏览 http://domain.com/post/mypost 并且文章过滤为 /post/
+echo $Url->whereAmI(); // 那么此方法将返回 post
+
+// 如果用户浏览 http://domain.com/tag/dog 并且标签过滤为 /tag/
+echo $Url->whereAmI(); // 则返回 tag
+
+// 如果用户浏览主页 http://domain.com
+echo $Url->whereAmI(); // 则返回 home
+</code></pre>
+
+关于 slugs。
+<pre><code data-language="php">// 如果用户浏览 http://domain.com/myfirstpage
+echo $Url->slug(); // 输出 myfirstpage
+
+// 如果用户浏览 http://domain.com/post/mypost 并且文章过滤为 /post/
+echo $Url->slug(); // 输出 mypost
+
+// 如果用户浏览 http://domain.com/tag/dog 并且标签过滤为 /tag/
+echo $Url->slug(); // 输出 dog
+</code></pre>
+
+有关 URI。
+<pre><code data-language="php">// 如果用户浏览 http://domain.com/myfirstpage
+echo $Url->uri(); // 输出 myfirstpage
+
+// 如果用户浏览 http://domain.com/post/mypost
+echo $Url->slug(); // 输出 /post/mypost
+
+// 如果用户浏览 http://domain.com/tag/dog
+echo $Url->slug(); // 输出 /tag/dog
+</code></pre>
+
+获取当前文章过滤器值。
+<pre><code data-language="php">$filter = $Uri->filters('post');
+echo $filter;</code></pre>
+
+获取当前页面过滤器值。
+<pre><code data-language="php">$filter = $Uri->filters('page');
+echo $filter;</code></pre>
+
+获取当前标签过滤器值。
+<pre><code data-language="php">$filter = $Uri->filters('tag');
+echo $filter;</code></pre>
+
+检查是否用户在浏览非法页面。
+<pre><code data-language="php">$notFound = $Uri->notFound();
+
+if($notFound) {
+	echo 'Page not found. 404.';
+}</code></pre>
+
+获取当前导航页面页号。
+<pre><code data-language="php">echo $Url->pageNumber();</code></pre>
