@@ -1,8 +1,8 @@
-Title: Hooks list
+Title: Hooks 清单
 Position: 2
 Content:
 
-There are hooks support by Bludit core, and there are other hooks supported by themes (Not all themes support all hooks).
+下面是Bludit core以及各种主题（某些主题并不支持所有的hook功能）支持的hooks.
 
 | Hooks 			| Execute in 		| Notes
 | ------------------------------|-----------------------|-----------------------------------------|
