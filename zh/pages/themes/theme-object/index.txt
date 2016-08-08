@@ -1,6 +1,6 @@
-Title: Theme Object
+Title: 主题对象
 Position: 100
-Status: draft
+Status: 草稿
 Content:
 
 This object is a Helper, this try to help developers to make code more clean and less code to write.

@@ -1,10 +1,10 @@
-Title: Example: My second theme
+Title: 示例: 我的第二个主题
 Position: 3
 Content:
 
-In this example I will call the new theme `Mars`.
+我的第二个示例主题名为 `Mars`。
 
-## 1. Folder structure
+## 1. 目录结构
 First create the folder for the theme inside the folder `/bl-themes/`, you will get `/bl-themes/mars/`.
 
 Next, create the languages, css and js folders:
