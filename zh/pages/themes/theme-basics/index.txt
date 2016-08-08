@@ -1,20 +1,20 @@
-Title: Theme basics
+Title: 主题基本概念
 Position: 1
 Content:
 
-Themes in Bludit are very flexible, you can use any framework ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/), etc), any Javascript code, whatever you want.
+Bludit 的主题非常灵活， 你可以使用 ([Bootstrap](http://getbootstrap.com/), [Kube](http://imperavi.com/kube/), [Pure.io](purecss.io), [Skel](https://github.com/n33/skel), [Less](http://lesscss.org/), etc), 以及 Javascript 代码。
 
-All themes resides into `themes` directory, and they have a default structure of directories, this structure is necesary only if you are going to use Bludit's helpers.
+所有的主题都处于 `themes` 目录中, 它们都具有默认的目录结构，只有在使用Bludit helpers的情况下，才需要此目录结构。
 
-### Content
-1. [Structure for themes](#structure-for-themes)
-2. [Information about the theme](#information)
+### 内容
+1. [主题结构](#structure-for-themes)
+2. [主题信息](#information)
 
 ---
 
 ## <a id="structure-for-themes"></a> Simple structure for themes
 
-This is a simple folder structure for themes.
+下面是一个简单的主题目录结构。
 
 ```
 /bl-themes/THEME_NAME/
@@ -27,7 +27,7 @@ This is a simple folder structure for themes.
 	index.php
 ```
 
-The next table shows PHP CONSTANSTS for developers.
+下表显示了开发者需要的PHP 常量。
 
 | Description 		| Real path                         | HTML paths                   | Real path                |
 | ----------------------|-----------------------------------|------------------------------|--------------------------|
@@ -44,16 +44,16 @@ The next table shows PHP CONSTANSTS for developers.
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>
-With this structure you are allowed to use Bludit's helpers.
+通过此目录结构，你可以使用Bludit helpers。
 </div>
 
 ---
 
-## Information about the theme <a id="information"></a>
+## 主题信息 <a id="information"></a>
 
-Each theme has an information file, called `metadata.json`, located in `/bl-themes/{THEME_NAME}/metadata.json`.
+各主题都有一个信息文件 `metadata.json`, 位于 `/bl-themes/{THEME_NAME}/metadata.json`。
 
-The next JSON is an example of the `metadata.json` file.
+下面是一个 `metadata.json`的 示例：
 
 <pre><code data-language="php">{
 	"author": "Bludit",
@@ -67,9 +67,9 @@ The next JSON is an example of the `metadata.json` file.
 }
 </code></pre>
 
-The theme's name and description are in the language file of the theme, located in `/bl-themes/{THEME_NAME}/languages/en_US.json`.
+主题的名称和描述位于主题的语言文件中, 位于 `/bl-themes/{THEME_NAME}/languages/en_US.json`。
 
-The next JSON is an example of the `en_US.json` file.
+下面是一个示范 `en_US.json` 文件：
 
 <pre><code data-language="php">{
 	"theme-data":
@@ -82,5 +82,5 @@ The next JSON is an example of the `en_US.json` file.
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>
-The default language in Bludit is the English from United States, the locale name is **en_US**, and the filename is **en_US.json**.
+Bludit的默认语言是美国英语 **en_US**, 文件名为 **en_US.json**。
 </div>

@@ -1,10 +1,10 @@
-Title: Plugin basics
+Title: 插件基础
 Position: 1
 Content:
 
-Plugins in Bludit resides into `bl-plugins` folder, and they have a default structure. Each plugin is an object in Bludit, with differents hooks (methods).
+Bludit的插件位于`bl-plugins`目录下, 它们都具有默认的文件结构。 每个插件都是Bludit中的实现各种 hook 功能（方法）的目标对象。
 
-This is an example of a little plugin, it prints a Hello World in the sidebar.
+下面是一个小插件的示例，它在侧边栏上打印出“Hello World”字样。
 ```
 <?php
 
@@ -18,15 +18,15 @@ class pluginHello extends Plugin {
 ?>
 ```
 
-### Content
-1. [Structure for plugins](#structure)
-2. [Information about the theme](#information)
+### 内容
+1. [插件文件结构](#structure)
+2. [有关主题的信息](#information)
 
 ---
 
-## <i id="structure"></i> Plugins structure
+## <i id="structure"></i> 插件结构
 
-This is a folder structure for a plugin
+下面是一个插件的目录结构
 
 ```
 /bl-plugins/{PLUGIN_NAME}/
@@ -37,9 +37,9 @@ This is a folder structure for a plugin
 
 ---
 
-## <i id="information"></i> Information about the plugin
+## <i id="information"></i> 有关插件的信息
 
-Each plugin has an information file, called `metadata.json`, located in `/bl-plugins/{PLUGIN_NAME}/metadata.json`.
+每个插件在`/bl-plugins/{PLUGIN_NAME}/metadata.json`目录下都有一个描述文件 `metadata.json`。
 
 ```
 {
@@ -54,7 +54,7 @@ Each plugin has an information file, called `metadata.json`, located in `/bl-plu
 }
 ```
 
-The plugin name and description are in the language file, located in `/bl-plugins/{PLUGIN_NAME}/languages/en_US.json`.
+插件的名称以及描述都位于语言文件 `/bl-plugins/{PLUGIN_NAME}/languages/en_US.json` 中。
 
 ```
 {
@@ -68,5 +68,5 @@ The plugin name and description are in the language file, located in `/bl-plugin
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>
-The default language in Bludit is the English from United States, the locale name is **en_US**, and the filename is **en_US.json**.
+Bludit默认的语言为美国英文（**en_US**），文件名为**en_US.json**。
 </div>

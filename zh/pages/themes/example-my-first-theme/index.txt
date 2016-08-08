@@ -1,12 +1,12 @@
-Title: Example: My first theme
+Title: 示例: 我的第一个主题
 Position: 2
 Content:
 
-First, create the folder structure, in this example I will call my new theme `Coffee`.
+首先, 创建目录结构，在本示例中，我称其主题为 `Coffee`。
 
-- Create the folder theme, inside the folder `/bl-themes/`, you will get `/bl-themes/coffee/`
-- Create the folder `languages`, inside the folder `/bl-themes/coffee/`
-- Create the file `index.php`, inside the folder `/bl-themes/coffee/`, with the next HTML and PHP code:
+- 在 `/bl-themes/` 中创建目录，如 `/bl-themes/coffee/`
+- 在 `/bl-themes/coffee/` 中创建目录 `languages`
+- 在 `/bl-themes/coffee/` 中创建文件 `index.php`, 内容如下：
 
 <pre><code data-language="html"><!DOCTYPE html>
 <html>
@@ -27,7 +27,7 @@ First, create the folder structure, in this example I will call my new theme `Co
 </html>
 </code></pre>
 
-Create a file with the theme information; the file will be in the root theme folder, called `metadata.json`, with the next JSON code:
+创建主题信息文件；此文件位于主题的根目录, 名为 `metadata.json`, JSON 代码如下:
 
 <pre><code data-language="php">{
 	"author": "Bludit",
@@ -41,7 +41,7 @@ Create a file with the theme information; the file will be in the root theme fol
 }
 </code></pre>
 
-Next, create another file with the name and description of the theme; create a file called `en_US.json` inside the folder `/bl-themes/coffee/languages/`, with the next JSON code:
+然后， 在 `/bl-themes/coffee/languages/` 目录下创建另一个 JSON 文件，提供主题标题及描述，JSON 代码如下:
 
 <pre><code data-language="php">{
 	"theme-data":
@@ -52,7 +52,7 @@ Next, create another file with the name and description of the theme; create a f
 }
 </code></pre>
 
-Now you will see the theme on the **Admin panel->Settings->Themes**. This theme shows only the posts of the first page.
+现在，你可以在**Admin panel->Settings->Themes**部分看到此主题了。此主题仅显示第一个页面。
 
 <div markdown="1" class="note">
 <div class="note-title">DOWNLOAD</div>
