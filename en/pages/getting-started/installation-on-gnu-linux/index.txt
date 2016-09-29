@@ -1,5 +1,7 @@
 Title: Installation on GNU/Linux
+
 Position: 5
+
 Content:
 
 All examples are out of the box installation, with Apache Webserver. If you have the steps for other distribution, you can publish this on the [forum](http://forum.bludit.com) or make a pull request on [Github Bludit Documentation](https://github.com/dignajar/bludit-documentation).
@@ -104,7 +106,7 @@ If you don’t have the command wget, you can try with the curl command.
 $ curl --remote-name https://s3.amazonaws.com/bludit-s3/bludit-builds/bludit_latest.zip
 ```
 
-Get the user associated with the Webserver process, to set the correct permissions to the directory `bl-content`. For example if you are running Apache you can do this:
+Get the user associated with the Webserver process, to set the correct permissions to the directory `bl-content`. For example, if you are running Apache you can do this:
 ```
 $ sudo ps axo user | egrep '(apache|httpd)' | uniq
 ```

@@ -1,8 +1,10 @@
 Title: Introduction
+
 Position: 1
+
 Content:
 
-Bludit is a simple web application to make your own **blog** or **site** in seconds, it's completly **free and open source**. Bludit uses flat-files to store the posts and pages, you don't need to install or configure a database.
+Bludit is a simple web application to make your own **blog** or **site** in seconds, it's completely **free and open source**. Bludit uses flat-files to store the posts and pages, you don't need to install or configure a database.
 
 ### Follow Bludit on
 Contact with the developers and users on different social networks.
@@ -10,12 +12,13 @@ Contact with the developers and users on different social networks.
 * [Twitter](https://twitter.com/bludit) **@bludit**
 * [Facebook](https://www.facebook.com/bluditcms)
 * [Google+](https://plus.google.com/+Bluditcms)
+* [Youtube](https://www.youtube.com/channel/UCuLu0Z_CHBsTiYTDz129x9Q)
 * [Freenode](https://webchat.freenode.net) IRC channel **#Bludit**
 * [Gitter](https://gitter.im/dignajar/bludit) async chat online
 * [Support forum](https://forum.bludit.com)
 
 ### License
-Bludit is opensource software licensed under the [MIT license.](https://tldrlegal.com/license/mit-license)
+Bludit is open source software licensed under the [MIT license.](https://tldrlegal.com/license/mit-license)
 
 ### Collaborate with us
 You can edit this documentation on [Github: Bludit documentation](https://github.com/dignajar/bludit-documentation).
