@@ -1,4 +1,4 @@
-Title: Ngnix
+Title: Nginx
 Position: 1
 Content: This is the configuration to run Bludit over Nginx web server.
 
