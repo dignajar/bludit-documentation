@@ -6,7 +6,7 @@ Log in to your Admin panel and go to **New post** on the top menu.
 
 Complete the form, write a title and the content for the new post, then click on the button **Save**.
 
-![Bludit new post](https://s3.amazonaws.com/bludit-s3/bludit-documentation/en/new-post-en.png)
+![Bludit new post](https://s3.amazonaws.com/bludit-s3/bludit-documentation/en/bludit-new-post-en.png)
 
 <div markdown="1" class="note">
 <div class="note-title">NOTE</div>

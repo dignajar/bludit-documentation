@@ -11,4 +11,4 @@ To schedule a post:
 4. Complete the post, title and content.
 4. Click **Save** button.
 
-![Schedule a post on Bludit](https://s3.amazonaws.com/bludit-s3/bludit-documentation/en/schedule-post-en.png)
+![Schedule a post on Bludit](https://s3.amazonaws.com/bludit-s3/bludit-documentation/en/bludit-how-to-schedule-a-post-en.png)
