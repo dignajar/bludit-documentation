@@ -1,0 +1,43 @@
+Title: Beiträge und Kommandozeilen-Modus
+Position: 2
+Content:
+
+Vergiss nicht vor der Verwendung des Kommandozeilen-Modus, diesen zu aktivieren.
+
+## Einen Beitrag erstellen
+
+- Erstelle ein neues Verzeichnis im Verzeichnis `/bl-content/posts/`.
+- Der Name des Verzeichnisses ist der URI des neuen Beitrags.
+- Erstelle eine Datei `index.txt` im neuen Verzeichnis.
+- bearbeite die Datei `index.txt`.
+- Füge die Variablen `Title:` und `Content:` hinzu.
+- Speichere die Datei.
+
+### Beispiel
+
+- Erstelle das Verzeichnis `/bl-content/posts/tiere`.
+- Erstelle die Datei `index.txt` im Verzeichnis `/bl-content/posts/tiere/`.
+- Edit the file `/bl-content/posts/animals/index.txt`.
+- Füge den neuen Beitrag hinzu, indem du die Datei spiecherst.
+
+```
+Title: Mein Beitrag über Tiere
+
+Content:
+<h1>HTML Supported</h1>
+
+## Markdown supported
+
+It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+**Bold text in Markdown format**
+```
+
+## How to edit a post
+
+- Just edit the file `index.txt` inside the directory of the post.
+- Save the file
+
+## Ein Beitrag löschen
+
+- Lösche das Verzeichnis mit dem Beitrag aus dem Verzeichnis `/bl-content/posts/`.
