@@ -4,7 +4,7 @@ Content:
 
 ## File Transfer Protocol (FTP)
 
-Um Dateien auf den Server zu laden oder vom Server auf den eigenen Computer herunterzuladen, wird das File Transfer Protocol (FPT) verwendet. Die Verbindung kann mit einem FTP-Client hergestellt werden.
+Um Dateien auf den Server zu laden oder vom Server auf den eigenen Computer herunterzuladen, wird das File Transfer Protocol (FTP) verwendet. Die Verbindung kann mit einem FTP-Client hergestellt werden.
 
 ### FTP-Clients
 
