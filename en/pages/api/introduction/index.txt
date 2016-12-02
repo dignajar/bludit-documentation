@@ -11,7 +11,7 @@ Content:
 The Bludi API (Application Programming Interface) is a plugin to provide an easy integration with Bludit core. With this plugin, you can retrieve or update data from the database with just an HTTP request.
 
 ## Installation
-Bludit came with the plugin API pre-installed, you only need to enable it. Go to **Admin panel->Plugins->API->Activate**.
+Bludit comes with the plugin API pre-installed, you only need to enable it. Go to **Admin panel->Plugins->API->Activate**.
 
 ## URL
 
@@ -20,13 +20,13 @@ The URL for the API requests is
 {protocol}://{domain}/api/{endpoints}
 ````
 
-This in an example
+Example:
 ```
 https://diego.bludit.com/api/posts
 ```
 
 ## Response
-The response format is `JSON`, with some keys defined as default, such as `status` and `message`.
+The response format is `JSON`, here is a list of keys from the JSON object.
 
 | Key 		| Type 		| Description 					|
 ----------------|---------------|-----------------------------------------------|
