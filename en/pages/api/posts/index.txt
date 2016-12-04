@@ -1,0 +1,91 @@
+Title: Manage posts
+
+Position: 2
+
+Date: 2016-12-03 22:00:00
+
+DateModified: 2016-12-03 22:00:00
+
+Content:
+
+To use this API you need to enable the API plugin.
+
+## Methods
+
+URL			| HTTP Method	| Description					|
+------------------------|---------------|-----------------------------------------------|
+/api/posts 		| GET 		| Returns all posts				|
+/api/posts/{slug}	| GET 		| Returns the post where the slug is {slug}	|
+* /api/posts 		| POST 		| Add a new post 				|
+* /api/posts/{slug}	| PUT 		| Edit the post where slug is {slug} 		|
+* /api/posts/{slug}	| DELETE 	| Delete the post where slug is {slug} 		|
+
+__The items marked with an * are not implemented yet.__
+
+## Parameters
+
+Key		| Type 		| Description
+----------------|---------------|-------------------------------|
+token 		| string 	| Authentication token		|
+limit		| integer	| Amount of posts		|
+
+## Get all posts
+
+Endpoint:
+- `/api/posts`
+
+Parameters requiered:
+- `token`
+- `limit`
+
+Example with curl.
+```
+$ curl -X GET -H "Content-Type: application/json" -d '{"token":"...", "limit":1}' https://diego.bludit.com/api/posts
+```
+
+```
+{
+  "status": "0",
+  "message": "Returns all posts, limit=1",
+  "data": [
+    {
+      "key": "my-dog",
+      "title": "My Dog",
+      "content": "...",
+      "contentRaw": "...",
+      "description": "...",
+      "date": "2016-12-03 22:30:10",
+      "permalink": "http:\/\/diego.bludit.com\/post/\/my-dog"
+    },
+  ]
+}
+```
+
+## Get a single post
+
+Endpoint:
+- `/api/posts/{slug}`
+
+Parameters requiered:
+- `token`
+
+Example with curl.
+```
+$ curl -X GET -H "Content-Type: application/json" -d '{"token":"..."}' https://diego.bludit.com/api/posts/my-dog
+```
+
+```
+{
+  "status": "0",
+  "message": "Returns the post, slug=my-dog",
+  "data": {
+    "key": "my-dog",
+    "title": "My DOg",
+    "content": "...",
+    "contentRaw": "...",
+    "description": "...",
+    "date": "2016-12-03 22:30:10",
+    "permalink": "http:\/\/diego.bludit.com\/post/\/my-dog"
+  }
+}
+```
