@@ -10,7 +10,14 @@ Content:
 
 To use this API you need to enable the API plugin.
 
-## Methods
+### Content
+1. [Methods](#methods)
+2. [Get all posts](#get-all-posts)
+3. [Get a single post](#get-a-single-post)
+
+---
+
+## <a id="methods"></a> Methods
 
 URL			| HTTP Method	| Description					|
 ------------------------|---------------|-----------------------------------------------|
@@ -22,14 +29,7 @@ URL			| HTTP Method	| Description					|
 
 __The items marked with an * are not implemented yet.__
 
-## Parameters
-
-Key		| Type 		| Description
-----------------|---------------|-------------------------------|
-token 		| string 	| Authentication token		|
-limit		| integer	| Amount of posts		|
-
-## Get all posts
+## <a id="get-all-posts"></a> Get all posts
 
 Endpoint:
 - `/api/posts`
@@ -61,7 +61,7 @@ $ curl -X GET -H "Content-Type: application/json" -d '{"token":"...", "limit":1}
 }
 ```
 
-## Get a single post
+## <a id="get-a-single-post"></a> Get a single post
 
 Endpoint:
 - `/api/posts/{slug}`
