@@ -1,4 +1,4 @@
-Title: Bludit API Introduction
+Title: API Introduction
 
 Position: 1
 
