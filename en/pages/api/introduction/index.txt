@@ -45,6 +45,6 @@ The response format is `JSON`, here is a list of keys from the JSON object.
 ## <a id="parameters"></a> Parameters
 
 Key		| Type 		| Description
-----------------|---------------|-------------------------------|
-token 		| string 	| Authentication token		|
-limit		| integer	| Amount of posts		|
+----------------|---------------|-----------------------------------------------|
+token 		| string 	| Authentication token				|
+limit		| integer	| A number for limit the pages or posts		|

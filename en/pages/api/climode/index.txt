@@ -1,0 +1,81 @@
+Title: API CLI mode
+
+Position: 4
+
+Date: 2016-12-04 22:00:00
+
+DateModified: 2016-12-04 22:00:00
+
+Content:
+
+Manage the posts and pages created from the command line.
+
+### Content
+1. [Methods](#methods)
+2. [Regenerate database](#regenerate-database)
+
+---
+
+## <a id="methods"></a> Methods
+
+URL			| HTTP Method	| Description					|
+------------------------|---------------|-----------------------------------------------|
+/api/cli 		| GET 		| 						|
+/api/cli/regenerate	| POST 		| 						|
+
+## <a id="regenerate-database"></a> Regenerate database
+
+When you create/edit/delete a post or a page from the command line, you need to tell to Bludit to check this new changes for renewing the database.
+
+Endpoint:
+- `/api/cli/regenerate`
+
+Parameters requiered:
+- `token`
+
+Request with curl command.
+```
+$ curl -X POST -H "Content-Type: application/json" -d '{"token":"..."}' https://my-blog.com/api/cli/regenerate
+```
+
+Response.
+```
+{
+  "status": "0",
+  "message": "Pages and posts regenerated."
+}
+```
+
+### Example of use
+This example creates a new post from the command line and generate the database.
+
+- Directory where Bludit is installed: `/var/www/html/bludit`
+- URL of Bludit installation: `https://www.my-blog.com`
+- API URL: `https://www.my-blog.com/api/`
+
+Create a new directory for the new post, the directory name represents the URI of the post.
+```
+$ cd /var/www/html/bludit
+$ mkdir bl-content/posts/my-post-cli
+```
+
+Create the `index.txt` file with the content of the post, this file has some `keys` by default.
+```
+$ cat << EOF > bl-content/posts/my-post-cli/index.txt
+Title: Post created from CLI
+Content:
+Hello this is a new post, created from the command line, support **Markdown** and **HTML code**.
+EOF
+```
+
+Call the API to check the new changes, get the `token` from the API plugin.
+```
+$ curl -X POST -H "Content-Type: application/json" -d '{"token":"..."}' https://my-blog.com/api/cli/regenerate
+```
+
+
+
+
+
+
+

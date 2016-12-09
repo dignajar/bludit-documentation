@@ -1,4 +1,4 @@
-Title: Manage posts
+Title: API Manage posts
 
 Position: 2
 
