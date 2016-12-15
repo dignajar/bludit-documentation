@@ -4,7 +4,7 @@ Content:
 
 1. Erstelle ein vollständiges Backup mit allen Dateien und Verzeichnissen.
 2. Lade die neueste Version von Bludit von https://s3.amazonaws.com/bludit-s3/bludit-builds/bludit_latest.zip herunter.
-3. Enpacke das ZIP-Archiv.
+3. Entpacke das ZIP-Archiv.
 4. Ersetze die bestehenden mit den neuen Dateien.
 5. Melde dich im Adminstrationsbereich an.
 6. Das ist alles!
