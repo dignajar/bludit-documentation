@@ -8,7 +8,7 @@ Um Bludit verwenden zu können, braucht es einen Webserver, auf dem PHP läuft:
 - PHP-Modul [mbstring](http://php.net/manual/en/book.mbstring.php) zur Unterstützung von UTF-8.
 - PHP-Modul [gd](http://php.net/manual/en/book.image.php) zur Grafikbearbeitung.
 - PHP-Modul [dom](http://php.net/manual/en/book.dom.php) zur DOM-Erweiterung.
-- PHP-Modul [json](http://php.net/manual/en/book.json.php) zur Verwendung des von JSON.
+- PHP-Modul [json](http://php.net/manual/en/book.json.php) zur Verwendung von JSON.
 - Unterstützte Server:
   * PHP Built-in Webserver.
   * Apache mit dem Modul [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html).
