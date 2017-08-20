@@ -1,4 +1,7 @@
-For Hiawatha you can use the following rewrite rule:
+
+Title: Hiwwatha
+Position: 2
+Content: For Hiawatha you can use the following rewrite rule:
 
 ````
 UrlToolkit {
