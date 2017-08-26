@@ -2,11 +2,12 @@ Title: Installationsanleitung
 Position: 3
 Content:
 
-1. Lade die neueste Version von Bludit von https://s3.amazonaws.com/bludit-s3/bludit-builds/bludit_latest.zip herunter.
-2. Entpacke das ZIP-Archiv in ein Verzeichnis, das du beispielsweise `bludit` benennst.
-3. Lade das Verzeichnis `bludit` auf deinen Server.
-4. Rufe im Browser die Domain mit der Installation auf, beispielsweise `http://domain.com/bludit`.
-5. Der Bludit-Installer führt dich danach durch die Einrichtung der Website.
+1. Die neueste Version von Bludit von https://s3.amazonaws.com/bludit-s3/bludit-builds/bludit_latest.zip herunterladen.
+2. Das ZIP-Archiv entpacken.
+3. Den Inhalt des ZIP-Archivs auf den Server laden.
+4. Im Browser die Domain und eventuell das Verzeichnis aufrufen, in dem sich die Dateien befinden.
+5. Auf der Seite Bludit Installer die gewünschte Sprache der Installation wählen und "Next" klicken.
+6. Passwort für den Benutzer "admin" und eine E-Mail-Adresse eingeben, Installation abschliessen.
 
 <div markdown="1" class="note">
 <div class="note-title">WICHTIG</div>
