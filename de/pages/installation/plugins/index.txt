@@ -1,0 +1,12 @@
+Title: Plugins
+Position: 8
+Content:
+
+Plugins werden wir folgt installiert:
+
+* Download des ZIP-Archivs.
+* Enpacken des ZIP-Archivs.
+* Inhalt des ZIP-Archivs in das Verzeichnis /bl-plugins der Bludit-Installation auf dem Server laden.
+* Plugin unter "Einstellungen" > "Plugins" aktivieren.
+
+Die meisten Plugins können konfiguriert werden. Dies ist unter "Einstellungen" > "Plugins" unter "Einstellungen" beim jeweiligen Plugin möglich.
