@@ -2,6 +2,6 @@ Title: Weiterlesen-Link einfügen
 Position: 5
 Content:
 
-Um vom Inhalt eines Beitrags nur einen Ausschnitt zu zeigen, kann das Code-Schnipsel `<!-- pagebreak -->` eingefügt werden.
+Standardmässig zeigt Bludit jeweils den ganzen Beitrag an.
 
-![Bludit read more](bludit-read-more.png)
+Um nur einen Ausschnitt zu zeigen, kann das Code-Schnipsel `<!-- pagebreak -->` eingefügt werden. Es wird dann nur der Text vor dem Code angezeigt sowie abhängig vom Theme ein Button oder Link "Weiterlesen". Durch Anklicken von "Weiterlesen" wird der Rest des Beitrags angezeigt.
